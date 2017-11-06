@@ -1,0 +1,181 @@
+.kabinet-history{
+  width: 100%;
+  float: left;
+  position: relative;
+  &__left{
+    width: 20%;
+    float: left;
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    ul{
+      width: 100%;
+      float: left;
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      li{
+        width: 100%;
+        display: inline-block;
+        list-style-type: none;
+        margin: 5px 0;
+        a{
+          text-decoration: none;
+          font-size: 12px;
+          font-family: $ob;
+          color: $green;
+          &:hover{
+            text-decoration: underline;
+          }
+          .count{
+            padding-left: 10px;
+            box-sizing: border-box;
+          }
+        }
+      }
+      li.active{
+        a{
+          color: #334a51;
+        }
+      }
+    }
+  }
+  &__right{
+    width: 80%;
+    float: left;
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    border-left: 1px solid #dedede;
+    h2{
+      padding-left: 50px;
+      box-sizing: border-box;
+      font-family: $or;
+      font-size: 24px;
+      color: #000;
+      margin: 0;
+      display: inline-block;
+    }
+    .kabinet-history__right-nav{
+      padding: 25px 0 25px 50px;
+      box-sizing: border-box;
+      float: left;
+      width: 100%;
+      ul{
+        padding-top: 10px;
+        box-sizing: border-box;
+        width: 100%;
+        float: left;
+        display: inline-block;
+        position: relative;
+        margin: 0;
+        padding-left: 0;
+        li{
+          width: 20%;
+          display: inline-block;
+          list-style-type: none;
+          position: relative;
+          a{
+            text-decoration: none;
+            color: #1a97bb;
+            font-size: 14px;
+            font-family: $ob;
+            span{
+              color: #adadad;
+            }
+          }
+        }
+        li.active{
+          a{
+            color: #000;
+          }
+        }
+      }
+    }
+    .checkbox0{
+      width: 50%;
+      float: left;
+      padding-left: 50px;
+      box-sizing: border-box;
+      label{
+        float: left;
+      }
+      p{
+        margin: 0;
+        font-family: $or;
+        font-size: 14px;
+        color: #000;
+        display: inline-block;
+        float: left;
+        line-height: 26px;
+      }
+      input[type=checkbox]:checked + label{
+        background-image: url('../img/checkbox-sprite.png');
+        background-repeat: no-repeat;
+        background-position: 0px -27px;
+        display: block;
+        size: 21px;
+        text-align: right;
+        float: right;
+        margin-top: 0;
+        float: left;
+      }
+    }
+    .table-block{
+      width: 100%;
+      float: left;
+      position: relative;
+      table{
+        width: 100%;
+        tr{
+
+        }
+        tr:first-of-type{
+          background-color: #334a51;
+        }
+        th{
+          font-size: 14px;
+          font-family: $ob;
+          color: #fff;
+          padding: 10px 0;
+          box-sizing: border-box;
+          .rubl-icon{
+            svg{
+              fill: #fff;
+              height: 11px;
+            }
+          }
+        }
+        td{
+          padding: 10px 0;
+          box-sizing: border-box;
+          font-family: $ob;
+          font-size: 12px;
+          color: #000;
+          .rubl-icon{
+            top: -1px;
+            left: -4px;
+            svg{
+              height: 10px;
+            }
+          }
+        }
+        th:first-of-type{
+          padding-left: 40px;
+          box-sizing: border-box;
+        }
+        td:first-of-type{
+          padding-left: 40px;
+          box-sizing: border-box;
+        }
+        .element-table{
+          size: 8px;
+          display: inline-block;
+          background-image: url("../img/element-table.png");
+        }
+      }
+    }
+  }
+}

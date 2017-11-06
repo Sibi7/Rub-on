@@ -1,0 +1,85 @@
+@mixin transition($t) {
+	-webkit-transition: all $t linear;
+	   -moz-transition: all $t linear;
+	    -ms-transition: all $t linear;
+	     -o-transition: all $t linear;
+	        transition: all $t linear;
+}
+@mixin hov-yellow{
+	&:hover{
+		color: #ffd800;
+	}
+}
+
+@mixin green-hov-rgba {
+	&:hover{
+		// background-color: rgba(60, 77, 82, 0.88);
+		background: linear-gradient(#626f7b, #334a51);
+		color: #fff;
+	}
+}
+@mixin bezh-hov {
+	&:hover{
+		background-color: $green;
+		color: #fff;
+	}
+}
+@mixin bezh-hov-rgba {
+	&:hover{
+    // background: linear-gradient(rgba(255, 255, 255, 0.5),#e7d571);
+    background: linear-gradient(#f7e896,#fff6c4);
+		// color: #fff;
+		color: $green;
+	}
+}
+@mixin h1-title{
+	font-size: 24px;
+	font-family: $or;
+	color: #424242;
+	padding-left: 0;
+	margin: 15px 0;
+	box-sizing: border-box;
+	float: left;
+	width: 100%;
+}
+
+@mixin overflow-img() {
+	overflow: hidden;
+	img {
+		min-width: 100%;
+		height: auto;
+		position: relative;
+		left: 50%;
+		top: 50%;
+		-webkit-transform: translate(-50%,-50%);
+		   -moz-transform: translate(-50%,-50%);
+		    -ms-transform: translate(-50%,-50%);
+		     -o-transform: translate(-50%,-50%);
+		        transform: translate(-50%,-50%);
+	}
+}
+
+// Breakpoints for each query
+$smartphone: 480px;
+$tabletPortrait: 767px;
+$tabletLandscape: 1024px;
+$desktop: 1174px;
+$largeScreen: 1400px;
+
+@mixin respondTo($media) {
+	@if $media == smartphone {
+	  @media (min-width: $smartphone) { @content; }
+	}
+	@else if $media == tablet {
+	  @media (min-width: $tabletPortrait) and (max-width: $tabletLandscape) { @content; }
+	}
+	@else if $media == smallScreen {
+	  @media (min-width: $desktop) { @content; }
+	}
+	@else if $media == desktop {
+	  @media (min-width: $desktop) { @content; }
+	}
+  @else if $media == largeScreen {
+    @media (min-width: $largeScreen) { @content; }
+  }
+}

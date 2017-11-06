@@ -1,0 +1,22 @@
+.service-page{
+  width: 100%;
+  float: left;
+  position: relative;
+  padding: 40px 0;
+  box-sizing: border-box;
+  text-align: center;
+  .page-pic{
+    size: 560px 400px;
+    float: none;
+    margin: 0 auto;
+    overflow: hidden;
+    img{
+      size: 100%;
+      object-fit: contain;
+    }
+  }
+  .goback-1{
+    padding: 0;
+    margin-top: 30px;
+  }
+}

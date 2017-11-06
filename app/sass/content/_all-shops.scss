@@ -1,0 +1,319 @@
+.all-shops__content{
+  width: 100%;
+  float: left;
+  position: relative;
+  border-top: 1px solid #dedede;
+  &_left{
+    width: 20%;
+    float: left;
+    #cssmenu-1, #cssmenu-1 ul, #cssmenu-1 ul li, #cssmenu-1 ul li a {
+        // border: 0 none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: block;
+        line-height: 1;
+        list-style: none outside none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+    #cssmenu ul li.active{
+      border-left: 2px solid $green;
+    }
+    #cssmenu-1 {
+        color: #ffffff;
+        width: 100%;
+    }
+    #cssmenu-1 ul ul {
+        display: none;
+    }
+    #cssmenu-1 > ul > li > a {
+        color: #334a51;
+        cursor: pointer;
+        font-size: 14px;
+        padding: 8px 0;
+        text-decoration: none;
+        z-index: 2;
+        text-align: left;
+        font-family: $ob;
+    }
+
+    #cssmenu-1 > ul > li:last-child > a,
+    #cssmenu-1 > ul > li.last > a {
+        // border-bottom: 1px solid #1682ba;
+    }
+    .holder {
+        height: 0;
+        position: absolute;
+        right: 0;
+        top: -6px;
+        width: 0;
+    }
+    .holder:after, .holder:before {
+        content: "";
+        display: block;
+        height: 6px;
+        position: absolute;
+        right: 20px;
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+        width: 6px;
+        z-index: 10;
+    }
+    .holder:after {
+        border-left: 2px solid transparent;
+        border-top: 2px solid transparent;
+        top: 17px;
+    }
+    #cssmenu-1 > ul > li > a:hover > span:after,
+    #cssmenu-1 > ul > li.active > a > span:after,
+    #cssmenu-1 > ul > li.open > a > span:after {
+        // border-color: #eeeeee;
+    }
+    .holder:before {
+        border-left-color: inherit;
+        border-left-style: solid;
+        border-left-width: 2px;
+        border-top-color: inherit;
+        border-top-style: solid;
+        border-top-width: 2px;
+        top: 18px;
+    }
+    #cssmenu-1 ul ul li a {
+        // background:#49505a;
+        // border-bottom: 1px solid #32373e;
+        // border-left: 1px solid #32373e;
+        // border-right: 1px solid #32373e;
+        color: #334a51;
+        cursor: pointer;
+        font-size: 12px;
+        padding: 10px 20px;
+        text-decoration: none;
+        z-index: 1;
+        font-family: $ob;
+        text-align: left;
+    }
+    #cssmenu-1 ul ul li:hover > a,
+    #cssmenu-1 ul ul li.open > a,
+    #cssmenu-1 ul ul li.active > a {
+        // background: none repeat scroll 0 0 #424852;
+        // color: #ffffff;
+    }
+    #cssmenu-1 ul ul li:first-child > a {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    #cssmenu-1 ul ul ul li:first-child > a {
+        -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+    }
+    #cssmenu-1 ul ul ul li a {
+        padding-left: 30px;
+    }
+    #cssmenu-1 > ul > li > ul > li:last-child > a,
+    #cssmenu-1 > ul > li > ul > li.last > a {
+        border-bottom: 0 none;
+    }
+    #cssmenu-1 > ul > li > ul > li.open:last-child > a,
+    #cssmenu-1 > ul > li > ul > li.last.open > a {
+        // border-bottom: 1px solid #32373e;
+    }
+    #cssmenu-1 > ul > li > ul > li.open:last-child > ul > li:last-child > a {
+        border-bottom: 0 none;
+    }
+    #cssmen1 ul ul li.has-sub > a:after {
+        border-left: 2px solid #eeeeee;
+        border-top: 2px solid #eeeeee;
+        content: "";
+        display: block;
+        height: 5px;
+        position: absolute;
+        right: 20px;
+        top: 11.5px;
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+        width: 5px;
+        z-index: 10;
+    }
+    #cssmenu-1 ul ul li.active > a:after,
+    #cssmenu-1 ul ul li.open > a:after,
+    #cssmenu-1 ul ul li > a:hover:after {
+        border-color: #ffffff;
+    }
+    .icon{
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-right: 5px;
+      position: relative;
+    }
+    @include breakpoint(max-width 770px){
+  		width: 30%;
+  	}
+  }
+  &_right{
+    float: left;
+    width: 80%;
+    display: block;
+    height: auto;
+    border-left: 1px solid #dedede;
+    box-sizing: border-box;
+    .breadcrumbs {
+      float: left;
+      width: 100%;
+      position: relative;
+      &__list {
+        list-style-type: none;
+        float: left;
+        margin-left: 30px;
+        padding: 0;
+        li {
+          display: inline-block;
+          margin: 0 10px;
+          position: relative;
+          font-size: 10px;
+          font-family:$or ;
+          a {
+            color: #334a51;
+          }
+          &:first-of-type {
+            margin-left: 0;
+          }
+          &:after {
+            content: "/";
+            position: absolute;
+            right: -18px;
+            bottom: 0;
+          }
+          &:last-of-type {
+            line-height: 30px;
+            a{
+              float: right;
+              line-height: 30px;
+              font-size: 12px;
+              color: #334a51;
+              font-family:$or ;
+              padding-left: 20px;
+              box-sizing: border-box;
+            }
+            &:after, &:before {
+              content: none;
+            }
+          }
+        }
+      }
+    }
+    .count-shops{
+      width: 100%;
+      float: left;
+      color: #797979;
+      font-size: 14px;
+      font-family: $or;
+      background-color: rgba(255, 216, 0, 0.28);
+      padding: 12px 0 12px 30px;
+      box-sizing: border-box;
+    }
+    .open-shops{
+      width: 25%;
+      float: left;
+      position: relative;
+      padding-top: 50px;
+      box-sizing: border-box;
+      a{
+        font-family: $ob;
+        font-size: 12px;
+        color: #1a97bb;
+        text-transform: uppercase;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        display: inline-block;
+        border: 1px solid #1a97bb;
+        border-radius: 14px;
+        text-decoration: none;
+        &:hover{
+          background-color: #ffd800;
+          border: 1px solid #fff;
+        }
+      }
+    }
+    .average-ad{
+      margin-bottom: 100px;
+      border: none;
+      .average-ad-item{
+        border: 1px solid #dedede;
+        border-left: none;
+        &:last-of-type{
+          border-top: none;
+        }
+        .average-ad-item-content{
+          .top-content{
+            p{
+              width: 100%;
+              float: left;
+            }
+            .average-ad-title{
+              color: $green;
+            }
+          }
+          .bottom-content{
+            .left, .right{
+              width: 35%;
+              float: left;
+              padding-top: 0;
+              text-align: left;
+              border: none;
+            }
+            .right{
+              width: 65%;
+            }
+            .shops-tel{
+              float: left;
+              font-family: $ob;
+              color: $green;
+              font-size: 14px;
+              text-align: left;
+              width: 100%;
+              .tel-icon{
+                background-image: url("../img/phone-receiver.png");
+                display: inline-block;
+                float: left;
+                width: 14px;
+                height: 13px;
+                position: relative;
+                top: 2px;
+                margin-right: 5px;
+                background-repeat: no-repeat;
+                background-size: contain;
+              }
+            }
+            .shops-link{
+              display: none;
+              text-transform: uppercase;
+              color: #fff;
+              // display: inline-block;
+              padding: 7px 25px;
+              box-sizing: border-box;
+              background-color: $green;
+              border-radius: 15px;
+              float: left;
+              font-size: 9px;
+              margin-top: 10px;
+              @include green-hov-rgba;
+            }
+          }
+
+        }
+
+      }
+      .average-ad-item:hover .average-ad-item-content .bottom-content .shops-link{
+          display: block;
+        }
+    }
+    @include breakpoint(max-width 770px){
+      width: 70%;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.activation{
+  width: 100%;
+  float: left;
+  display: block;
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+  .reg-form{
+    margin: 0 auto;
+    float: none;
+    display: inline-block;
+    margin-bottom: 30px;
+    .row-knopka{
+      width: 50%;
+      float: left;
+      display: inline-block;
+      position: relative;
+      padding: 0 20px;
+      box-sizing: border-box;
+      .reg-form-send{
+        min-width: 30%;
+        text-transform: lowercase;
+        padding: 0 30px;
+        box-sizing: border-box;
+        @include green-hov-rgba;
+        &:after{
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+.activation-title{
+  font-size: 18px;
+  font-family: $or;
+  border: 7px solid #ffd800;
+  width: 50%;
+  padding: 35px 20px;
+  box-sizing: border-box;
+  margin: 0 auto 10px;
+  float: none;
+
+}
+.activatioN-info{
+  font-family: $opl;
+  font-size: 12px;
+  color: $green;
+}
+.goback{
+  width: 100%;
+  display: inline-block;
+  font-size: 14px;
+  font-family: $or;
+  padding: 10px 0 40px;
+  box-sizing: border-box;
+  font-weight: 600;
+}
+.goback-link{
+  color: $link;
+  text-decoration: underline;
+}
+.goback-1{
+  min-width: 17%;
+  display: inline-block;
+  font-size: 14px;
+  font-family: $or;
+  padding: 10px 0 40px;
+  box-sizing: border-box;
+  font-weight: 600;
+}
+
+
+.alert-info {
+  width: 303px;
+}
+
+.control-label{
+  text-align: left;
+}

@@ -1,0 +1,100 @@
+.header__middle-home-white{
+  background-color: #fff;
+}
+.kabinet-header__menu{
+  width: 100%;
+  float: left;
+  position: relative;
+  text-align: center;
+  background-color: #334a51;
+}
+.kabinet-header__mnu{
+  width: 100%;
+  padding: 10px 0 0;
+  box-sizing: border-box;
+  display: inline-block;
+  float: left;
+  text-align: left;
+  margin: 0;
+  li{
+    display: inline-block;
+    list-style-type: none;
+    min-width: 5%;
+    margin: 0 20px;
+    a{
+      text-decoration: underline;
+      color: #fff;
+      font-family: $ob;
+      font-size: 14px;
+    
+    }
+    &:first-of-type{
+      margin-left: 0;
+    }
+  }
+  li.active{
+    border-bottom: 4px solid #ffd800;
+    padding-bottom: 16px;
+  }
+}
+.kabinet-header-icon-mail{
+  display: inline-block;
+  background-image: url("/img/kabinet-header-mail.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 13px;
+  margin-right: 5px;
+  top: 2px;
+  position: relative;
+}
+.kabinet-header-icon-favorite{
+  display: inline-block;
+  background-image: url("/img/kabinet-header-favorite.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  size: 18px;
+  margin-right: 5px;
+  top: 2px;
+  position: relative;
+}
+.kabinet-header-icon-delivery {
+  display: inline-block;
+  background-image: url("/img/kabinet-header-delivery.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  size: 27px 17px;
+  margin-right: 5px;
+  top: 2px;
+  position: relative;
+}
+.kabinet-header-icon-msg {
+  display: inline-block;
+  background-image: url("/img/kabinet-header-msg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  size: 17px 15px;
+  margin-right: 5px;
+  top: 2px;
+  position: relative;
+}
+.kabinet-header-icon-bill {
+  display: inline-block;
+  background-image: url("/img/kabinet-header-bill.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  size: 16px 20px;
+  margin-right: 5px;
+  top: 2px;
+  position: relative;
+}
+.kabinet-header-icon-setting {
+  display: inline-block;
+  background-image: url("/img/kabinet-header-setting.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  size: 16px;
+  margin-right: 5px;
+  top: 2px;
+  position: relative;
+}

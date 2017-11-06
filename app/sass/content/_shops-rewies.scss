@@ -1,0 +1,124 @@
+.rewies{
+  width: 100%;
+  float: left;
+  display: inline-block;
+}
+
+.rewies-item{
+  width: 100%;
+  float: left;
+  position: relative;
+
+}
+
+.rewies-item-thumb{
+  width: 52px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+  position: relative;
+  display: inline-block;
+  img{
+    width: 52px;
+    height: 52px;
+    object-fit: cover;
+  }
+}
+
+.rewies-item-content{
+  display: inline-block;
+  float: left;
+  position: relative;
+  width: calc(100% - 52px);
+  padding-left: 15px;
+  box-sizing: border-box;
+  p{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    margin: 0;
+    color: #000;
+    font-family: $or;
+  }
+}
+
+.rewies-item-title{
+  width: 100%;
+  float: left;
+  text-align: right;
+  display: inline-block;
+  margin-bottom: 10px;
+  .name{
+    color: #00060b;
+    font-family: $ob;
+    float: left;
+    display: inline-block;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .time{
+    color: #9d9d9d;
+    font-family: $or;
+    float: none;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 400;
+  }
+}
+
+
+.nested-wrap{
+  float: right;
+  width: 90%;
+  display: inline-block;
+  position: relative;
+  margin-top: 15px;
+}
+
+
+.rewies-panel{
+  width: 100%;
+  float: left;
+  position: relative;
+  display: inline-block;
+  text-align: right;
+  margin-bottom: 15px;
+  p{
+    margin: 0;
+    display: inline-block;
+    float: none;
+    color: #01050a;
+    font-family: $or;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 5px;
+  }
+}
+
+.reiting-red-icon, .comment-red-icon{
+  size: 17px;
+  float: left;
+  display: inline-block;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/red-reiting.png");
+  margin-right: 7px;
+}
+
+.comment-red-icon{
+  background-image: url("../img/red-comment.png");
+}
+
+
+.comments-counter{
+  color: #334a51;
+  font-family: $ob;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  float: left;
+  text-align: left;
+  display: inline-block;
+}

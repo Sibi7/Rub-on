@@ -1,0 +1,192 @@
+.ad-author__menu{
+  width: 100%;
+  float: left;
+  position: relative;
+  text-align: center;
+  background-color: #334a51;
+  .kabinet-header__mnu{
+    width: 100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    text-align: left;
+    margin: 0;
+    li{
+      display: inline-block;
+      list-style-type: none;
+      min-width: 5%;
+      margin: 0 20px;
+      position: relative;
+      a{
+        text-decoration: underline;
+        color: #fff;
+        font-family: $ob;
+        font-size: 14px;
+        width: 100%;
+        position: relative;
+      }
+      &:first-of-type{
+        margin-left: 0;
+      }
+    }
+    li.active{
+      border-bottom: none;
+    }
+    li.active a:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    background-color: #ffd800;
+    display: inline-block;
+    top: 42px;
+}
+  }
+}
+.ad-author__content{
+  width: 100%;
+  float: left;
+  position: relative;
+  &_left{
+    width: 75%;
+    float: left;
+    position: relative;
+    .about-seller{
+      width: 100%;
+      border-top: none;
+      .user{
+        min-width: 20%;
+        float: left;
+        display: inline-block;
+        position: relative;
+        .thumb{
+          size: 35px;
+          float: left;
+          overflow: hidden;
+          border-radius: 50%;
+          height: 35px;
+          margin-right: 5px;
+          img{
+            width: auto;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        span{
+          font-family: $or;
+          color: #878787;
+          font-size: 12px;
+          text-align: left;
+          float: left;
+          width: 70%;
+        }
+        h4{
+          margin: 0;
+          font-size: 16px;
+          font-family: $ob;
+          color: #000;
+          text-align: left;
+          width: 70%;
+          float: left;
+        }
+      }
+      .user-number, .user-city{
+        margin-top: 17px;
+      }
+    }
+    .ad-author__content_left-item{
+      display: inline-block;
+      float: left;
+      width: 100%;
+      padding: 15px 0;
+      box-sizing: border-box;
+      border-bottom: 1px solid #dedede;
+      .kabinet-active-ad__content_ad{
+        width: 100%;
+        float: left;
+        display: inline-block;
+        .average-ad-item-thumb{
+          width: 21%;
+          img{
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .average-ad-item-content{
+          .average-ad-title{
+            font-size: 16px;
+          }
+        }
+      }
+      .average-ad-item{
+        border-bottom: none;
+        padding: 0;
+        .average-ad-item-thumb{
+          width: 20%;
+        }
+        .average-ad-title{
+          width: 96%;
+        }
+        .left{
+          width: 35%;
+          text-align: left;
+          padding-top: 0;
+        }
+        .right {
+            width: 65%;
+            border-left: none;
+            .shops-tel{
+              width: 100%;
+              float: left;
+              font-family: $ob;
+              color: #334a51;
+              font-size: 14px;
+              text-align: left;
+              .tel-icon {
+                  background-image: url(../img/phone-receiver.png);
+                  display: inline-block;
+                  float: left;
+                  width: 14px;
+                  height: 13px;
+                  position: relative;
+                  top: 2px;
+                  margin-right: 5px;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+              }
+            }
+        }
+      }
+      &:last-of-type{
+        border-bottom: none;
+      }
+    }
+  }
+  &_right{
+    width: 25%;
+    float: left;
+  }
+  .banner-rightbar{
+    margin-top: 20px;
+  }
+}
+
+
+.warning-pic{
+  width: 114px;
+  height: 104px;
+  float: left;
+  margin-right: 20px;
+}
+.warning-row{
+  float: left;
+  color: #020000;
+  font-family: $ob;
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 96px;
+  display: inline-block;
+  width: calc(100% - 135px);
+}

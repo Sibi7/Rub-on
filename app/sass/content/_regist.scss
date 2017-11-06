@@ -1,0 +1,337 @@
+.registration{
+	float: left;
+	width: 100%;
+	display: block;
+	position: relative;
+	@include breakpoint(max-width 770px){
+		text-align: center;
+	}
+}
+.registration-form{
+	float: left;
+	width: 60%;
+	display: block;
+	background-color: #FFF;
+	padding-left: 150px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	@include breakpoint(max-width 770px){
+		width: 50%;
+		padding-left: 0;
+		float: none;
+		display: inline-block;
+		margin: 0 auto;
+	}
+	@include breakpoint(max-width 670px){
+		width: 80%;
+	}
+}
+
+.title-registration-form{
+	font-size: 24px;
+	font-family: $or;
+	color: #424242;
+	padding-left: 0;
+	margin-top: 0;
+
+}
+.reg-form{
+	float: left;
+	width: 50%;
+	position: relative;
+	text-align: left;
+	display: block;
+	text-align: center;
+	.my-error{
+		input{
+			border: 1px solid #c91414;
+		}
+	}
+	@include breakpoint(max-width 770px){
+		width: 100%;
+	}
+}
+
+.form-row{
+	width: 100%;
+	float: left;
+	display: inline-block;
+	position: relative;
+	// height: 38px;
+	margin: 10px 0;
+	text-align: left;
+	.error{
+		margin-top: 1px;
+	}
+	.memo-error, .memo{
+    right: -282px;
+		margin-top: -10px;
+		&:after{
+			content: "";
+			top: 21%;
+		}
+	}
+
+
+}
+.form-row-social{
+	.grey-star{
+		top: 23px;
+	}
+}
+.grey-star{
+	width: 29px;
+	height: 38px;
+	// background-color: #a5d1cf;
+	border: 1px solid transparent;
+	position: absolute;
+	z-index: 1;
+	float: right;
+	-webkit-border-top-right-radius: 4px;
+	        border-top-right-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	        border-bottom-right-radius: 4px;
+	right: 0%;
+	font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+}
+.input-reg{
+	outline: none;
+	width: 100%;
+	height: 38px;
+	padding-left: 10px;
+	background-color: white;
+	border: 1px solid rgba(156, 156, 156, 0.38);
+	border-radius: 4px;
+	&::-webkit-input-placeholder {color: #070000; font-size: 12px; font-family: $or;}
+	&::-moz-placeholder          {color: #070000; font-size: 12px; font-family: $or;}
+	&:-moz-placeholder           {color: #070000; font-size: 12px; font-family: $or;}
+	&:-ms-input-placeholder      {color: #070000; font-size: 12px; font-family: $or;}
+}
+.rules{
+	width: 100%;
+	float: left;
+	margin: 0 auto;
+	position: relative;
+	display: inline-block;
+	padding: 5px 0;
+	padding-left: 30px;
+	p{
+		text-align: left;
+	}
+	input{
+		display: none;
+
+	}
+
+	label{
+		height: 16px;
+		width: 16px;
+		/* background-color: #FFF; */
+		border: 1px solid #b8b6b6;
+		position: absolute;
+		left: 0px;
+	}
+	input[type=checkbox]:checked + label{
+		background-image: url('../img/check.png');
+		background-repeat: no-repeat;
+		height: 14px;
+		display: block;
+		-webkit-background-size: contain;
+		     -o-background-size: contain;
+		        background-size: contain;
+		width: 14px;
+	}
+
+}
+.row-knopka{
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	float: left;
+	height: 31px;
+    margin: 10px 0;
+
+	&:after{
+		content: "";
+		position: relative;
+		z-index: 10;
+		border-top: 1px solid #e8e8e8;;
+		width: 100%;
+		display: inline-block;
+		top: -30px;
+    	left: 0;
+	}
+}
+.reg-form-send{
+	text-decoration: none;
+	display: inline-block;
+	min-width: 50%;
+	height: 31px;
+	font-family: $or;
+	font-size: 13px;
+	line-height: 31px;
+	background-color: $green;
+	border: none;
+	border-radius: 15px;
+	text-transform: uppercase;
+	color: #fff;
+	position: relative;
+	z-index: 29;
+	outline: none;
+	@include green-hov-rgba;
+
+}
+.row-knopka-2{
+	width: 100%;
+	text-align: left;
+	display: inline-block;
+	float: left;
+	height: 31px;
+    margin: 10px 0;
+    margin-left: 35px;
+ }
+.reg-form-send-2{
+	text-decoration: none;
+	display: inline-block;
+	min-width: 40%;
+	height: 31px;
+	font-family: $or;
+	font-size: 13px;
+	line-height: 31px;
+	background-color: $green;
+	border: none;
+	border-radius: 15px;
+	text-transform: uppercase;
+	color: #fff;
+	position: relative;
+	z-index: 29;
+	outline: none;
+	text-align: -webkit-center;
+    margin-left: 10%;
+  @include green-hov-rgba;
+
+}
+.row-soc-text{
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	p{
+		font-size: 11px;
+		font-family: $or;
+		text-align: center;
+	}
+}
+.soc{
+	float: left;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	ul{
+		display:block;
+		width: 100%;
+		padding-left: 0;
+		list-style-type: none;
+		li{
+			display: inline-block;
+			a{
+				display: block;
+			    width: 30px;
+			    height: 30px;
+			    border-radius: 50%;
+			    background-color: #1a97bb;
+			    text-align: center;
+			    line-height: 25px;
+			    position: relative;
+			    margin-left: 10px;
+			    i{
+			    	color: #fff;
+			    	line-height: 30px;
+						font-size: 18px;
+			    }
+			}
+		}
+	}
+}
+
+.registration-info{
+	float: left;
+	width: 40%;
+	position: relative;
+	display: block;
+	background-image: url("../img/reg-info.png");
+	background-repeat: no-repeat;
+	height: 425px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-left: 45px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	p{
+		font-size: 14px;
+		font-family: $or;
+		padding: 20px 0;
+		line-height: 25px;
+		color: #000;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		b{
+			font-family: $ob;
+		}
+	}
+	ul{
+		list-style: none;
+		padding-left: 50px;
+		margin-bottom: 0;
+		li{
+			font-size: 14px;
+			font-family: $or;
+			line-height: 25px;
+			position: relative;
+			&:before{
+				content: "";
+				background-image: url('../img/regist-target.png');
+				height: 17px;
+				width: 17px;
+				position: absolute;
+			    bottom: 2px;
+			    float: left;
+    			left: -25px;
+			}
+		}
+	}
+	@include breakpoint(max-width 770px){
+		display: none;
+	}
+}
+
+
+.soglashenie{
+	width: 100%;
+	float: left;
+	position: relative;
+	text-align: left;
+	.checkbox0{
+		float: left;
+		width: 6%;
+	}
+	p{
+		font-size: 11px;
+		font-family: $or;
+		color: #000101;
+		text-align: left;
+		padding-left: 29px;
+		box-sizing: border-box;
+		a{
+			font-family: $ob;
+			color: #000101;
+		}
+	}
+}
