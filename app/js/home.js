@@ -12,9 +12,13 @@ document.addEventListener('DOMContentLoaded', function () {
             $('.text-about').slideUp();
             $(this).parent().find($('.text-about[data-id='+ id +']')).slideDown();
         }
-    })
-    
-    $(document).on('click', '.category', function () {
-        console.log($(this).find('ul'));
-    })
+    });
+
+    $(document).on('click', '.mob-append-btn', function () {
+        $(this).toggleClass('mob-append-btn-active')
+    });
+
+    $(document).on('click', '.mob-menu-btn', function () {
+        $(this).toggleClass('mob-menu-btn-active')
+    });
 });
