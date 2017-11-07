@@ -42,6 +42,9 @@
 		padding: 25px 50px;
 		box-sizing: border-box;
 		margin: 10px 0;
+		@include breakpoint(max-width 992px) {
+			padding: 25px;
+		}
 
 		.text-about-title{
 			width: 100%;
@@ -71,15 +74,15 @@
 		width: 100%;
 		display: inline-block;
 		margin: 0 auto;
-		-moz-column-count: 3;
-		-moz-column-width: 33%;
-		-moz-column-gap: 10px;
-		-webkit-column-count: 3;
-		-webkit-column-width: 33%;
-		-webkit-column-gap: 10px;
 		column-count: 3;
-		column-width: 33%;
+		//column-width: 33%;
 		column-gap: 10px;
+		@include breakpoint(max-width 992px) {
+			column-count: 2;
+		}
+		@include breakpoint(max-width 600px) {
+			column-count: 1;
+		}
 	}
 	.text-about-link{
 		color: #006b93;
@@ -92,6 +95,9 @@
 		&:hover{
 			text-decoration: underline;
 		}
+		@include breakpoint(max-width 600px) {
+			text-align: center;
+		}
 	}
 }
 .home-contents{
@@ -99,74 +105,21 @@
 	float: none;
 	width: 90%;
 }
-.text-about:after{
+//.text-about:after{
+//
+//		content: "";
+//		position: absolute;
+//		width: 0;
+//		height: 0;
+//		border-left: 9px solid transparent;
+//    border-right: 9px solid transparent;
+//    border-bottom: 14px solid #f4f3f3;
+//    display: inline-block;
+//    z-index: 4;
+//    top: -13px;
+//    // left: 7%;
+//}
 
-		content: "";
-		position: absolute;
-		width: 0;
-		height: 0;
-		border-left: 9px solid transparent;
-    border-right: 9px solid transparent;
-    border-bottom: 14px solid #f4f3f3;
-    display: inline-block;
-    z-index: 4;
-    top: -13px;
-    // left: 7%;
-}
-.text-about:nth-of-type(2){
-	&:after{
-		left: 7%;
-	}
-}
-.text-about:nth-of-type(3){
-	&:after{
-		left: 28%;
-	}
-}
-.text-about:nth-of-type(4){
-	&:after{
-		left: 50%;
-	}
-}
-.text-about:nth-of-type(5){
-	&:after{
-		left: 68%;
-	}
-}
-.text-about:nth-of-type(6){
-	&:after{
-		left: 87%;
-	}
-}
-
-.text-about:nth-of-type(8){
-	&:after{
-		left: 7%;
-
-	}
-}
-.text-about:nth-of-type(9){
-	&:after{
-		left: 28%;
-
-	}
-}
-.text-about:nth-of-type(10){
-	&:after{
-		left: 50%;
-
-	}
-}
- .text-about:nth-of-type(11){
- 	&:after{
-		left: 68%;
- 	}
- }
- .text-about:nth-of-type(12){
- 	&:after{
- 		left: 87%;
- 	}
- }
 .home-content-item{
 	-webkit-flex-basis: 20%;
 	        flex-basis: 20%;
@@ -186,64 +139,52 @@
 	}
 }
 
-.home-content-organization .home-content-item{
-	-webkit-flex-basis: 20%;
-		flex-basis: 20%;
-	display: flex;
-	position: relative;
-	@include breakpoint(max-width 770px){
-		width: 20%;
-		float: left;
-		display: inline-block;
-	}
-	@include breakpoint(max-width 670px){
-		width: 100%;
-		flex-basis: 100%;
-    float: left;
-    display: inline-block;
-	}
-	.content-item-thumb{
-		size: 44px;
-		overflow: hidden;
-		margin-top: 10px;
-		img{
-			object-fit: cover;
-			// height: 100%;
-			// width: auto;
-		}
-		@include breakpoint(max-width 770px){
-			float: none;
-    	margin: 0 auto;
-		}
-	}
-	.content-item-text{
-    width: initial;
-		padding-left: 1px;
-		display: flex;
-		flex-direction: row;
-    align-items: flex-end;
-		justify-content: flex-start;
-		height: 44px;
-		.text-title{
-			padding-bottom: 0;
-			text-align: left;
-		}
-		@include breakpoint(max-width 770px){
-			width: 100%;
-     float: left;
-     display: inline-block;
-     position: relative;
-     text-align: center;
-     .text-title{
-       width: 100%;
-       text-align: center;
-     }
-		}
-	}
-}
-.home-content-organization .home-content-item:last-of-type{
-	margin-right: 0;
-}
+//.home-content-organization .home-content-item{
+//	-webkit-flex-basis: 20%;
+//		flex-basis: 20%;
+//	display: flex;
+//	position: relative;
+//	@include breakpoint(max-width 770px){
+//		width: 20%;
+//		float: left;
+//		display: inline-block;
+//	}
+//	@include breakpoint(max-width 670px){
+//		width: 100%;
+//		flex-basis: 100%;
+//    float: left;
+//    display: inline-block;
+//	}
+//	.content-item-thumb{
+//		//size: 44px;
+//		//overflow: hidden;
+//		//margin-top: 10px;
+//		//img{
+//		//	object-fit: cover;
+//		//	// height: 100%;
+//		//	// width: auto;
+//		//}
+//		@include breakpoint(max-width 770px){
+//			float: none;
+//    	margin: 0 auto;
+//		}
+//	}
+//	.content-item-text{
+//    width: initial;
+//		padding-left: 1px;
+//		display: flex;
+//		flex-direction: row;
+//    	align-items: center;
+//		justify-content: flex-start;
+//		height: 44px;
+//		@include breakpoint(max-width 1200px) {
+//			align-items: flex-start;
+//		}
+//	}
+//}
+//.home-content-organization .home-content-item:last-of-type{
+//	margin-right: 0;
+//}
 .content-item-thumb{
 	display: block;
 	position: relative;
@@ -251,9 +192,10 @@
 	height: 55px;
 	float: left;
 	img{
-		max-width: 100%;
-	    /* min-height: 100%; */
+		width: 40px;
+		height: 40px;
 		position: absolute;
+		object-fit: scale-down;
 	    top: 50%;
 	    left: 50%;
 	    -webkit-transform: translate(-50%, -50%);
@@ -262,33 +204,22 @@
 	         -o-transform: translate(-50%, -50%);
 	            transform: translate(-50%, -50%);
 	}
-	@include breakpoint(max-width 770px){
-		float: none;
-		margin: 0 auto;
-	}
+	//@include breakpoint(max-width 770px){
+	//	float: none;
+	//	margin: 0 auto;
+	//}
 }
 .content-item-text{
 	width: initial;
 	padding-left: 1px;
 	display: flex;
 	flex-direction: row;
-	align-items: flex-end;
+	align-items: center;
 	justify-content: flex-start;
 	height: 44px;
 	.text-title{
 		padding-bottom: 0;
 		text-align: left;
-	}
-	@include breakpoint(max-width 770px){
-		width: 100%;
-		 float: left;
-		 display: inline-block;
-		 position: relative;
-		 text-align: center;
-		 .text-title{
-			 width: 100%;
-			 text-align: center;
-		 }
 	}
 }
 .text-title{
@@ -345,13 +276,16 @@
 		text-align: right;
 		position: relative;
 	 	top: -3px;
-		z-index: 100;
+		//z-index: 100;
 	}
-	@include breakpoint(max-width 770px){
-		.owl-carousel{
-			width: 94%;
-			float: none;
-			margin: 0 auto;
+	.owl-carousel{
+		width: 94%;
+		float: none;
+		margin: 0 auto;
+		@include breakpoint(max-width 800px) {
+			.owl-controls {
+				display: none;
+			}
 		}
 	}
 }
@@ -406,9 +340,12 @@
 			font-size: 16px;
 			z-index: 5;
 	    margin-top: 3px;
-	    left: 84%;
+	    left: 80%;
 			line-height: 56px;
 			text-align: center;
+			@include breakpoint(max-width 992px) {
+				left: 0;
+			}
 		}
 		.thumb{
 			width: 100%;

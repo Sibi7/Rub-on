@@ -29,15 +29,15 @@
 		position: relative;
 	}
 }
-.header__middle-home-right{
-	float: left;
-	width: 50%;
-	display: inline-block;
-	position: relative;
-	@include breakpoint(max-width 770px){
-		width: 100%;
-	}
-}
+//.header__middle-home-right{
+//	float: left;
+//	width: 50%;
+//	display: inline-block;
+//	position: relative;
+//	@include breakpoint(max-width 770px){
+//		width: 100%;
+//	}
+//}
 // .home-menu{
 // 	width: 100%;
 // 	float: right;

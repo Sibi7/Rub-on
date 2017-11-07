@@ -1,0 +1,405 @@
+  .home-contents {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .home-content-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 20%;
+    cursor: pointer;
+    margin: 20px 0;
+    @include breakpoint(max-width 1200px) {
+      flex-direction: column;
+    }
+    .content-item-text {
+      .text-title {
+        @include breakpoint(max-width 1200px) {
+          text-align: center;
+        }
+      }
+    }
+
+    //----------------------
+    &:nth-of-type(1) {
+      order: 1;
+    }
+    &:nth-of-type(2) {
+      order: 1;
+    }
+    //------------------------------
+    &:nth-of-type(5) {
+      order: 1;
+    }
+    &:nth-of-type(6) {
+      order: 1;
+    }
+    //-------------------------------
+    &:nth-of-type(9) {
+      order: 1;
+    }
+    &:nth-of-type(10) {
+      order: 3;
+    }
+    //-------------------------------
+    &:nth-of-type(13) {
+      order: 3;
+    }
+    &:nth-of-type(14) {
+      order: 3;
+    }
+    //-------------------------------
+    &:nth-of-type(17) {
+      order: 3;
+    }
+    &:nth-of-type(18) {
+      order: 3;
+    }
+
+    &:nth-of-type(21) {
+      order: 5;
+    }
+    &:nth-of-type(22) {
+      order: 5;
+    }
+    //-----------------------------6
+    &:nth-of-type(25) {
+      order: 5;
+    }
+    &:nth-of-type(26) {
+      order: 5;
+    }
+    //-------------------------------
+    &:nth-of-type(29) {
+      order: 5;
+    }
+    &:nth-of-type(30) {
+      order: 7;
+    }
+    //-------------------------------
+    &:nth-of-type(33) {
+      order: 7;
+    }
+    &:nth-of-type(34) {
+      order: 7;
+    }
+    //-------------------------------
+    &:nth-of-type(37) {
+      order: 7;
+    }
+    &:nth-of-type(38) {
+      order: 7;
+    }
+
+    &:nth-of-type(41) {
+      order: 9;
+    }
+
+    @include breakpoint(max-width 992px) {
+      width: 50%;
+      flex-basis: 50%;
+      flex-direction: row;
+
+      &:nth-of-type(1) {
+        order: 1;
+      }
+      &:nth-of-type(2) {
+        order: 1;
+      }
+      //------------------------------
+      &:nth-of-type(5) {
+        order: 3;
+      }
+      &:nth-of-type(6) {
+        order: 3;
+      }
+      //-------------------------------
+      &:nth-of-type(9) {
+        order: 5;
+      }
+      &:nth-of-type(10) {
+        order: 5;
+      }
+      //-------------------------------
+      &:nth-of-type(13) {
+        order: 7;
+      }
+      &:nth-of-type(14) {
+        order: 7;
+      }
+      //-------------------------------
+      &:nth-of-type(17) {
+        order: 9;
+      }
+      &:nth-of-type(18) {
+        order: 9;
+      }
+
+      &:nth-of-type(21) {
+        order: 11;
+      }
+      &:nth-of-type(22) {
+        order: 11;
+      }
+      //------------------------------
+      &:nth-of-type(25) {
+        order: 13;
+      }
+      &:nth-of-type(26) {
+        order: 13;
+      }
+      //-------------------------------
+      &:nth-of-type(29) {
+        order: 15;
+      }
+      &:nth-of-type(30) {
+        order: 15;
+      }
+      //-------------------------------
+      &:nth-of-type(33) {
+        order: 17;
+      }
+      &:nth-of-type(34) {
+        order: 17;
+      }
+      //-------------------------------
+      &:nth-of-type(37) {
+        order: 19;
+      }
+      &:nth-of-type(38) {
+        order: 19;
+      }
+
+      &:nth-of-type(41) {
+        order: 21;
+      }
+      //img {
+      //  display: block;
+      //  height: 50px;
+      //  width: 75px;
+      //  object-fit: none;
+      //  position: relative;
+      //  float: left;
+      //  margin-right: 10px;
+      //  @include breakpoint(max-width 500px) {
+      //    height: auto;
+      //    width: 40px;
+      //    max-width: 100%;
+      //    object-fit: fill;
+      //  }
+      //}
+      p {
+        font-weight: 600;
+        font-size: 15px;
+        color: #000;
+        @include breakpoint(max-width 500px) {
+          font-size: 13px;
+        }
+      }
+    }
+    @include breakpoint(max-width 600px) {
+      flex-direction: column;
+    }
+  }
+  .text-about {
+      display: none;
+      width: 100%;
+      position: relative;
+      float: left;
+      margin: 15px 0;
+      padding: 5px 50px;
+      box-sizing: border-box;
+      border-radius: 20px;
+      background-color: #f4f3f3;
+      &:nth-of-type(3) {
+        order: 2;
+      }
+      &:nth-of-type(4) {
+        order: 2;
+      }
+      //------------------------------
+      &:nth-of-type(7) {
+        order: 2;
+      }
+      &:nth-of-type(8) {
+        order: 2;
+      }
+      //-------------------------------
+      &:nth-of-type(11) {
+        order: 2;
+      }
+      &:nth-of-type(12) {
+        order: 4;
+      }
+      //-------------------------------
+      &:nth-of-type(15) {
+        order: 4;
+      }
+      &:nth-of-type(16) {
+        order: 4;
+      }
+      //-------------------------------
+      &:nth-of-type(19) {
+        order: 4;
+      }
+      &:nth-of-type(20) {
+        order: 4;
+      }
+
+      &:nth-of-type(23) {
+        order: 6;
+      }
+      &:nth-of-type(24) {
+        order: 6;
+      }
+      //------------------------------
+      &:nth-of-type(27) {
+        order: 6;
+      }
+      &:nth-of-type(28) {
+        order: 6;
+      }
+      //-------------------------------
+      &:nth-of-type(31) {
+        order: 6;
+      }
+      &:nth-of-type(32) {
+        order: 8;
+      }
+      //-------------------------------
+      &:nth-of-type(35) {
+        order: 8;
+      }
+      &:nth-of-type(36) {
+        order: 8;
+      }
+      //-------------------------------
+      &:nth-of-type(39) {
+        order: 8;
+      }
+      &:nth-of-type(40) {
+        order: 8;
+      }
+
+      &:nth-of-type(42) {
+        order: 10;
+      }
+      @include breakpoint(max-width 992px) {
+        &:nth-of-type(3) {
+          order: 2;
+        }
+        &:nth-of-type(4) {
+          order: 2;
+        }
+        //------------------------------
+        &:nth-of-type(7) {
+          order: 4;
+        }
+        &:nth-of-type(8) {
+          order: 4;
+        }
+        //-------------------------------
+        &:nth-of-type(11) {
+          order: 6;
+        }
+        &:nth-of-type(12) {
+          order: 6;
+        }
+        //-------------------------------
+        &:nth-of-type(15) {
+          order: 8;
+        }
+        &:nth-of-type(16) {
+          order: 8;
+        }
+        //-------------------------------
+        &:nth-of-type(19) {
+          order: 10;
+        }
+        &:nth-of-type(20) {
+          order: 10;
+        }
+
+        &:nth-of-type(23) {
+          order: 12;
+        }
+        &:nth-of-type(24) {
+          order: 12;
+        }
+        //------------------------------
+        &:nth-of-type(27) {
+          order: 14;
+        }
+        &:nth-of-type(28) {
+          order: 14;
+        }
+        //-------------------------------
+        &:nth-of-type(31) {
+          order: 16;
+        }
+        &:nth-of-type(32) {
+          order: 16;
+        }
+        //-------------------------------
+        &:nth-of-type(35) {
+          order: 18;
+        }
+        &:nth-of-type(36) {
+          order: 18;
+        }
+        //-------------------------------
+        &:nth-of-type(39) {
+          order: 20;
+        }
+        &:nth-of-type(40) {
+          order: 20;
+        }
+
+        &:nth-of-type(42) {
+          order: 22;
+        }
+      }
+
+      > span {
+        position: absolute;
+        top: -14px;
+        border-right: 9px solid transparent;
+        border-bottom: 14px solid #f4f3f3;
+        border-left: 9px solid transparent;
+      }
+      &--head {
+        position: relative;
+        float: left;
+        width: 100%;
+        padding: 15px 0;
+        border-bottom: 2px dashed #d1d1d1;
+        a {
+          font-size: 13px;
+          width: 100%;
+          span {
+            font-weight: 600;
+            font-style: italic;
+          }
+        }
+      }
+      &--body {
+        width: 100%;
+        position: relative;
+        float: left;
+        padding: 20px 0;
+        a {
+          display: block;
+          position: relative;
+          float: left;
+          width: 33%;
+          font-size: 14px;
+          padding-bottom: 5px;
+          @include breakpoint(max-width 992px) {
+            width: 50%;
+          }
+          @include breakpoint(max-width 500px) {
+            width: 100%;
+          }
+        }
+      }
+    }

@@ -199,18 +199,18 @@ $(document).ready(function () {
         $(".delivery_text").html(tv);
     });
 });
-$(document).ready(function () {
-    $('.delivery_list1').click(function () {
-        $(".cities_list1").slideToggle('fast');
-    });
-    $('ul.cities_list1 li').click(function () {
-        var tx = $(this).html();
-        var tv = $(this).attr('alt');
-        $(".cities_list1").slideUp('fast');
-        $(".delivery_list1 .select-category").html(tx);
-        $(".delivery_text1").html(tv);
-    });
-});
+// $(document).ready(function () {
+//     $('.delivery_list1').click(function () {
+//         $(".cities_list1").slideToggle('fast');
+//     });
+//     $('ul.cities_list1 li').click(function () {
+//         var tx = $(this).html();
+//         var tv = $(this).attr('alt');
+//         $(".cities_list1").slideUp('fast');
+//         $(".delivery_list1 .select-category").html(tx);
+//         $(".delivery_text1").html(tv);
+//     });
+// });
 
 $(function () {
     $(".heading-change").click(function (e) {
