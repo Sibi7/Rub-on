@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     $(document).on('click', '.mob-menu-btn', function () {
-        $(this).toggleClass('mob-menu-btn-active');
+        $('.mob-menu-btn').toggleClass('mob-menu-btn-active');
         $('.mob-append-btn').removeClass('mob-append-btn-active');
         $('.mob-append-menu').slideUp();
         $('.mob-menu-list').slideToggle()

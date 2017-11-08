@@ -66,6 +66,9 @@
 	font-weight: 900;
 	text-align: left;
 	display: flex;
+	@include breakpoint(max-width 500px) {
+		display: none;
+	}
 }
 .circle{
 	position: absolute;
@@ -146,7 +149,7 @@
 	align-items: center;	
 	position: relative;
 	box-sizing: border-box;
-	text-align: right;
+	//text-align: right;
 	&:hover{
 		.private-cabinet{
 			display: block;
@@ -719,15 +722,16 @@ margin: 5px 0 0 3px;
 }
 .header__top_user-list{
 	display: none;
-	width: 30%;
 	position: absolute;
-	top: 38px;
+	top: 100%;
 	right: 0;
 	background-color: #edeef0;
 	border-radius: 6px;
 	padding: 20px 0;
 	box-sizing: border-box;
 	z-index: 30;
+	min-width: 170px;
+	max-width: 200px;
 	a{
 		width: 100%;
 		display: inline-block;
@@ -763,10 +767,10 @@ margin: 5px 0 0 3px;
 		width: 0;
 		height: 0;
 		top: -13px;
-    right: 37%;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-bottom: 14px solid #edeef0;
+		right: 30px;
+		border-left: 7px solid transparent;
+		border-right: 7px solid transparent;
+		border-bottom: 14px solid #edeef0;
 	}
 }
 .home-top{
@@ -918,7 +922,7 @@ margin: 5px 0 0 3px;
 }
 .header__top_right{
 	position: relative;
-	text-align: right;
+	//text-align: right;
 	display: flex;
 	align-items: center;
 	.header__top_right-buttons{
@@ -926,10 +930,11 @@ margin: 5px 0 0 3px;
 		float: left;
 		padding: 10px 0;
 		box-sizing: border-box;
+		@include breakpoint(max-width 992px){
+			display: none;
+		}
 	}
-	//@include breakpoint(max-width 770px){
-	//	width: 100%;
-	//}
+	
 }
 .header-tooltip {
 	display: none;

@@ -36,16 +36,16 @@ $(document).ready(function () {
     });
 // close edit-accordion
 
-    // open header-user-menu
-    $(".header__top_user").click(function (event) {
-        $(".header__top_user-list").slideToggle();
-        // console.log(".header__top_user-list");
-        return false;
-    });
-    $("body").click(function (e) {
-        if ($(e.target).closest(".header__top_user-list").length == 0) $(".header__top_user-list").hide("slow");
-    });
-    // open header-user-menu
+    // // open header-user-menu
+    // $(".header__top_user").click(function (event) {
+    //     $(".header__top_user-list").slideToggle();
+    //     // console.log(".header__top_user-list");
+    //     return false;
+    // });
+    // $("body").click(function (e) {
+    //     if ($(e.target).closest(".header__top_user-list").length == 0) $(".header__top_user-list").hide("slow");
+    // });
+    // // open header-user-menu
 // close accordion
 
 
