@@ -132,12 +132,13 @@
 		position: absolute;
 		top: 100%;
 		right: 0;
-		width: 165px;
-		padding: 0px 25px;
+		width: 200px;
+		padding: 0 25px;
 		background-color: #2f474e;
 		z-index: 100;
 		@include breakpoint(max-width 680px) {
 			left: 0;
+			width: 165px;
 		}
 	}
 	.mob-menu-section {
@@ -152,8 +153,12 @@
 	.mob-menu-item {
 		display: block;
 		color: #fff;
-		font-size: 9px;
-		padding: 5px 0;
+		font-size: 12px;
+		padding: 3px 0;
+		@include breakpoint(max-width 680px) {
+			font-size: 9px;
+			padding: 5px 0;
+		}
 	}
 }
 .header__top_user-vhod{
@@ -193,6 +198,7 @@
 	}
 }
 .header__top_logo{
+	max-width: 120px;
 	width: 20%;
 	float: left;
 	overflow: hidden;

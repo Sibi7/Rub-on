@@ -36,18 +36,6 @@ $(document).ready(function () {
     });
 // close edit-accordion
 
-    // // open header-user-menu
-    // $(".header__top_user").click(function (event) {
-    //     $(".header__top_user-list").slideToggle();
-    //     // console.log(".header__top_user-list");
-    //     return false;
-    // });
-    // $("body").click(function (e) {
-    //     if ($(e.target).closest(".header__top_user-list").length == 0) $(".header__top_user-list").hide("slow");
-    // });
-    // // open header-user-menu
-// close accordion
-
 
 $(".owl-model").owlCarousel({
     loop: true,
@@ -202,7 +190,7 @@ $(document).ready(function () {
 // $(document).ready(function () {
 //     $('.delivery_list1').click(function () {
 //         $(".cities_list1").slideToggle('fast');
-//     });
+//     });F
 //     $('ul.cities_list1 li').click(function () {
 //         var tx = $(this).html();
 //         var tv = $(this).attr('alt');
@@ -248,26 +236,33 @@ $(document).ready(function () {
         }
     });
 
+    if (window.innerWidth > 992) {
+        $(window).scroll(function () {
 
-    $(window).scroll(function () {
+            if ($(this).scrollTop() >= 253) {
+                $('.adpage').addClass('fixed_addpage');
+            }
+            else {
+                $('.adpage').removeClass('fixed_addpage');
+            }
+        });
+    }
 
-        if ($(this).scrollTop() >= 253) {
-            $('.adpage').addClass('fixed_addpage');
-        }
-        else {
-            $('.adpage').removeClass('fixed_addpage');
-        }
-    });
 
 
     /*sidebar*/
 
     var windowWidth = $(window).width();
-    if (windowWidth > 760) {
+    if (windowWidth > 770) {
       if ($('.ad-charasteristics').length > 0) {
         $(window).scroll(function () {
+            var sb_m;
+            if (window.innerWidth < 992) {
+                sb_m = 10;
+            } else {
+                sb_m = 50;
+            }
 
-            var sb_m = 50;
             /* отступ сверху и снизу */
             var mb = 300;
             /* высота подвала с запасом */

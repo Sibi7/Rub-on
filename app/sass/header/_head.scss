@@ -71,13 +71,15 @@
 	}
 }
 .circle{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	position: absolute;
-	width: 13px;
-	height: 12px;
+	width: 15px;
+	height: 15px;
 	background-color: #f78900;
 	border-radius: 6px;
 	float: right;
-	display: inline-block;
 	right: -4px;
     top: -3px;
     font-size: 11px;
@@ -370,7 +372,7 @@
 	// left: 22px;
 	outline: none;
 	border-radius: 50%;
-	@include breakpoint(max-width 670px) {
+	@include breakpoint(max-width 770px) {
 		width: calc(100% - 135px);
 	}
 }
@@ -403,7 +405,7 @@
     position: absolute;
     margin-top: 7px;
 	}
-	@include breakpoint(max-width 670px){
+	@include breakpoint(max-width 770px){
 		display: none;
 	}
 }
@@ -416,12 +418,15 @@
 	background-color: #fff;
 	padding: 10px;
 	box-sizing: border-box;
-	right: 11%;
+	right: -40px;
 	top: 40px;
 	border: 0.5px solid #334a51;
 	@include breakpoint(max-width 1200px) {
-		width: 100%;
-		right: 0px;
+		width: 700px;
+		right: -150px;
+	}
+	@include breakpoint(max-width 992px) {
+		right: -145px;
 	}
 	span{
 		min-width: 30%;

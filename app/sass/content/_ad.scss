@@ -647,12 +647,14 @@ input[type=radio]:checked + label{
 .average-ad-item, .ad-author__content_left-item{
 	width: 100%;
 	float: left;
-	display: inline-block;
+	display: flex;
 	padding: 11px 0 11px 1px;
 	border-bottom: 1px solid #dedede;
 }
 .average-ad-item {
+	display: flex;
 	@include breakpoint(max-width 770px) {
+		flex-direction: column;
 		width: 49%;
 		&:nth-of-type(2n+2) {
 			margin-right: 2%;
@@ -669,13 +671,30 @@ input[type=radio]:checked + label{
 	display: block;
 	height: 124px;
 	position: relative;
-	overflow: hidden;
-	img{
-		position: absolute;
-		top: 0%;
-		left: 0%;
+	>img{
 		width: 100%;
-		min-height: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	>span {
+		display: block;
+		height: 50px;
+		width: 50px;
+		position: absolute;
+		top: -10px;
+		right: -10px;
+		@include breakpoint(max-width 500px) {
+			width: 65px;
+			height: 65px;
+			top: 0;
+			right: 0;
+		}
+		img {
+			height: 100%;
+			width: 100%;
+			display: block;
+			object-fit: cover;
+		}
 	}
 	@include breakpoint(max-width 770px){
 		width: 100%;
@@ -685,7 +704,8 @@ input[type=radio]:checked + label{
 .average-ad-item-content{
 	width: 75%;
 	float: left;
-	display: inline-block;
+	display: flex;
+	flex-direction: column;
 	position: relative;
 	padding-left: 15px;
 	@include breakpoint(max-width 770px){
@@ -715,26 +735,47 @@ input[type=radio]:checked + label{
 }
 .bottom-content{
 	width: 100%;
-	float: left;
 	position: relative;
+	margin-top: auto;
 }
 .top-content{
 	width: 100%;
 	float: left;
 	position: relative;
+	display: flex;
+	@include breakpoint(max-width 770px) {
+		flex-direction: column-reverse;
+	}
+}
+.top-content-left {
+	width:calc(100% - 95px);
+	padding-right: 15px;
+	@include breakpoint(max-width 770px) {
+		width: 100%;
+	}
+}
+.top-content-right {
+	width: 95px;
+	@include breakpoint(max-width 770px) {
+		width: 100%;
+		margin: 10px 0;
+	}
 }
 .average-ad-category:first-of-type{
 	margin-left: 0!important;
 }
 .average-ad-title, .vip-ad-title{
 	float: left;
-	width: 75%;
+	width: 100%;
 	font-size: 18px;
 	font-family: $ob;
 	color: #334a51;
 	text-decoration: none;
 	text-align: left;
-	margin-top: 15px;
+	//margin-top: 15px;
+	@include breakpoint(max-width 770px) {
+		width: 100%;
+	}
 }
 .vip-ad-title{
 	color: #1a97bb;
@@ -749,6 +790,7 @@ input[type=radio]:checked + label{
 	position: relative;
 	float: left;
 	width: 100%;
+	margin: 10px 0;
 }
 .vip-ad-geo{
 	margin:5px 0;
@@ -760,7 +802,7 @@ input[type=radio]:checked + label{
 	width: 10px;
 	position: absolute;
 	left: 0;
-	bottom: 3px;
+	top: 3px;
 }
 .vip-geo-space{
 	top: 3px;
@@ -791,7 +833,10 @@ input[type=radio]:checked + label{
 	text-align: right;
 	padding-right: 10px;
 	box-sizing: border-box;
-	margin-top: 15px;
+	//margin-top: 15px;
+	@include breakpoint(max-width 770px) {
+		float: left;
+	}
 }
 .average-ad-star, .vip-ad-star{
 	height: 14px;
