@@ -241,11 +241,14 @@ margin: 5px 0 0 3px;
 	display: block;
 	position: relative;
 	z-index: 2;
-	@include breakpoint(max-width 770px){
-		width: 30%;
+	@include breakpoint(max-width 992px){
+		width: 25%;
 	}
-	@include breakpoint(max-width 670px){
-		width: 100%;
+	@include breakpoint(max-width 770px){
+		display: none;
+		width: 250px;
+		margin: 0 auto;
+		float: none;
 	}
 
 }
@@ -484,10 +487,10 @@ input[type=radio]:checked + label{
 	height: auto;
 
 	box-sizing: border-box;
-	@include breakpoint(max-width 770px){
-		width: 69%;
+	@include breakpoint(max-width 992px){
+		width: 75%;
 	}
-	@include breakpoint(max-width 670px){
+	@include breakpoint(max-width 770px){
 		width: 100%;
 	}
 }
@@ -496,24 +499,20 @@ input[type=radio]:checked + label{
 	float: left;
 	display: inline-block;
 	background-color: #fff6c4;
-	padding: 5px 0;
-
-
+	padding: 5px;
 	p{
 		font-size: 16px;
 		font-family: $opi;
 		color: #334a51;
-		width: 11%;
 		float: left;
 		display: inline-block;
 		padding: 0;
+		padding-left: 10px;
+		padding-right: 10px;
 		margin: 0;
-		@include breakpoint(max-width 770px){
-			width: 16%;
-			padding-left: 0;
-		}
-		@include breakpoint(max-width 670px){
-
+		@include breakpoint(max-width 400px) {
+			width: 100%;
+			padding: 0;
 		}
 	}
 }
@@ -585,19 +584,23 @@ input[type=radio]:checked + label{
 	border-right: 1px solid #dedede;
 	border-top: 1px solid #dedede;
 	border-left: 1px solid #dedede;
+	@include breakpoint(max-width 992px) {
+		width: 100%;
+	}
 	.append-button{
 		width: 100%;
 		text-align: center;
 		border-bottom: 1px solid #dedede;
 		padding-bottom: 20px;
 		box-sizing: border-box;
-		a{
+		a {
 			margin: 0 auto;
 			float: none;
 		}
 	}
 	@include breakpoint(max-width 770px){
 		width: 100%;
+		border: none;
 	}
 }
 .adpage{
@@ -632,13 +635,12 @@ input[type=radio]:checked + label{
 	display: block;
 	width: 27%;
 	padding-left: 10px;
-	// padding-top: 20px;
 	box-sizing: border-box;
 	margin-bottom: 20px;
 	.banner-rightbar{
 		float: right;
 	}
-	@include breakpoint(max-width 770px){
+	@include breakpoint(max-width 992px){
 		display: none;
 	}
 }
@@ -648,8 +650,18 @@ input[type=radio]:checked + label{
 	display: inline-block;
 	padding: 11px 0 11px 1px;
 	border-bottom: 1px solid #dedede;
-
-
+}
+.average-ad-item {
+	@include breakpoint(max-width 770px) {
+		width: 49%;
+		&:nth-of-type(2n+2) {
+			margin-right: 2%;
+		}
+	}
+	@include breakpoint(max-width 500px) {
+		width: 100%;
+		margin: 0!important;
+	}
 }
 .average-ad-item-thumb{
 	width: 25%;
@@ -665,7 +677,7 @@ input[type=radio]:checked + label{
 		width: 100%;
 		min-height: 100%;
 	}
-	@include breakpoint(max-width 670px){
+	@include breakpoint(max-width 770px){
 		width: 100%;
 		height: 150px;
 	}
@@ -676,7 +688,7 @@ input[type=radio]:checked + label{
 	display: inline-block;
 	position: relative;
 	padding-left: 15px;
-	@include breakpoint(max-width 670px){
+	@include breakpoint(max-width 770px){
 		width: 100%;
 		padding-left: 0;
 	}

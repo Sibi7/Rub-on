@@ -183,12 +183,13 @@
   }
 }
 .banner-rightbar{
-  height: 400px;
-  width: 240px;
+  max-width: 240px;
+  height: 100%;
+  width: 100%;
   background-color: #e5e5e5;
   float: right;
   margin: 0 auto 20px;
-  display: inline-block;
+  display: block;
   &:first-of-type{
     margin-bottom: 20px;
   }

@@ -210,8 +210,12 @@
 	display: inline-block;
 	border-bottom: 1px solid #1a97bb;
 	text-decoration: none;
+	color: #1a97bb;
 	&:hover{
 		text-decoration: none;
+	}
+	&:visited {
+		color: #1a97bb;
 	}
 }
 .user-name{
@@ -289,12 +293,25 @@
 	margin-top: 20px;
 	margin-bottom: 20px;
 	@include box-sizing(border-box);
+	@include breakpoint(max-width 992px) {
+		display: none;
+	}
 }
 .baner{
 	height: 90px;
 	background-color: #f1f1f1;
 	width: 100%;
 	margin: 0 auto;
+	a {
+		display: block;
+		height: 100%;
+		width: 100%;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
 }
 .header__bottom-home{
 	width: 100%;
