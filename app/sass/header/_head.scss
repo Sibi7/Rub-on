@@ -31,6 +31,7 @@
 	// width: 33%;
 	float: left;
 	color: #000;
+	 position: relative;
 	text-decoration: none;
 	font-size: 12px;
 	font-family: $ob;
@@ -48,12 +49,23 @@
 	font-size: 12px;
 	font-family: $ob;
 	text-align: left;
+	position: relative;
 }
+.header__top_favorites,
+.header__top_advert,
+.header__top_msg {
+	&:hover {
+		.header-tooltip {
+			display: block;
+		}
+	}
+}
+
 .header__top_price{
 	padding-left: 10px;
-	width: 13%;
 	font-weight: 900;
 	text-align: left;
+	display: flex;
 }
 .circle{
 	position: absolute;
@@ -130,10 +142,9 @@
 	margin-right: 10px;
 }
 .header__top_user{
-	width: 32%;
-	float: right;
+	display: flex;
+	align-items: center;	
 	position: relative;
-	// padding-top: 7px;
 	box-sizing: border-box;
 	text-align: right;
 	&:hover{
@@ -208,13 +219,13 @@
 	font-family: $ob;
 	color: #000;
 	position: relative;
-	top: 7px;
 }
 .rubl-icon{
 	position: relative;
 	display: inline-block;
 	height: 16px;
 	width: 16px;
+	margin-left: 5px;
 	svg{
 		display: inline-block;
 		height: 16px;
@@ -906,20 +917,42 @@ margin: 5px 0 0 3px;
 	}
 }
 .header__top_right{
-	float: right;
-	width: 50%;
 	position: relative;
 	text-align: right;
+	display: flex;
+	align-items: center;
 	.header__top_right-buttons{
+		display: flex;
 		float: left;
-		width: 68%;
 		padding: 10px 0;
 		box-sizing: border-box;
 	}
-	@include breakpoint(max-width 770px){
-		width: 100%;
+	//@include breakpoint(max-width 770px){
+	//	width: 100%;
+	//}
+}
+.header-tooltip {
+	display: none;
+	position: absolute;
+	top: calc(100% + 15px);
+	left: -8px;
+	white-space: nowrap;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 12px;
+	color: #fff;
+	background-color: #2f474e;
+	z-index: 9;
+	&:before {
+		content: '';
+		bottom: 100%;
+		position: absolute;
+		border-bottom: 10px solid #2f474e;
+		border-left: 7px solid transparent;
+		border-right: 7px solid transparent;
 	}
 }
+
 .toggle_mnu {
 	display: none;
   width: 40px;

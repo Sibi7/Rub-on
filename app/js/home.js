@@ -15,10 +15,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     $(document).on('click', '.mob-append-btn', function () {
-        $(this).toggleClass('mob-append-btn-active')
+        $(this).toggleClass('mob-append-btn-active');
+        $('.mob-menu-btn').removeClass('mob-menu-btn-active');
+        $('.mob-menu-list').slideUp();
+        $('.mob-append-menu').slideToggle()
     });
 
     $(document).on('click', '.mob-menu-btn', function () {
-        $(this).toggleClass('mob-menu-btn-active')
+        $(this).toggleClass('mob-menu-btn-active');
+        $('.mob-append-btn').removeClass('mob-append-btn-active');
+        $('.mob-append-menu').slideUp();
+        $('.mob-menu-list').slideToggle()
     });
+
 });
