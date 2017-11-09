@@ -66,6 +66,7 @@
 	font-weight: 900;
 	text-align: left;
 	display: flex;
+	align-items: center;
 	@include breakpoint(max-width 500px) {
 		display: none;
 	}
@@ -232,8 +233,6 @@
 .rubl-icon{
 	position: relative;
 	display: inline-block;
-	height: 16px;
-	width: 16px;
 	margin-left: 5px;
 	svg{
 		display: inline-block;
@@ -414,20 +413,12 @@
 	display: none;
 	position: absolute;
 	z-index: 3;
-	width: 780px;
+	width: 100%;
 	background-color: #fff;
 	padding: 10px;
 	box-sizing: border-box;
-	right: -40px;
 	top: 40px;
 	border: 0.5px solid #334a51;
-	@include breakpoint(max-width 1200px) {
-		width: 700px;
-		right: -150px;
-	}
-	@include breakpoint(max-width 992px) {
-		right: -145px;
-	}
 	span{
 		min-width: 30%;
     padding: 0 10px;

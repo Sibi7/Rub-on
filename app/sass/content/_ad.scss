@@ -603,24 +603,24 @@ input[type=radio]:checked + label{
 		border: none;
 	}
 }
-.adpage{
-	position: relative;
-	z-index: 20;
-	margin-top: 20px;
-	.header__bottom-home-left{
-		padding: 0 15px;
-		box-sizing: border-box;
-		.select-category{
-			font-size: 13px;
-		}
-		@include breakpoint(max-width 670px){
-			padding: 0;
-		}
-	}
-	.header__bottom-home-right{
-		margin-left: 0;
-	}
-}
+//.adpage{
+//	position: relative;
+//	z-index: 20;
+//	margin-top: 20px;
+//	.header__bottom-home-left{
+//		padding: 0 15px;
+//		box-sizing: border-box;
+//		.select-category{
+//			font-size: 13px;
+//		}
+//		@include breakpoint(max-width 670px){
+//			padding: 0;
+//		}
+//	}
+//	.header__bottom-home-right{
+//		margin-left: 0;
+//	}
+//}
 .fixed_addpage{
 	position: fixed;
 	left: 0;
