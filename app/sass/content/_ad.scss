@@ -756,9 +756,32 @@ input[type=radio]:checked + label{
 }
 .top-content-right {
 	width: 95px;
+	display: flex;
+	flex-direction: column;
 	@include breakpoint(max-width 770px) {
+		flex-direction: row;
 		width: 100%;
 		margin: 10px 0;
+	}
+	>span {
+		padding-bottom: 10px;
+		display: flex;
+		align-items: center;
+		img {
+			padding-right: 5px;
+			height: 17px;
+			width: 17px;
+			object-fit: contain;
+		}
+		span {
+			font-size: 9px;
+			@include breakpoint(max-width 770px) {
+				display: none;
+			}
+		}
+	}
+	.average-ad-price {
+		margin-right: auto;
 	}
 }
 .average-ad-category:first-of-type{
@@ -828,9 +851,7 @@ input[type=radio]:checked + label{
 		width: 100%;
 }
 .average-ad-price{
-	float: right;
 	min-width: 25px;
-	text-align: right;
 	padding-right: 10px;
 	box-sizing: border-box;
 	//margin-top: 15px;
