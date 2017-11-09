@@ -111,6 +111,7 @@ $('.slider-for').slick({
     arrows: true,
     fade: true,
     asNavFor: '.slider-nav'
+
     // autoplay: true
 });
 $('.slider-nav').slick({
@@ -123,7 +124,6 @@ $('.slider-nav').slick({
     vertical: true,
     arrows: false,
     verticalSwiping: true
-
 });
 // open help-category menu
     $('#cssmenu li.has-sub > a').on('click', function () {
