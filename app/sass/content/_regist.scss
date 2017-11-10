@@ -6,29 +6,29 @@
 	@include breakpoint(max-width 770px){
 		text-align: center;
 	}
+	.container {
+		display: flex;
+		margin-top: 50px;
+	}
 }
 .registration-form{
-	float: left;
-	width: 60%;
-	display: block;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
 	background-color: #FFF;
-	padding-left: 150px;
-	padding-top: 50px;
 	padding-bottom: 50px;
 	position: relative;
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 	@include breakpoint(max-width 770px){
-		width: 50%;
+		width: 320px;
 		padding-left: 0;
 		float: none;
-		display: inline-block;
 		margin: 0 auto;
 	}
-	@include breakpoint(max-width 670px){
-		width: 80%;
-	}
+	//@include breakpoint(max-width 670px){
+	//	width: 80%;
+	//}
 }
 
 .title-registration-form{
@@ -50,6 +50,9 @@
 		input{
 			border: 1px solid #c91414;
 		}
+	}
+	@include breakpoint(max-width 992px){
+		width: 70%;
 	}
 	@include breakpoint(max-width 770px){
 		width: 100%;
@@ -259,17 +262,12 @@
 	}
 }
 
-.registration-info{
-	float: left;
-	width: 40%;
+.registration-info {
+	width: 50%;
 	position: relative;
 	display: block;
-	background-image: url("../img/reg-info.png");
-	background-repeat: no-repeat;
 	height: 425px;
-	margin-top: 50px;
 	margin-bottom: 50px;
-	padding-left: 45px;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
@@ -310,6 +308,13 @@
 	@include breakpoint(max-width 770px){
 		display: none;
 	}
+}
+.registration-info-wrap {
+	max-width: 360px;
+	margin: 0 auto;
+	background-image: url("../img/reg-info.png");
+	background-repeat: no-repeat;
+	padding: 10px;
 }
 
 

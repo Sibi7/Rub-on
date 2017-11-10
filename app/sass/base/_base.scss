@@ -19,6 +19,9 @@ a {
 	&:hover, &:focus, &:active{
 		outline: none;
 	}
+  &:visited {
+    color: inherit;
+  }
 }
 
 ul {

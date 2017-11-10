@@ -31,6 +31,7 @@
 	// width: 33%;
 	float: left;
 	color: #000;
+	 position: relative;
 	text-decoration: none;
 	font-size: 12px;
 	font-family: $ob;
@@ -48,21 +49,38 @@
 	font-size: 12px;
 	font-family: $ob;
 	text-align: left;
+	position: relative;
 }
+.header__top_favorites,
+.header__top_advert,
+.header__top_msg {
+	&:hover {
+		.header-tooltip {
+			display: block;
+		}
+	}
+}
+
 .header__top_price{
 	padding-left: 10px;
-	width: 13%;
 	font-weight: 900;
 	text-align: left;
+	display: flex;
+	align-items: center;
+	@include breakpoint(max-width 500px) {
+		display: none;
+	}
 }
 .circle{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	position: absolute;
-	width: 13px;
-	height: 12px;
+	width: 15px;
+	height: 15px;
 	background-color: #f78900;
 	border-radius: 6px;
 	float: right;
-	display: inline-block;
 	right: -4px;
     top: -3px;
     font-size: 11px;
@@ -130,12 +148,11 @@
 	margin-right: 10px;
 }
 .header__top_user{
-	width: 32%;
-	float: right;
+	display: flex;
+	align-items: center;	
 	position: relative;
-	// padding-top: 7px;
 	box-sizing: border-box;
-	text-align: right;
+	//text-align: right;
 	&:hover{
 		.private-cabinet{
 			display: block;
@@ -196,8 +213,12 @@
 	display: inline-block;
 	border-bottom: 1px solid #1a97bb;
 	text-decoration: none;
+	color: #1a97bb;
 	&:hover{
 		text-decoration: none;
+	}
+	&:visited {
+		color: #1a97bb;
 	}
 }
 .user-name{
@@ -208,13 +229,11 @@
 	font-family: $ob;
 	color: #000;
 	position: relative;
-	top: 7px;
 }
 .rubl-icon{
 	position: relative;
 	display: inline-block;
-	height: 16px;
-	width: 16px;
+	margin-left: 5px;
 	svg{
 		display: inline-block;
 		height: 16px;
@@ -275,18 +294,32 @@
 	margin-top: 20px;
 	margin-bottom: 20px;
 	@include box-sizing(border-box);
+	@include breakpoint(max-width 992px) {
+		display: none;
+	}
 }
 .baner{
 	height: 90px;
 	background-color: #f1f1f1;
 	width: 100%;
 	margin: 0 auto;
+	a {
+		display: block;
+		height: 100%;
+		width: 100%;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
 }
 .header__bottom-home{
 	width: 100%;
 	float: left;
 	display: inline-block;
 	margin-bottom: 20px;
+	z-index: 30;
 	>.container {
 		display: flex;
 		@include breakpoint(max-width 992px) {
@@ -339,7 +372,7 @@
 	// left: 22px;
 	outline: none;
 	border-radius: 50%;
-	@include breakpoint(max-width 670px) {
+	@include breakpoint(max-width 770px) {
 		width: calc(100% - 135px);
 	}
 }
@@ -372,7 +405,7 @@
     position: absolute;
     margin-top: 7px;
 	}
-	@include breakpoint(max-width 670px){
+	@include breakpoint(max-width 770px){
 		display: none;
 	}
 }
@@ -381,17 +414,12 @@
 	display: none;
 	position: absolute;
 	z-index: 3;
-	width: 780px;
+	width: 100%;
 	background-color: #fff;
 	padding: 10px;
 	box-sizing: border-box;
-	right: 11%;
 	top: 40px;
 	border: 0.5px solid #334a51;
-	@include breakpoint(max-width 1200px) {
-		width: 100%;
-		right: 0px;
-	}
 	span{
 		min-width: 30%;
     padding: 0 10px;
@@ -708,15 +736,16 @@ margin: 5px 0 0 3px;
 }
 .header__top_user-list{
 	display: none;
-	width: 30%;
 	position: absolute;
-	top: 38px;
+	top: 100%;
 	right: 0;
 	background-color: #edeef0;
 	border-radius: 6px;
 	padding: 20px 0;
 	box-sizing: border-box;
 	z-index: 30;
+	min-width: 170px;
+	max-width: 200px;
 	a{
 		width: 100%;
 		display: inline-block;
@@ -752,10 +781,10 @@ margin: 5px 0 0 3px;
 		width: 0;
 		height: 0;
 		top: -13px;
-    right: 37%;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-bottom: 14px solid #edeef0;
+		right: 30px;
+		border-left: 7px solid transparent;
+		border-right: 7px solid transparent;
+		border-bottom: 14px solid #edeef0;
 	}
 }
 .home-top{
@@ -906,20 +935,43 @@ margin: 5px 0 0 3px;
 	}
 }
 .header__top_right{
-	float: right;
-	width: 50%;
 	position: relative;
-	text-align: right;
+	//text-align: right;
+	display: flex;
+	align-items: center;
 	.header__top_right-buttons{
+		display: flex;
 		float: left;
-		width: 68%;
 		padding: 10px 0;
 		box-sizing: border-box;
+		@include breakpoint(max-width 992px){
+			display: none;
+		}
 	}
-	@include breakpoint(max-width 770px){
-		width: 100%;
+	
+}
+.header-tooltip {
+	display: none;
+	position: absolute;
+	top: calc(100% + 15px);
+	left: -8px;
+	white-space: nowrap;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 12px;
+	color: #fff;
+	background-color: #2f474e;
+	z-index: 9;
+	&:before {
+		content: '';
+		bottom: 100%;
+		position: absolute;
+		border-bottom: 10px solid #2f474e;
+		border-left: 7px solid transparent;
+		border-right: 7px solid transparent;
 	}
 }
+
 .toggle_mnu {
 	display: none;
   width: 40px;

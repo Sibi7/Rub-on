@@ -20,14 +20,12 @@
 <body>
 
 
-<!-- start header-top-guest.html-->
+<!-- start header-top-user.html-->
 <section class="header__top">
     <div class="container">
         <div class="header__top_left">
 
-            <button class="mob-append-btn">
-                +
-            </button>
+            <button class="mob-append-btn">+</button>
             <div class="mob-append-menu">
                 <h3>Начните продавать!</h3>
                 <a href=""><span class="plus-icon">+</span>Подать объявление</a>
@@ -59,27 +57,57 @@
                 </div>
             </div>
 
-            <h1>
-                <a href="#" class="header__top_logo" title="На главную Rubon - бесплатные объявления">
-                    <!-- <img src='img/Logotip_RUBON.png' alt=""> -->
-                    На главную OLX - бесплатные объявления
-                </a>
-            </h1>
+            <a href="#" class="header__top_logo">
+                <img src='img/Logotip_RUBON.png' alt="">
+            </a>
             <div class="append-button">
                 <a href=""><span class="plus-icon">+</span>добавить организацию</a>
                 <a href=""><span class="plus-icon">+</span>Подать объявление</a>
             </div>
         </div>
-        <div class="header__top_user-vhod">
-            <a href="" class="header__regist">Регистрация </a>
-            <a href="" class="header__login">
-                Вход
-                <span class="login-icon"></span>
+        <div class="header__top_right">
+            <div class="header__top_right-buttons">
+                <a href="#" class="header__top_favorites">
+                    <span href="" class="header_top_icon favorites_icon "><span class="circle">5</span></span><span class="header-tooltip">Избранное</span>
+                </a>
+                <a class="header__top_advert">
+                    <span href="" class="header_top_icon advert_icon "><span class="circle">5</span></span><span class="header-tooltip">Мои объявления</span>
+                </a>
+                <a class="header__top_msg">
+                    <span href="" class="header_top_icon header-msg_icon "><span class="circle">5</span></span><span class="header-tooltip">Мои сообщения</span>
+                </a>
+            </div>
+            <a class="header__top_price">
+                <span href="" class=" price_icon"></span>500
+                <span class="rubl-icon">
+                    <img src="img/icons/ruble.png" style="height: 22px; width: 22px; object-fit: cover" alt="">
+                </span>
             </a>
+            <div class="header__top_user mob-menu-btn">
+
+                <a href="#" class="user-pic">
+                    <img src="img/user_pic.png" alt="">
+                </a>
+                <span class="user-name"> <a class="user-name-link" href="#" >Alex Wayn</a>
+                     </span>
+            </div>
+            <!--<div class="header__top_user-list">-->
+                <!--<a href="">Личный кабинет</a>-->
+                <!--<span class="header__top_user-list-line"></span>-->
+                <!--<a href="">Объявления</a>-->
+                <!--<a href="">Избранные</a>-->
+                <!--<a href="">Мои магазины</a>-->
+                <!--<a href="">Сообщения</a>-->
+                <!--<a href="">Счет</a>-->
+                <!--<a href="">Настройки</a>-->
+                <!--<span class="header__top_user-list-line"></span>-->
+                <!--<a href="">Выйти</a>-->
+            <!--</div>-->
         </div>
+
     </div>
 </section>
-<!-- end header-top-guest.html-->
+<!-- end header-top-user.html-->
 <!-- start header-middle-home.html-->
 <section class="header__middle-home">
     <div class="container">
@@ -87,13 +115,6 @@
             <span>На сайте <a href="#">5360</a> объявлений, <a href="#">265</a> организаций</span>
         </div>
         <div class="header__middle-home-right">
-            <button class="toggle_mnu">
-            <span class="sandwich">
-              <span class="sw-topper"></span>
-              <span class="sw-bottom"></span>
-              <span class="sw-footer"></span>
-            </span>
-            </button>
             <ul class="home-menu">
                 <li><a href="">Объявления</a></li>
                 <li><a href="">Организации</a></li>
@@ -898,11 +919,7 @@
                 <li><a href="">Популярные запросы</a></li>
 
             </ul>
-            <!-- <div class="mob-version">
-                <a href="">
-                    <span class="mob-icon">
-                        <img src="img/mobilnik.png" alt=""></span>Мобильная версия</a>
-            </div> -->
+
         </div>
     </div>
 </section>
