@@ -76,23 +76,33 @@
 	display: block;
 	position: relative;
 	border-left: 1px solid #DEDEDE;
+	@include breakpoint(max-width 992px) {
+		width: 100%;
+		border-left: none;
+	}
 	h1{
 		font-size: 25px;
 		font-family: $ob;
 		width: 100%;
 		float: left;
 		padding-left: 100px;
+		@include breakpoint(max-width 800px) {
+			padding-left: 0;
+			text-align: center;
+		}
 	}
 }
 
-.left{
+.left {
 	width: 20%;
 	float: left;
 	display: block;
 	text-align: center;
-  padding-top: 15px;
+    padding-top: 15px;
 	box-sizing: border-box;
-
+	@include breakpoint(max-width 992px) {
+		display: none;
+	}
 }
 .left-menu{
 	width: 100%;
@@ -126,6 +136,13 @@
 	padding-left: 100px;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	@include breakpoint(max-width 992px) {
+		padding-left: 20px;
+	}
+	@include breakpoint(max-width 800px) {
+		width: 100%;
+		padding-left: 0;
+	}
 	.SelectCategory{
 		display: inline-block;
 		float: left;
@@ -225,23 +242,25 @@
 	padding: 10px 0;
   box-sizing: border-box;
 }
-.memo{
+.memo {
 	display: block;
 	width: 270px;
 	background: #e8f4de;
 	text-align: left;
-  color: #528425;
-  height: auto;
-  float: right;
-  position: absolute;
+	color: #528425;
+	height: auto;
+	float: right;
+	position: absolute;
 	right: -283px;
 	margin-top: 1px;
-  top: 10px;
-  z-index: 10;
-  padding: 7px 10px 7px 40px;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
-    p{
+  	top: 10px;
+  	z-index: 10;
+  	padding: 7px 10px 7px 40px;  
+	border-radius: 5px;
+	@include breakpoint(max-width 800px) {
+		display: none;
+	}
+    p {
     	text-align: left;
     }
 }
@@ -412,6 +431,9 @@ input[type=file] {
 	text-align: center;
 	padding: 20px 0 20px 175px;
 	box-sizing: border-box;
+	@include breakpoint(max-width 1200px) {
+		padding-left: 25px;
+	}
 	span{
 		width: 100%;
 		float: none;
