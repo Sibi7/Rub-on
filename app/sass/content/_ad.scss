@@ -579,7 +579,8 @@ input[type=radio]:checked + label{
 }
 .average-ad{
 	float: left;
-	display: block;
+	display: flex;
+	flex-wrap: wrap;
 	width: 73%;
 	// padding-right: 10px;
 	border-right: 1px solid #dedede;
@@ -790,6 +791,9 @@ input[type=radio]:checked + label{
 		text-align: right;
 		float: none;
 		justify-content: flex-end;
+		@include breakpoint(max-width 770px) {
+			justify-content: flex-start;
+		}
 	}
 }
 .average-ad-category:first-of-type{
