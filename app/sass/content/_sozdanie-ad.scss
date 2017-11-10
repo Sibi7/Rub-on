@@ -208,6 +208,10 @@
 	float: left;
 	display: block;
 	position: relative;
+	@include breakpoint(max-width 450px) {
+		display: flex;
+		flex-direction: column;
+	}
 }
 .check-category, .selected-sub-categ{
 	width: 100%;
@@ -290,32 +294,49 @@
 	background-color: #c91414;
     color: #fff;
     padding-left: 10px;
-		padding-top: 5px;
-		padding-bottom: 5px;
-		padding-right: 5px;
-		box-sizing: border-box;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+	box-sizing: border-box;
     min-width: 270px;
     position: absolute;
     z-index: 2;
     float: right;
-		right: -283px;
-		margin-top: 1px;
+	right: -283px;
+	margin-top: 1px;
     top: 10px;
-    -webkit-border-radius: 5px;
-            border-radius: 5px;
-		p{
-			margin: 0;
-		}
+	border-radius: 5px;
+	@include breakpoint(max-width 800px) {
+		right: 0;
+		top: -50%;
+	}
+	@include breakpoint(max-width 450px) {
+		top: -10%;
+	}
+	p{
+		margin: 0;
+	}
 
 }
 .memo-error::after{
 	content: "";
 	top: 18%;
-  left: -4%;
-  position: absolute;
-  border-top: 9px solid transparent;
-  border-right: 13px solid #c91414;
-  border-bottom: 9px solid transparent;
+	left: -4%;
+	position: absolute;
+	border-top: 9px solid transparent;
+	border-right: 13px solid #c91414;
+	border-bottom: 9px solid transparent;
+	@include breakpoint(max-width 800px) {
+		top: 100%;
+		left: 10px;
+		border-left: 9px solid transparent;
+		border-top: 13px solid #c91414;
+		border-right: 9px solid transparent;
+	}
+	@include breakpoint(max-width 600px) {
+		right: 10px;
+		left: auto;
+	}
 }
 .calc{
 	color: #1a97bb;
@@ -334,6 +355,10 @@
 	top: 17px;
 	color: rgba(108, 114, 117, 0.75);
 	right: 0px;
+	@include breakpoint(max-width 450px) {
+		margin-bottom: 15px;
+		width: 100%	;
+	}
 	span{
 		color: rgba(108, 114, 117, 0.75);
 	}
@@ -348,6 +373,9 @@
 	height: 30px;
 	padding-left: 10px;
 	margin-bottom: 0;
+	@include breakpoint(max-width 450px) {
+		width: 100%	;
+	}
 }
 .input-small{
 	display: block;
@@ -358,6 +386,12 @@
 	margin: 12px 0;
 	height: 30px;
 	padding-left: 10px;
+	@include breakpoint(max-width 600px) {
+		width: 70%;
+	}
+	@include breakpoint(max-width 450px) {
+		width: 100%	;
+	}
 }
 .area-name{
 	width: 70%;
@@ -369,6 +403,9 @@
 	margin: 12px 0;
 	padding-left: 10px;
 	margin-bottom: 0;
+	@include breakpoint(max-width 450px) {
+		width: 100%	;
+	}
 }
 .file_upload{
     display: block;
@@ -443,6 +480,9 @@ input[type=file] {
 		padding: 5px 0;
 		p{
 			text-align: left;
+			@include breakpoint(max-width 1200px) {
+				width: calc(100% - 40px);
+			}
 		}
 		input{
 			display: none;
@@ -486,6 +526,9 @@ input[type=file] {
 		-webkit-background-size: contain;
 		     -o-background-size: contain;
 		        background-size: contain;
+		@include breakpoint(max-width 1200px) {
+			right: 0;
+		}
 	}
 }
 .publish{
@@ -500,25 +543,31 @@ input[type=file] {
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #fff;
-
 	display: inline-block;
 	border: none;
 	margin-left: 95px;
 	padding-left: 20px;
 	padding-right: 20px;
 	@include green-hov-rgba;
+	@include breakpoint(max-width 500px) {
+		margin-left: 0;
+	}
 }
 .prew{
 	font-size: 14px;
 	color: #fff;
 	display: inline-block;
 	width: 24%;
+	min-width: 150px;
 	border:none;
 	background-color: $green;
 	height: 30px;
 	line-height: 30px;
 	margin-left: 20px;
-
+	@include breakpoint(max-width 367px) {
+		margin-left: 0;
+		margin-top: 15px;
+	}
 	&:hover{
 		text-decoration:underline;
 		background: linear-gradient(#626f7b, #334a51);
