@@ -821,6 +821,9 @@ button.slick-prev.slick-arrow{
   position: relative;
   text-align: center;
   margin-bottom: 15px;
+  @include breakpoint(max-width 992px){
+    width: 100%;
+  }
 }
 .write-author, .call-author, .all-author-ads{
   width: 83%;

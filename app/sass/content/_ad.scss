@@ -6,12 +6,6 @@
 	height: 50px;
 	border-bottom: 1px solid #dedede;
 }
-// .header__middle-home-left{
-// 	float: left;
-// 	width: 50%;
-// 	display: inline-block;
-// 	padding: 15px 0;
-// }
 .dobavit-home{
 	display: block;
 	width: 35%;
@@ -29,49 +23,6 @@
 		position: relative;
 	}
 }
-//.header__middle-home-right{
-//	float: left;
-//	width: 50%;
-//	display: inline-block;
-//	position: relative;
-//	@include breakpoint(max-width 770px){
-//		width: 100%;
-//	}
-//}
-// .home-menu{
-// 	width: 100%;
-// 	float: right;
-// 	display: inline-block;
-// 	list-style-type: none;
-// 	padding-left: 50px;
-// 	margin: 0;
-// 	padding-top: 15px;
-// 	padding-bottom: 15px;
-// 	text-align: right;
-// 	li{
-// 		display: inline-block;
-// 		float: none;
-// 		margin-left: 40px;
-// 		position: relative;
-// 		.soon{
-// 			position: absolute;
-// 			size: 56px 22px;
-// 			overflow: hidden;
-// 			left: 81%;
-// 			margin-top: -12px;
-// 			img{
-// 				object-fit: contain;
-// 				size: 100%;
-// 			}
-// 		}
-// 		a{
-// 			font-size: 14px;
-// 			color: #01080a;
-// 			font-family: $ob;
-// 		}
-//
-// 	}
-// }
 .header__bottom-ad{
   width: 100%;
   float:left;
