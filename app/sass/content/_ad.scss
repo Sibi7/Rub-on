@@ -74,7 +74,7 @@
   text-transform: uppercase;
   font-size: 13px;
   font-family: $osb;
-  color: #fff;
+  color: #fff!important;
   text-decoration: none;
   border: 1px solid #dedede;
 	@include green-hov-rgba;

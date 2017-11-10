@@ -435,4 +435,7 @@ $(document).ready(function () {
         });
     }
     /*gamburger*/
+    $(".help-category-menu").click(function(){
+        $(".help-category-menu-hide").slideToggle();
+    });
 });
