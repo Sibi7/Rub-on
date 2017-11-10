@@ -881,8 +881,13 @@ button.slick-prev.slick-arrow{
   }
 }
 .banner {
-  @include breakpoint(max-width 1200px) {
+  margin-bottom: 15px;
+  padding: 5px;
+  @include breakpoint(max-width 992px) {
     display: none;
+  }
+  img {
+    width: 100%;
   }
 }
 .write-author, .call-author, .all-author-ads{

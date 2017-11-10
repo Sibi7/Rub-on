@@ -53,11 +53,17 @@
     width: 75%;
     float: left;
     position: relative;
+    @include breakpoint(max-width 992px) {
+      width: 100%;
+    }
     .about-seller{
       width: 100%;
       border-top: none;
+      display: flex;
+      align-items: center;
       .user{
-        min-width: 20%;
+        width: 20%;
+        min-width: 200px;
         float: left;
         display: inline-block;
         position: relative;
@@ -108,7 +114,7 @@
         float: left;
         display: inline-block;
         .average-ad-item-thumb{
-          width: 21%;
+          width: 25%;
           img{
             height: 100%;
             object-fit: cover;
@@ -167,6 +173,9 @@
   &_right{
     width: 25%;
     float: left;
+    @include breakpoint(max-width 992px) {
+      display: none;
+    }
   }
   .banner-rightbar{
     margin-top: 20px;
