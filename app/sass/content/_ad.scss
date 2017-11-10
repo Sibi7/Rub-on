@@ -500,6 +500,7 @@ input[type=radio]:checked + label{
 	display: inline-block;
 	background-color: #fff6c4;
 	padding: 5px;
+	border-bottom: 1px solid #dedede;
 	p{
 		font-size: 16px;
 		font-family: $opi;
@@ -631,7 +632,7 @@ input[type=radio]:checked + label{
 	transition: transform 1s ease-out;
 }
 .right-sidebar{
-	float: left;
+	float: right;
 	display: block;
 	width: 27%;
 	padding-left: 10px;
@@ -664,6 +665,9 @@ input[type=radio]:checked + label{
 		width: 100%;
 		margin: 0!important;
 	}
+}
+.selected-average-ad-item {
+	background-color: #fff6c4;
 }
 .average-ad-item-thumb{
 	width: 25%;
@@ -755,7 +759,7 @@ input[type=radio]:checked + label{
 	}
 }
 .top-content-right {
-	width: 95px;
+	width: 150px;
 	display: flex;
 	flex-direction: column;
 	@include breakpoint(max-width 770px) {
@@ -782,6 +786,10 @@ input[type=radio]:checked + label{
 	}
 	.average-ad-price {
 		margin-right: auto;
+		width: 100%;
+		text-align: right;
+		float: none;
+		justify-content: flex-end;
 	}
 }
 .average-ad-category:first-of-type{
@@ -940,7 +948,7 @@ input[type=radio]:checked + label{
 	color: #1a97bb;
 }
 .pagination {
-	width: 75%;
+	width: 73%;
 	padding: 20px;
 	position: relative;
 	display: inline-block;
@@ -959,9 +967,6 @@ input[type=radio]:checked + label{
 				font-family: $or;
 			}
 		}
-	}
-	@include breakpoint(max-width 670px){
-		width: 100%;
 	}
 	@include breakpoint(max-width 770px){
 		width: 100%;
@@ -1015,7 +1020,7 @@ input[type=radio]:checked + label{
 	}
 }
 .seo-text{
-	width: 75%;
+	width: 73%;
 	float: left;
 	display: inline-block;
 	border-top: 1px solid #dedede;
@@ -1024,9 +1029,6 @@ input[type=radio]:checked + label{
 		font-family: $or;
 		font-size: 12px;
 		text-align: left;
-	}
-	@include breakpoint(max-width 670px){
-		width: 100%;
 	}
 	@include breakpoint(max-width 770px){
 		width: 100%;
@@ -1056,7 +1058,7 @@ input[type=radio]:checked + label{
 		cursor: pointer;
 	}
 }
-.ui-slider-range{
+.ui-slider-range {
 	background-color: $bezh;
 }
 .ui-slider .ui-slider-handle{
