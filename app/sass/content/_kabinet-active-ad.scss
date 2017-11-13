@@ -3,6 +3,11 @@
   float: left;
   position: relative;
 }
+.shops-txt {
+  @include breakpoint(max-width 992px) {
+    display: none;
+  }
+}
 .kabinet-active-ad__left{
   width: 20%;
   float: left;
@@ -11,18 +16,31 @@
   padding-bottom: 50px;
   text-align: center;
   box-sizing: border-box;
+  @include breakpoint(max-width 992px) {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
   ul{
     width: 100%;
     float: left;
     display: inline-block;
     padding: 0;
     margin: 0;
+    @include breakpoint(max-width 992px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
     li{
       width: 100%;
       display: inline-block;
       list-style-type: none;
       margin: 5px 0;
       text-align: left;
+      @include breakpoint(max-width 992px) {
+        width: auto;
+        margin: auto 5px;
+      }
       a{
         text-decoration: none;
         font-size: 12px;
@@ -40,6 +58,9 @@
     background-color: #f3f3f3;
     box-shadow: 0px 0px 5px 1px rgba(6,0,0,.1);
     margin-bottom: 10px;
+    @include breakpoint(max-width 992px) {
+      display: none;
+    }
     &:first-of-type{
       margin-top: 15px;
     }
@@ -101,9 +122,12 @@
   padding-bottom: 50px;
   box-sizing: border-box;
   border-left: 1px solid #dedede;
-  padding-left: 50px;
-  box-sizing: border-box;
-
+  padding-left: 20px;
+  @include breakpoint(max-width 992px) {
+    width: 100%;
+    padding-left: 0;
+    border-left: none;
+  }
 }
 .kabinet-active-ad__additionaly-option{
   width: 100%;
@@ -112,6 +136,8 @@
   padding: 15px 0;
   box-sizing: border-box;
   text-align: right;
+  display: flex;
+  flex-wrap: wrap;
   ul{
     width: 33%;
     display: inline-block;
@@ -119,6 +145,10 @@
     margin: 0;
     padding: 0;
     text-align: left;
+    @include breakpoint(max-width 1200px) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
     li{
       display: inline-block;
       list-style-type: none;
@@ -154,6 +184,9 @@
     box-sizing: border-box;
     margin: 0 5px;
     @include bezh-hov;
+    @include breakpoint(max-width 600px) {
+      margin-bottom: 5px;
+    }
   }
   .up-option{
     display: inline-block;
@@ -166,26 +199,52 @@
   .checkbox0{
     width: 2%;
     cursor: pointer;
+    margin-left: auto;
+    @include breakpoint(max-width 770px) {
+      display: none;
+    }
   }
 }
+
+.item-edit-ad-text {
+  @include breakpoint(max-width 770px) {
+    display: none;
+  }
+}
+
 .kabinet-active-ad__content{
   width: 100%;
   float: left;
   position: relative;
+  @include breakpoint(max-width 770px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .item{
+    display: flex;
+    align-items: flex-start;
     width: 100%;
     float: left;
     position: relative;
     padding: 15px 0;
     box-sizing: border-box;
     border-bottom: 1px solid #dedede;
+    @include breakpoint(max-width 770px) {
+      width: 50%;
+      flex-direction: column;
+      padding: 10px;
+    }
+    @include breakpoint(max-width 550px) {
+      width: 100%;
+    }
     .checkbox, .checkbox0{
       width: 10%;
       display: inline-block;
       float: right;
       text-align: right;
       position: relative;
-      margin-top: 52px;
+      margin-top: 0;
+      margin-left: auto;
       cursor: pointer;
       overflow: hidden;
       input[type=checkbox] {
@@ -215,10 +274,13 @@
       width: 58%;
       float: left;
       display: inline-block;
+      @include breakpoint(max-width 770px) {
+        width: 100%;
+      }
       .average-ad-item-thumb{
         img{
           overflow: hidden;
-          object-fit: contain;
+          object-fit: cover;
         }
       }
       .average-ad-item-content{
@@ -252,6 +314,7 @@
 
         }
         .reload-ad{
+          width: 100px;
           float: left;
           display: inline-block;
           color: #fff;
@@ -277,12 +340,18 @@
       }
     }
     .item-edit-ad{
-      width: 15%;
+      width: 150px;
       float: left;
       position: relative;
       text-align: left;
       margin-top: 13px;
-      margin-left: 48px;
+      margin-left: 15px;
+      @include breakpoint(max-width 770px) {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: 0;
+      }
       .edit, .delete,.remove, .publish-ad{
         display: inline-block;
         min-width: 50%;
@@ -293,6 +362,9 @@
         color: $green;
         font-size: 10px;
         font-family: $ob;
+        @include breakpoint(max-width 770px) {
+          min-width: inherit;
+        }
         .edit-icon, .del-icon, .remove-icon, .publish-icon{
           background-image: url("../img/edit-icon.png");
           size: 12px 9px;
@@ -323,6 +395,10 @@
         color: $link;
         cursor: pointer;
         margin-left: 25px;
+        @include breakpoint(max-width 770px) {
+          width: 100%;
+          margin-left: 0;
+        }
       }
       .edit-accordion-list{
         display: none;
@@ -365,9 +441,15 @@
     // }
     .checkbox{
       width: 2%;
+      @include breakpoint(max-width 770px) {
+        display: none;
+      }
     }
     &:last-of-type{
       border-bottom: none;
+      @include breakpoint(max-width 770px) {
+        border-bottom: 1px solid #dedede;
+      }
     }
   }
 
@@ -421,6 +503,10 @@
   position: relative;
   margin-top: 7px;
   margin-left: 17px;
+  @include breakpoint(max-width 770px) {
+    width: 100%;
+    margin: 0;
+  }
   span{
     padding-top: 10px;
     display: inline-block;

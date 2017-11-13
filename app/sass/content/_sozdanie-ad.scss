@@ -177,6 +177,14 @@
 		box-sizing: border-box;
 	}
 }
+.content-organizatsii {
+	@include breakpoint(max-width 1200px) {
+		padding-left: 10px;
+	}
+	@include breakpoint(max-width 800px) {
+		padding-left: 0;
+	}
+}
 .btnCategoryEdit .select-category-add, .place-ad__form__search{
 	background-color: $green;
 	color: #fff;
@@ -208,10 +216,10 @@
 	float: left;
 	display: block;
 	position: relative;
-	@include breakpoint(max-width 450px) {
-		display: flex;
-		flex-direction: column;
-	}
+	//@include breakpoint(max-width 450px) {
+	//	display: flex;
+	//	flex-direction: column;
+	//}
 }
 .check-category, .selected-sub-categ{
 	width: 100%;
@@ -387,9 +395,9 @@
 	height: 30px;
 	padding-left: 10px;
 	@include breakpoint(max-width 600px) {
-		width: 70%;
+		width: 62%;
 	}
-	@include breakpoint(max-width 450px) {
+	@include breakpoint(max-width 500px) {
 		width: 100%	;
 	}
 }

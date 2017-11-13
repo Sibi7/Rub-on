@@ -1048,21 +1048,26 @@ input[type=radio]:checked + label{
 }
 
 .search-warning{
+	display: block!important;
 	width: 100%;
 	float: left;
-	padding-left: 50px;
 	box-sizing: border-box;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: 20px;
 	.average-ad-item-content{
 		float: left;
 		width: calc(100% - 101px);
+		@include breakpoint(max-width 500px) {
+			width: 100%;
+		}
 		.search-warning-title{
 			font-family: $ob;
 			text-align: left;
 			color: $green;
 			font-size: 24px;
-    line-height: 80px;
+    		line-height: 80px;
+			@include breakpoint(max-width 1200px) {
+				line-height: 26px;
+			}
 		}
 	}
 	.append-button{

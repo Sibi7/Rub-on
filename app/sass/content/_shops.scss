@@ -16,11 +16,14 @@
   li{
     display: inline-block;
     list-style-type: none;
-    min-width: 5%;
+    min-width: 30px;
     margin: 0 20px;
     padding-bottom: 18px;
     box-sizing: border-box;
     position: relative;
+    @include breakpoint(max-width 500px) {
+      margin: 0 8px;
+    }
     a{
       text-decoration: underline;
       color: #fff;
@@ -70,6 +73,9 @@
     position: relative;
     top: 6px;
     margin-right: 5px;
+  @include breakpoint(max-width 992px) {
+    width: 100%;
+  }
 }
 .shops-ad-icon, .about-company, .jobs-icon_shop, .comments-icon_shop, .special-offer{
   display: inline-block;
@@ -81,37 +87,37 @@
   margin-right: 5px;
 }
 .shops-ad-icon{
-  background-image: url("../img/shops-header-icon/ad-shoops.png");
+  background: url("../img/shops-header-icon/ad-shoops.png") center center no-repeat;
 }
 .special-offer{
-  background-image: url("../img/shops-header-icon/percentage.png");
+  background: url("../img/shops-header-icon/percentage.png") center center no-repeat;
 }
 .about-company{
-  background-image: url("../img/shops-header-icon/about-company.png");
+  background: url("../img/shops-header-icon/about-company.png") center center no-repeat;
 }
 .comments-icon_shop{
-  background-image: url("../img/shops-header-icon/edit-doc.png");
+  background: url("../img/shops-header-icon/edit-doc.png") center center no-repeat;
 }
 .jobs-icon_shop{
-  background-image: url("../img/shops-header-icon/head.png");
+  background: url("../img/shops-header-icon/head.png") center center no-repeat;
 }
 .shops-ad{
-  background-image: url("../img/menu-icon/shops-ad.png");
+  background: url("../img/menu-icon/shops-ad.png") center center no-repeat;
 }
 .shops-favorite{
-  background-image: url("../img/menu-icon/shops-favorite.png");
+  background: url("../img/menu-icon/shops-favorite.png") center center no-repeat;
 }
 .shops-my{
-  background-image: url("../img/menu-icon/shops-my.png");
+  background: url("../img/menu-icon/shops-my.png") center center no-repeat;
 }
 .shops-msg{
-  background-image: url("../img/menu-icon/shops-msg.png");
+  background: url("../img/menu-icon/shops-msg.png") center center no-repeat;
 }
 .shops-wallet{
-  background-image: url("../img/menu-icon/shops-wallet.png");
+  background: url("../img/menu-icon/shops-wallet.png") center center no-repeat;
 }
 .shops-setting{
-  background-image: url("../img/menu-icon/shops-setting.png");
+  background: url("../img/menu-icon/shops-setting.png") center center no-repeat;
 }
 .header-shop-fon{
   width: 100%;
