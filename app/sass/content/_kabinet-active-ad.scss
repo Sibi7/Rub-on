@@ -149,6 +149,9 @@
       width: 100%;
       margin-bottom: 30px;
     }
+    @include breakpoint(max-width 770px) {
+      margin-bottom: 0;
+    }
     li{
       display: inline-block;
       list-style-type: none;
@@ -184,11 +187,11 @@
     box-sizing: border-box;
     margin: 0 5px;
     @include bezh-hov;
-    @include breakpoint(max-width 600px) {
-      margin-bottom: 5px;
+    @include breakpoint(max-width 770px) {
+      display: none;
     }
   }
-  .up-option{
+  .up-option {
     display: inline-block;
     size: 17px 15px;
     background-image: url("/img/up-option.png");
