@@ -1210,4 +1210,91 @@ input[type=radio]:checked + label {
     size: 100%;
     object-fit: contain;
   }
+	background-color: $bezh;
+}
+.ui-slider .ui-slider-handle{
+	background-color: $green;
+	cursor: pointer;
+	outline: none;
+	width: 11px;
+	height: 12px;
+	position: absolute;
+	top: 11px;
+	&::before{
+		content: "";
+		width: 0;
+		height: 0;
+		position: absolute;
+		margin-top: -10px;
+		border-left: 6px solid transparent;
+		border-right: 5px solid transparent;
+		border-bottom: 10px solid $green;
+	}
+}
+.ui-slider-horizontal{
+	cursor: pointer;
+}
+.title-none_ad{
+	width: 100%;
+	float: left;
+	text-align: center;
+	font-family: $ob;
+	color: $green;
+	margin: 40px 0;
+}
+
+.search-warning{
+	display: block!important;
+	width: 100%;
+	float: left;
+	box-sizing: border-box;
+	padding: 20px;
+	.average-ad-item-content{
+		float: left;
+		width: calc(100% - 101px);
+		@include breakpoint(max-width 500px) {
+			width: 100%;
+		}
+		.search-warning-title{
+			font-family: $ob;
+			text-align: left;
+			color: $green;
+			font-size: 24px;
+    		line-height: 80px;
+			@include breakpoint(max-width 1200px) {
+				line-height: 26px;
+			}
+		}
+	}
+	.append-button{
+		border: none;
+		margin-top: 20px;
+		margin-bottom: 0;
+	}
+}
+.search-recomendation{
+	float: left;
+	width: 100% ;
+	margin-top: 20px;
+	p{
+		width: 100%;
+		float: left;
+		text-align: left;
+		margin: 0;
+		font-family: $or;
+		font-size: 16px;
+		&:first-of-type{
+			margin-bottom: 20px;
+		}
+	}
+}
+.search-warning-pic{
+	float: left;
+	position: relative;
+	size: 80px;
+	margin-right: 20px;
+	img{
+		size: 100%;
+		object-fit: contain;
+	}
 }

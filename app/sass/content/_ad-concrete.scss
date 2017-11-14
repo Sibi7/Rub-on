@@ -278,6 +278,9 @@
 
     height: 370px;
     display: inline-block;
+    @include breakpoint(max-width 500px) {
+      height: 200px;
+    }
   }
   img{
     width: 100%;
@@ -881,12 +884,18 @@ button.slick-prev.slick-arrow{
   }
 }
 .banner {
-  @include breakpoint(max-width 1200px) {
+  margin-bottom: 15px;
+  padding: 5px;
+  @include breakpoint(max-width 992px) {
     display: none;
+  }
+  img {
+    width: 100%;
   }
 }
 .write-author, .call-author, .all-author-ads{
   width: 83%;
+  max-width: 200px;
   float: none;
   display: inline-block;
   border-radius: 15px;

@@ -488,8 +488,10 @@ display: block;
 		font-family: $ob;
 		color: #006b93;
 		text-align: left;
-
 		margin-bottom: 5px;
+		line-height : 1.4;
+		overflow : hidden;
+		height: 35px;
 	}
 }
 .new-organization{
