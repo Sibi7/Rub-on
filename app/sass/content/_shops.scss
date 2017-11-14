@@ -64,7 +64,7 @@
     // }
   }
 }
-.shops-ad, .shops-favorite, .shops-my, .shops-msg, .shops-wallet, .shops-setting,{
+.shops-ad, .shops-favorite, .shops-msg, .shops-wallet, .shops-setting, .shops-my{
     display: inline-block;
     width: 26px;
     height: 23px;
@@ -77,6 +77,13 @@
     width: 100%;
   }
 }
+.shops-ad, .shops-my {
+  width: 26px;
+  @include breakpoint(max-width 992px) {
+    width: 25px;
+  }
+}
+
 .shops-ad-icon, .about-company, .jobs-icon_shop, .comments-icon_shop, .special-offer{
   display: inline-block;
   size: 21px 23px;

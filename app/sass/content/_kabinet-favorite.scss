@@ -11,6 +11,9 @@
   padding-top: 70px;
   padding-bottom: 50px;
   box-sizing: border-box;
+  @include breakpoint(max-width 992px) {
+    display: none;
+  }
   ul{
     width: 100%;
     float: left;
@@ -50,9 +53,16 @@
   padding-bottom: 50px;
   box-sizing: border-box;
   border-left: 1px solid #dedede;
+  @include breakpoint(max-width 992px) {
+    width: 100%;
+    border-left: none;
+  }
   .breadcrumbs{
     padding-left: 50px;
     box-sizing: border-box;
+    @include breakpoint(max-width 992px) {
+      padding-left: 0;
+    }
   }
   h2{
     padding-left: 50px;
@@ -84,9 +94,15 @@
       box-sizing: border-box;
       top: 0;
       position: relative;
+      @include breakpoint(max-width 770px) {
+        display: none;
+      }
     }
     .checkbox0{
       float: right;
+      @include breakpoint(max-width 770px) {
+        display: none;
+      }
     }
   }
 
@@ -191,23 +207,43 @@
   padding-bottom: 10px;
   box-sizing: border-box;
   border-bottom: 1px solid #dedede;
+  @include breakpoint(max-width 992px) {
+    padding-left: 0;
+  }
+  @include breakpoint(max-width 770px) {
+    width: 50%;
+    padding: 10px;
+  }
+  @include breakpoint(max-width 550px) {
+    width: 100%;
+  }
   &:last-of-type{
     border-bottom: none;
+    @include breakpoint(max-width 770px) {
+      border-bottom: 1px solid #dedede;
+    }
+  }
+  .checkbox0 {
+    @include breakpoint(max-width 770px) {
+      display: none;
+    }
   }
   .average-ad-item{
-    width: 75%;
+    width: calc(100% - 20px);
     float: left;
     display: inline-block;
     border-bottom: none;
+    @include breakpoint(max-width 770px) {
+      width: 100%;
+    }
     .average-ad-item-thumb{
       img{
         overflow: hidden;
-        object-fit: contain;
+        object-fit: cover;
       }
     }
     .average-ad-item-content{
       .average-ad-star{
-        left: 97%;
         z-index: 3;
       }
       .average-ad-title{
@@ -229,10 +265,14 @@
   background-color: #fff3a0;
   display: inline-block;
   position: absolute;
-  min-width: 24%;
+  min-width: 210px;
   left: 22%;
 bottom: 26%;
   z-index: 1;
+  @include breakpoint(max-width 600px) {
+    right: 0;
+    left: auto;
+  }
 }
 .close-ad__fon{
   display: inline-block;
@@ -242,6 +282,9 @@ bottom: 26%;
   left: 5%;
   background-color: rgba(51, 74, 81, 0);
   height: 100%;
+  @include breakpoint(max-width 770px) {
+    width: 100%;
+  }
 }
 
 .kabinet-favorite-right__search-item{
@@ -340,14 +383,15 @@ bottom: 26%;
   border-bottom: none;
 }
 .kabinet-favorite-right_top-menu{
-  width: 60%;
   float: left;
   padding: 0 0 0 50px;
   box-sizing: border-box;
   margin: 0;
   display: inline-block;
   text-align: left;
-
+  @include breakpoint(max-width 992px) {
+    padding-left: 0;
+  }
   li{
     display: inline-block;
     list-style-type: none;
