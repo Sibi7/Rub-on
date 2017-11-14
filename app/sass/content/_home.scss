@@ -488,8 +488,22 @@ display: block;
 		font-family: $ob;
 		color: #006b93;
 		text-align: left;
-
 		margin-bottom: 5px;
+		line-height : 1.4;
+		overflow : hidden;
+		text-overflow : ellipsis;
+		padding : 0 !important;
+		height : calc(1em * 1.4 * 2);
+		&:before {
+			content : '...';
+			text-align : right;
+			bottom : 6px;
+			right : 0;
+			width : 25%;
+			display : block;
+			position : absolute;
+			height : calc(1em * 1.4);
+		}
 	}
 }
 .new-organization{
