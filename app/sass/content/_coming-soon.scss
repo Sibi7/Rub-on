@@ -1,90 +1,100 @@
-.coming-soon{
+.coming-soon {
   width: 100%;
   float: left;
   position: relative;
   text-align: center;
   padding: 20px 0 70px;
   box-sizing: border-box;
-  h3{
+  @include breakpoint(max-width 992px) {
+    padding-bottom: 20px;
+  }
+  h3 {
     color: $green;
     font-family: $or;
     font-size: 18px;
     display: inline-block;
+    @include breakpoint(max-width 992px){
+      margin: 15px 0;
+    }
   }
-  .coming-soon__row{
+  .coming-soon__row {
     width: 80%;
     float: none;
     margin: 10px auto;
     display: inline-block;
     text-align: center;
-    h3{
-      margin: 0;
+    @include breakpoint(max-width 992px) {
+      width: 100%;
     }
-    .footer-soc{
-  		width: 20%;
-  		float: none;
-  		display: inline-block;
-  		padding-left: 0;
+    .footer-soc {
+      width: 20%;
+      float: none;
+      display: inline-block;
+      padding-left: 0;
       margin: 0;
-  		li{
-  			display: inline-block;
-  			list-style-type: none;
-  			size: 25px;
-  			margin-right: 5px;
-  			a, span{
-  				position: relative;
-  		    display: block;
-  				float: left;
+      @include breakpoint(max-width 992px){
+        width: 100%;
+        margin: 15px 0;
+      }
+      li {
+        display: inline-block;
+        list-style-type: none;
+        size: 25px;
+        margin-right: 5px;
+        a, span {
+          position: relative;
+          display: block;
+          float: left;
           margin: 0;
-  		    size: 25px;
-  		    border-radius: 50%;
-  		    background-color: #fff;
-  		    text-align: center;
-  		    line-height: 25px;
-  				background-repeat: no-repeat;
-  				background-size: contain;
+          size: 25px;
+          border-radius: 50%;
+          background-color: #fff;
+          text-align: center;
+          line-height: 25px;
+          background-repeat: no-repeat;
+          background-size: contain;
           padding: 0;
-  				.vkontakte-icon{
-  					background-image: url("../img/vk.png");
-  					&:hover{
-  						background-image: url("../img/vk_h.png");
-  				    background-color: #334a51;
-  					}
-  				}
-  				.facebook-icon{
-  					background-image: url("../img/fb.png");
-  					&:hover{
-  						background-image: url("../img/fb_h.png");
-  				    background-color: #334a51;
-  					}
-  				}
-  				.twitter-icon{
-  					background-image: url("../img/tw.png");
-  					&:hover{
-  						background-image: url("../img/tw_h.png");
-  				    background-color: #334a51;
-  					}
-  				}
-  				.google-icon{
-  					background-image: url("../img/g+.png");
-  					&:hover{
-  						background-image: url("../img/g+_h.png");
-  				    background-color: #334a51;
-  					}
-  				}
-  			}
-  		}
-  	}
-    p{
+          .vkontakte-icon {
+            background-image: url("../img/vk.png");
+            &:hover {
+              background-image: url("../img/vk_h.png");
+              background-color: #334a51;
+            }
+          }
+          .facebook-icon {
+            background-image: url("../img/fb.png");
+            &:hover {
+              background-image: url("../img/fb_h.png");
+              background-color: #334a51;
+            }
+          }
+          .twitter-icon {
+            background-image: url("../img/tw.png");
+            &:hover {
+              background-image: url("../img/tw_h.png");
+              background-color: #334a51;
+            }
+          }
+          .google-icon {
+            background-image: url("../img/g+.png");
+            &:hover {
+              background-image: url("../img/g+_h.png");
+              background-color: #334a51;
+            }
+          }
+        }
+      }
+    }
+    p {
       min-width: 10%;
       display: inline-block;
-      color:$green;
+      color: $green;
       font-family: $ob;
       margin: 0 10px;
       top: -6px;
       position: relative;
     }
-    a{
+    a {
       outline: none;
       font-size: 12px;
       font-family: $ob;
@@ -100,21 +110,29 @@
       padding-right: 20px;
       margin: 0 10px;
       @include green-hov-rgba;
+      @include breakpoint(max-width 992px){
+        margin-bottom: 15px;
+      }
     }
   }
-  .page-pic{
+  .page-pic {
     size: 830px 600px;
     float: none;
     margin: 0 auto;
     overflow: hidden;
-    img{
-      size: 100%;
+    @include breakpoint(max-width 992px) {
+      width: 100%;
+      height: auto;
+    }
+    img {
+      width: 100%;
+      height: 100%;
       object-fit: contain;
     }
   }
 }
 
-.modals_div, .modals_di{
+.modals_div, .modals_di {
   width: 552px;
   background-color: #fcfdfe;
   padding: 20px 50px;
@@ -123,11 +141,11 @@
   position: fixed;
   top: 45%;
   margin-top: -150px;
-  margin-left: calc(50% - (552px/2));
+  margin-left: calc(50% - (552px / 2));
   display: none;
   opacity: 0;
   z-index: 5;
-  h2{
+  h2 {
     color: #2f3c41;
     font-size: 18px;
     color: $green;
@@ -136,14 +154,14 @@
     text-align: center;
     display: inline-block;
   }
-  form{
+  form {
     width: 100%;
     display: inline-block;
     float: left;
     position: relative;
     text-align: center;
   }
-  input, textarea{
+  input, textarea {
     float: left;
     width: 100%;
     height: 46px;
@@ -156,10 +174,10 @@
     box-sizing: border-box;
     resize: none;
   }
-  textarea{
+  textarea {
     height: 100px;
   }
-  button{
+  button {
     outline: none;
     font-size: 12px;
     font-family: $ob;
@@ -178,11 +196,11 @@
     margin: 0 10px;
     @include green-hov-rgba;
   }
-  .pic{
+  .pic {
     width: 100%;
     float: left;
     text-align: center;
-    img{
+    img {
       size: 79px;
       float: none;
       margin: 0 auto;

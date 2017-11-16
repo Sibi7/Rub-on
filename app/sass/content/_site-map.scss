@@ -8,7 +8,6 @@
   width: 100%;
   float: right;
   position: relative;
-
   h1{
     width: 100%;
     float: left;
@@ -16,13 +15,16 @@
     font-size: 25px;
     color: #0d0101;
     text-align: left;
-    margin: 20px 0;
+    margin-top: 20px;
+    margin-bottom: 0;
+    @include breakpoint(max-width 992px)
   }
   ul{
     width: 100%;
     float: left;
     position: relative;
     padding: 0;
+    margin: 0;
     // display: -webkit-flex;
     // display: -ms-flex;
     // display: flex;
@@ -33,6 +35,12 @@
     width: 25%;
     float: left;
     position: relative;
+    @include breakpoint(max-width 992px){
+      width: 50%;
+    }
+    @include breakpoint(max-width 550px){
+      width: 100%;
+    }
   }
   ul li{
     width: 100%;
