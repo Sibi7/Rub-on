@@ -9,6 +9,9 @@
     padding-top: 70px;
     padding-bottom: 50px;
     box-sizing: border-box;
+    @include breakpoint(max-width 770px) {
+      display: none;
+    }
     ul{
       width: 100%;
       float: left;
@@ -41,6 +44,11 @@
     padding-bottom: 50px;
     box-sizing: border-box;
     border-left: 1px solid #dedede;
+    @include breakpoint(max-width 770px) {
+      width: 100%;
+      padding-left: 0;
+      border-left: none;
+    }
     h2{
       font-size: 14px;
       font-family: $ob;
@@ -65,6 +73,9 @@
       width: 50%;
       float: left;
       position: relative;
+      @include breakpoint(max-width 992px) {
+        width: 100%;
+      }
       h2{
         font-size: 14px;
         font-family: $ob;
@@ -74,13 +85,22 @@
         color: #c1a72d;
       }
       .row-form{
+        display: flex;
         width: 100%;
         float: left;
-        display: inline-block;
         margin: 15px 0;
         position: relative;
+        @include breakpoint(max-width 770px) {
+          flex-direction: column;
+          align-items: center;
+          width: 60%;
+          min-width: 300px;
+          float: none;
+          margin: 15px auto;
+        }
         label{
           width: 45%;
+          min-width: 200px;
           float: left;
           display: inline-block;
           font-size: 13px;
@@ -90,6 +110,11 @@
           font-weight: 500;
           padding-right: 45px;
           box-sizing: border-box;
+          @include breakpoint(max-width 770px) {
+            width: auto;
+            padding: 0;
+            text-align: center;
+          }
         }
         input{
           width: 55%;
@@ -98,6 +123,7 @@
           height: 30px;
           padding-left: 10px;
           box-sizing: border-box;
+          min-width: 250px;
         }
         .file_upload{
           margin: 0;
@@ -107,11 +133,33 @@
         }
         .memo-error{
           top: 0;
+          @include breakpoint(max-width 1200px) {
+            top: -130%;
+            right: 0;
+            &:after {
+              border-right: 9px solid transparent;
+              border-top: 13px solid #c91414;
+              border-left: 9px solid transparent;
+              top: 100%;
+              right: 10px;
+              left: auto;
+            }
+          }
+          @include breakpoint(max-width 770px) {
+            top: -40px;
+            right: auto;
+            left: 0;
+          }
         }
       }
       .row-knopka{
         width: 55%;
         float: right;
+        @include breakpoint(max-width 770px) {
+          margin: 10px auto;
+          float: none;
+          display: block;
+        }
       }
     }
     .row-soc{
@@ -119,6 +167,11 @@
       float: left;
       display: inline-block;
       margin: 7px 0;
+      @include breakpoint(max-width 500px) {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
       a{
         min-width: 149px;
         display: inline-block;
