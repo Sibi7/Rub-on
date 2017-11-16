@@ -8,15 +8,13 @@
     <title></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/libs.min.css" rel="stylesheet" type="text/css">
-    <!-- <link href="css/owl.carousel.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="css/slick.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="css/slick-theme.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="css/star-rating.min.css" rel="stylesheet" type="text/css">
-    <link href="css/theme.min.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="css/fancybox/jquery.fancybox-thumbs.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="css/fancybox/jquery.fancybox-buttons.css" rel="stylesheet" type="text/css"> -->
+    <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link href="css/slick.css" rel="stylesheet" type="text/css">
+    <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css">
+    <link href="css/fancybox/jquery.fancybox-thumbs.css" rel="stylesheet" type="text/css">
+    <link href="css/fancybox/jquery.fancybox-buttons.css" rel="stylesheet" type="text/css">
     <link href="css/style.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -131,72 +129,182 @@
     </div>
 </section>
 <!-- end _header-middle-home.html-->
-<!-- start _vhod.html-->
-<section class="vhod">
-	<div class="container">
-		<div class="registration-form">
-		<h2 class="title-registration-form">Вход</h2>
-		<form class="reg-form" action="" method="post">
-			<div class="form-row">
-				<input class="input-reg" type="email" placeholder="Ввведите ваш email-адрес">
-			</div>
-			<div class="form-row">
-				<input class="input-reg" type="password" placeholder="Пароль">
-			</div>
-			<div class="problem-vhod">
-				<div class="checkbox0">
+<!-- start _kabinet-header-menu.html-->
+<section class="kabinet-header__menu">
+    <div class="container">
+        <ul class="shops-header__mnu">
+            <li class="active">
+                <a href=""><span class="shops-ad "></span><span class="shops-txt">Объявления</span></a>
+            </li>
+            <li><a href=""><span class="shops-favorite"></span><span class="shops-txt">Избранные</span></a></li>
+            <li><a href=""><span class="shops-my"></span><span class="shops-txt">Мои магазины</span></a></li>
+            <li><a href=""><span class="shops-msg"></span><span class="shops-txt">Сообщения</span></a></li>
+            <li><a href=""><span class="shops-wallet"></span><span class="shops-txt">Счет</span></a></li>
+            <li><a href=""><span class="shops-setting"></span><span class="shops-txt">Настройки</span></a></li>
+        </ul>
+    </div>
+</section>
+<!-- end _kabinet-header-menu.html-->
+<!-- start _kabinet-organizatsii.html-->
+<section class="kabinet-active-ad">
+  <div class="container">
+    <div class="kabinet-active-ad__left">
+      <ul>
+        <li><a href="">Управление объявлениями</a></li>
+        <li><a href="">Создание нового объявления</a></li>
+      </ul>
+      <div class="recent-article-item">
+        <h2>Актуальные статьи</h2>
+        <div class="recent-article-item__articles">
+          <a href="">Почему мое объявление удалено?</a>
+          <a href="">Почему заблокирован мой Профиль?</a>
+          <a href="">Достигнут лимит, не могу опубликовать новое</a>
+        </div>
+      </div>
+    </div>
+    <div class="kabinet-active-ad__right">
+      <!-- open .breadcrubs -->
+      <article class="breadcrumbs">
+        <!-- open .container -->
+
+          <!-- open .bread -->
+          <ol class="breadcrumbs__list">
+            <li><a href="#">Главная </a></li>
+            <li><a href="#">Кабинет</a></li>
+            <li><a href="#">Объявления</a></li>
+            <li>Активные</li>
+          </ol>
+          <!-- close .bread -->
+
+        <!-- close .container -->
+      </article>
+      <!-- close .breadcrubs -->
+      <div class="kabinet-active-ad__additionaly-option">
+        <ul>
+          <li class="active" ><a href="">Активные</a></li>
+          <li><a href="">Неактивные</a></li>
+          <li><a href="">На проверке </a></li>
+        </ul>
+        <a href="" class="option-2">Снять с публикации</a>
+        <a href="" class="option-2"><span class="up-option"></span>Активировать на 60 дней и поднять</a>
+        <a href="" class="option-2">Активировать</a>
+        <div class="checkbox0">
           <input id="check0" type="checkbox" name="check" value="check0">
           <label for="check0"></label>
         </div>
-				<p>Запомнить меня</p>
-				<a href="">Не можете войти?</a>
-			</div>
-			<div class="row-knopka">
-				<button  type="submit" class="reg-form-send">Войти</button>
-
-			</div>
-			<div class="row-soc-text"><p>или войдите через соц.сеть</p></div>
-			 <div class="soc">
-            	<ul>
-					<li>
-						<a href="#" target="_blank" title="twitter"><i class="fa fa-google-plus fa-lg" aria-hidden="true"></i></a>
-					</li>
-					<li>
-						<a href="#" target="_blank" title="twitter"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
-					</li>
-					<li>
-						<a href="#" target="_blank" title="twitter"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
-					</li>
-					<li>
-						<a href="#" target="_blank" title="twitter"><i class="fa fa-vk fa-lg" aria-hidden="true"></i></a>
-					</li>
-					<li>
-						<a href="#" target="_blank" title="twitter"><i class="fa fa-odnoklassniki fa-lg" aria-hidden="true"></i></a>
-					</li>
-				</ul>
+      </div>
+      <div class="kabinet-active-ad__content">
+        <div class="item">
+          <div class="kabinet-active-ad__content_ad">
+            <a href="" class="average-ad-item-thumb">
+              <img src="img/adpic-2.png" alt=""/>
+            </a>
+            <div class="average-ad-item-content">
+              <p class="average-ad-time">Сегодня 20:00</p>
+              <div class="average-ad-categories">
+                <a href="" class="average-ad-category">Квартиры</a>
+                <a href="" class="average-ad-category">Недвижимость</a>
+              </div>
+              <a href="" class="average-ad-title">2-х комнатная квартира, 63 м², 2/5 этаж</a>
+              <p class="average-ad-geo"> <span class="geo-space"></span>Речной вокзал 1.9 км, ул. Дыбенко д.16 корп.1</p>
+              <span class="average-ad-price">2 500 000 &#8381;</span>
+              <a href="" class="reload-ad"><span class="reload-icon"></span>Обновить</a>
             </div>
-		</form>
-	</div>
-	<div class="registration-info">
+          </div>
+          <div class="item-edit-ad">
+            <a href="" class="delete"> <span class="del-icon"></span><span class="item-edit-ad-text">удалить</span></a>
+            <a href="" class="edit"> <span class="edit-icon"></span><span class="item-edit-ad-text">редактировать</span></a>
+            <a href="" class="remove"> <span class="remove-icon"></span><span class="item-edit-ad-text">снять с публикации</span></a>
+            <a href="" class="publish-ad"><span class="publish-icon"></span><span class="item-edit-ad-text">опубликовать</span></a>
+            <span class="edit-accordion">дополнительно</span>
+            <div class="edit-accordion-list">
+              <a href="">Сделать вип</a>
+              <a href="">Выделить обьявление</a>
+              <a href="">Поднять объявление</a>
+            </div>
+          </div>
+          <div class="checkbox">
+            <input id="check1" type="checkbox" name="check" value="check1">
+            <label for="check1"></label>
+          </div>
+        </div>
+        <div class="item">
+          <div class="kabinet-active-ad__content_ad">
+            <a href="" class="average-ad-item-thumb">
+              <img src="img/adpic-2.png" alt=""/>
+            </a>
+            <div class="average-ad-item-content">
+              <p class="average-ad-time">Сегодня 20:00</p>
+              <div class="average-ad-categories">
+                <a href="" class="average-ad-category">Квартиры</a>
+                <a href="" class="average-ad-category">Недвижимость</a>
+              </div>
+              <a href="" class="average-ad-title">2-х комнатная квартира, 63 м², 2/5 этаж</a>
+              <p class="average-ad-geo"> <span class="geo-space"></span>Речной вокзал 1.9 км, ул. Дыбенко д.16 корп.1</p>
+              <span class="average-ad-price">2 500 000 &#8381;</span>
+              <a href="" class="reload-ad"><span class="reload-icon"></span>Обновить</a>
+            </div>
+          </div>
+          <div class="item-edit-ad">
+            <a href="" class="delete"> <span class="del-icon"></span><span class="item-edit-ad-text">удалить</span></a>
+            <a href="" class="edit"> <span class="edit-icon"></span><span class="item-edit-ad-text">редактировать</span></a>
+            <a href="" class="remove"> <span class="remove-icon"></span><span class="item-edit-ad-text">снять с публикации</span></a>
+            <a href="" class="publish-ad"><span class="publish-icon"></span><span class="item-edit-ad-text">опубликовать</span></a>
+            <span class="edit-accordion">дополнительно</span>
+            <div class="edit-accordion-list">
+              <a href="">Сделать вип</a>
+              <a href="">Выделить обьявление</a>
+              <a href="">Поднять объявление</a>
+            </div>
+          </div>
+          <div class="checkbox">
+            <input id="check1" type="checkbox" name="check" value="check1">
+            <label for="check1"></label>
+          </div>
+        </div>
+        <div class="item">
+          <div class="kabinet-active-ad__content_ad">
+            <a href="" class="average-ad-item-thumb">
+              <img src="img/adpic-2.png" alt=""/>
+            </a>
+            <div class="average-ad-item-content">
+              <p class="average-ad-time">Сегодня 20:00</p>
+              <div class="average-ad-categories">
+                <a href="" class="average-ad-category">Квартиры</a>
+                <a href="" class="average-ad-category">Недвижимость</a>
+              </div>
+              <a href="" class="average-ad-title">2-х комнатная квартира, 63 м², 2/5 этаж</a>
+              <p class="average-ad-geo"> <span class="geo-space"></span>Речной вокзал 1.9 км, ул. Дыбенко д.16 корп.1</p>
+              <span class="average-ad-price">2 500 000 &#8381;</span>
+              <a href="" class="reload-ad"><span class="reload-icon"></span>Обновить</a>
+            </div>
+          </div>
+          <div class="item-edit-ad">
+            <a href="" class="delete"> <span class="del-icon"></span><span class="item-edit-ad-text">удалить</span></a>
+            <a href="" class="edit"> <span class="edit-icon"></span><span class="item-edit-ad-text">редактировать</span></a>
+            <a href="" class="remove"> <span class="remove-icon"></span><span class="item-edit-ad-text">снять с публикации</span></a>
+            <a href="" class="publish-ad"><span class="publish-icon"></span><span class="item-edit-ad-text">опубликовать</span></a>
+            <span class="edit-accordion">дополнительно</span>
+            <div class="edit-accordion-list">
+              <a href="">Сделать вип</a>
+              <a href="">Выделить обьявление</a>
+              <a href="">Поднять объявление</a>
+            </div>
+          </div>
+          <div class="checkbox">
+            <input id="check1" type="checkbox" name="check" value="check1">
+            <label for="check1"></label>
+          </div>
+        </div>
 
-		<div class="registration-info-wrap">
-			<p>Пароль нужен для входа в раздел <br>
-				<b>Мои объявления, Мои услуги, <br>Мои магазины</b>
-				и другое, где вы сможете <br>работать с объявлениями:</p>
-			<ul>
-				<li>редактировать, удалять и обновлять</li>
-				<li>просматривать сообщения</li>
-				<li>просматривать избранные объявления</li>
-				<li>предосталять свои услуги или услуги компании</li>
-				<li>разместить свой магазин в каталоге</li>
-			</ul>
-			<p>Введите ваш email-адрес, желаемый пароль <br>и подтвердите изменения, пройдя по ссылке <br>в письме, которое мы вам отправим.</p>
-		</div>
+      </div>
+    </div>
 
-	</div>
-	</div>
+  </div>
+
 </section>
-<!-- end _vhod.html-->
+
+<!-- end _kabinet-organizatsii.html-->
 <!-- start _footer.html-->
 <section class="footer">
     <h2><b>Rubon—</b> сайт объявлений. </h2>

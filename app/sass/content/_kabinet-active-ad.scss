@@ -274,11 +274,13 @@
       }
     }
     .kabinet-active-ad__content_ad{
-      width: 58%;
       float: left;
-      display: inline-block;
+      width: calc(100% - 2% - 150px);
+      display: flex;
+      justify-content: space-between;
       @include breakpoint(max-width 770px) {
         width: 100%;
+        flex-direction: column;
       }
       .average-ad-item-thumb{
         img{
@@ -287,6 +289,12 @@
         }
       }
       .average-ad-item-content{
+        @include breakpoint(max-width 992px) {
+          width: 73%;
+        }
+        @include breakpoint(max-width 770px) {
+          width: 100%;
+        }
         .average-ad-title{
           font-size: 16px;
           width: 100%;
@@ -351,7 +359,7 @@
       margin-left: 15px;
       @include breakpoint(max-width 770px) {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         width: 100%;
         margin-left: 0;
       }
@@ -399,8 +407,8 @@
         cursor: pointer;
         margin-left: 25px;
         @include breakpoint(max-width 770px) {
-          width: 100%;
-          margin-left: 0;
+          width: auto;
+          margin-left: auto;
         }
       }
       .edit-accordion-list{
