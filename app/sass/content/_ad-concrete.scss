@@ -893,6 +893,14 @@ button.slick-prev.slick-arrow{
     width: 100%;
   }
 }
+
+.btn-horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+
 .write-author, .call-author, .all-author-ads{
   width: 83%;
   max-width: 200px;
