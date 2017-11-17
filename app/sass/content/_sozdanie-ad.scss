@@ -185,6 +185,7 @@
 		padding-left: 0;
 	}
 }
+
 .btnCategoryEdit .select-category-add, .place-ad__form__search{
 	background-color: $green;
 	color: #fff;
@@ -205,6 +206,9 @@
     border: none;
     cursor: pointer;
     margin-bottom: 15px;
+}
+.btnCategoryEdit .select-category-add {
+	width: auto;
 }
 .content-forma{
 	h2{
