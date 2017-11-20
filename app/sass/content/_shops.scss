@@ -150,6 +150,11 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
+  .geo-pic{
+   @include breakpoint(max-width 660px){
+     display: none;
+   }
+  }
   img {
     width: 100%;
     object-fit: cover;
@@ -194,6 +199,9 @@
       @include breakpoint(max-width 992px) {
         width: 50%;
       }
+      @include breakpoint(max-width 660px){
+        width: 100%;
+      }
       span {
         padding-left: 10px;
         box-sizing: border-box;
@@ -206,6 +214,10 @@
       }
       &:last-of-type {
         font-size: 14px;
+        @include breakpoint(max-width 992px){
+          font-size: 12px;
+          color: #334a51;
+        }
       }
     }
   }
@@ -232,7 +244,9 @@
   position: relative;
   .search-map {
     background-image: url("../img/search-map-long.png");
+
   }
+
   .nachalo {
     background-color: #fff;
   }
@@ -364,6 +378,7 @@
       text-align: left;
       @include breakpoint(max-width 992px) {
         width: 30%;
+        margin: 0;
       }
       @include breakpoint(max-width 660px) {
         width: 100%;
@@ -398,6 +413,9 @@
       margin: 6px auto 15px;
       display: inline-block;
       float: none;
+      @include breakpoint(max-width 992px){
+        margin: 15px 0;
+      }
       &:hover {
         color: #fff;
         text-decoration: none;
