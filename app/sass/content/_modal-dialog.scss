@@ -1,12 +1,71 @@
+.modal {
+  @include breakpoint(max-width 600px) {
+    overflow: scroll;
+    height: 100%;
+  }
+}
+
 .modal-dialog {
+  position: absolute;
   max-width: 850px;
   width: 100%;
-  .modal-body {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)!important;
+  margin: 0!important;
+  @include breakpoint(max-width 600px) {
+    top:0;
+    transform: translate(-50%,0%)!important;
+    height: auto;
+    width: 100%;
+   }
+  .modal-content {
+    @include breakpoint(max-width 600px) {
+      height: 100%;
+      width: 100%;
+    }
+    .first-modal {
+      .modal-body  {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        @include breakpoint(max-width 700px) {
+          padding: 20px;
+          padding-top: 0;
+        }
+      }
+    }
+    .second-modal {
+      .modal-body  {
+        display: flex;
+        @include breakpoint(max-width 700px) {
+          padding: 0;
+          transform: translateX(-100%);
+        }
+      }
+    }
   }
+
   .modal-item {
-    min-width: 100px;
+    min-width: 110px;
+    @include breakpoint(max-width 600px) {
+      margin-top: 0;
+    }
+    span {
+
+    }
+  }
+
+  .arrow-back {
+    display: none;
+    position: relative;
+    border-top: 5px solid transparent;
+    border-right: 10px solid #f98b10;
+    border-bottom: 5px solid transparent;
+    margin-right: 10px;
+    cursor: pointer;
+    @include breakpoint(max-width 700px) {
+      display: inline-block;
+    }
   }
 }

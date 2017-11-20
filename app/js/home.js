@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', function () {
         $('.mob-menu-list').slideToggle()
     });
 
+    $(document).on('click', '.arrow-back', function () {
 
+    })
 
 });
