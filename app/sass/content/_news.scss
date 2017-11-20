@@ -5,6 +5,9 @@
   background-color: #edeef0;
   padding: 0 0 100px;
   box-sizing: border-box;
+  @include breakpoint(max-width 992px){
+    padding: 0;
+  }
 }
 
 .news__left{
@@ -196,12 +199,20 @@
     text-align: left;
     padding: 20px 30px 6px 75px;
     box-sizing: border-box;
+    @include breakpoint(max-width 992px){
+      padding: 20px;
+    }
     .thumb{
       width: 109px;
       height: 109px;
       display: block;
       border-radius: 50%;
       overflow: hidden;
+      @include breakpoint(max-width 992px){
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+      }
       img{
         width: auto;
         height: 100%;
@@ -214,6 +225,10 @@
       position: relative;
       padding-left: 30px;
       box-sizing: border-box;
+      @include breakpoint(max-width 662px){
+        width: 100%;
+        padding-left: 0;
+      }
       .content-row{
         width: 100%;
         float: left;
@@ -254,6 +269,9 @@
         color: $green;
         padding: 15px 0 20px;
         box-sizing: border-box;
+        @include breakpoint(max-width 992px){
+          padding-bottom: 0;
+        }
       }
     }
   }
@@ -285,6 +303,12 @@
   text-align: right;
   padding: 30px 0;
   box-sizing: border-box;
+  @include breakpoint(max-width 992px){
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
+  }
   h2{
     font-size: 18px;
     width: 40%;
@@ -295,12 +319,19 @@
     padding-left: 35px;
     box-sizing: border-box;
     color: $green;
+    @include breakpoint(max-width 992px){
+     width: auto;
+      padding-left: 0;
+    }
   }
   a{
     font-size: 16px;
     display: inline-block;
     color: $green;
     margin-left: 10px;
+    @include breakpoint(max-width 992px){
+      margin-left: 0;
+    }
     span{
       background-repeat: no-repeat;
       background-size: contain;
@@ -346,6 +377,12 @@
   padding-left: 30px;
   // padding-top: 50px;
   box-sizing: border-box;
+  @include breakpoint(max-width 992px){
+    padding-top: 0!important;
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .other-news{

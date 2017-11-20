@@ -1,0 +1,12 @@
+.modal-dialog {
+  max-width: 850px;
+  width: 100%;
+  .modal-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .modal-item {
+    min-width: 100px;
+  }
+}
