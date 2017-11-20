@@ -37,94 +37,94 @@ $(document).ready(function () {
 // close edit-accordion
 
 
-$(".owl-model").owlCarousel({
-    loop: true,
-    margin: 30,
-    nav: true,
-    navText: true,
-    navigation: true,
-    /*navigationText: true,*/
-    pagination: true,
-    items: 6,
-    dots: false,
-    singleItem: false,
-    responsiveClass: true,
-    responsive: {
-        0: {
-            items: 2,
-            nav: true
-        },
-        600: {
-            items: 4,
-            nav: true
-        },
-        1000: {
-            items: 6,
-            nav: true,
-            loop: true
-        },
-        1200: {
-            items: 6,
-            nav: true,
-            loop: true
+    $(".owl-model").owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        navText: true,
+        navigation: true,
+        /*navigationText: true,*/
+        pagination: true,
+        items: 6,
+        dots: false,
+        singleItem: false,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 2,
+                nav: true
+            },
+            600: {
+                items: 4,
+                nav: true
+            },
+            1000: {
+                items: 6,
+                nav: true,
+                loop: true
+            },
+            1200: {
+                items: 6,
+                nav: true,
+                loop: true
+            }
         }
-    }
-});
-$(".owl-model-specials").owlCarousel({
-    loop: true,
-    margin: 20,
-    nav: true,
-    navText: true,
-    navigation: true,
-    /*navigationText: true,*/
-    pagination: true,
-    items: 4,
-    dots: false,
-    singleItem: false,
-    responsiveClass: true,
-    responsive: {
-        0: {
-            items: 2,
-            nav: true
-        },
-        600: {
-            items: 4,
-            nav: true
-        },
-        1000: {
-            items: 4,
-            nav: true,
-            loop: true
-        },
-        1200: {
-            items: 4,
-            nav: true,
-            loop: true
+    });
+    $(".owl-model-specials").owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: true,
+        navText: true,
+        navigation: true,
+        /*navigationText: true,*/
+        pagination: true,
+        items: 4,
+        dots: false,
+        singleItem: false,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 2,
+                nav: true
+            },
+            600: {
+                items: 4,
+                nav: true
+            },
+            1000: {
+                items: 4,
+                nav: true,
+                loop: true
+            },
+            1200: {
+                items: 4,
+                nav: true,
+                loop: true
+            }
         }
-    }
 
-});
+    });
 
-$('.slider-for').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    fade: true,
-    asNavFor: '.slider-nav'
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: true,
+        asNavFor: '.slider-nav'
 
-    // autoplay: true
-});
-$('.slider-nav').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: '.slider-for',
-    dots: false,
-    centerMode: true,
-    focusOnSelect: true,
-    vertical: true,
-    arrows: false,
-    verticalSwiping: true
-});
+        // autoplay: true
+    });
+    $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true,
+        vertical: true,
+        arrows: false,
+        verticalSwiping: true
+    });
 // open help-category menu
     $('#cssmenu li.has-sub > a').on('click', function () {
         $(this).removeAttr('href');
@@ -209,7 +209,6 @@ $(function () {
 });
 
 
-
 $(document).ready(function () {
     $('.fancybox-thumb').fancybox({
         prevEffect: 'fade',
@@ -249,45 +248,45 @@ $(document).ready(function () {
     }
 
 
-
     /*sidebar*/
 
     var windowWidth = $(window).width();
     if (windowWidth > 770) {
-      if ($('.ad-charasteristics').length > 0) {
-        $(window).scroll(function () {
-            var sb_m;
-            if (window.innerWidth < 992) {
-                sb_m = 10;
-            } else {
-                sb_m = 50;
-            }
-
-            /* отступ сверху и снизу */
-            var mb = 300;
-            /* высота подвала с запасом */
-            var st = $(window).scrollTop();
-            var sb = $(".ad-charasteristics");
-            var sbi = $(".ad-charasteristics-form");
-            var sb_ot = sb.offset().top;
-            var sbi_ot = sbi.offset().top;
-            var sb_h = sb.height();
-
-            if (sb_h + $(document).scrollTop() + sb_m + mb < $(document).height()) {
-                if (st > sb_ot) {
-                    var h = Math.round(st - sb_ot) + sb_m;
-                    sb.css({"paddingTop": h});
+        if ($('.ad-charasteristics').length > 0) {
+            $(window).scroll(function () {
+                var sb_m;
+                if (window.innerWidth < 992) {
+                    sb_m = 10;
+                } else {
+                    sb_m = 50;
                 }
-                else {
-                    sb.css({"paddingTop": 0});
+
+                /* отступ сверху и снизу */
+                var mb = 300;
+                /* высота подвала с запасом */
+                var st = $(window).scrollTop();
+                var sb = $(".ad-charasteristics");
+                var sbi = $(".ad-charasteristics-form");
+                var sb_ot = sb.offset().top;
+                var sbi_ot = sbi.offset().top;
+                var sb_h = sb.height();
+
+                if (sb_h + $(document).scrollTop() + sb_m + mb < $(document).height()) {
+                    if (st > sb_ot) {
+                        var h = Math.round(st - sb_ot) + sb_m;
+                        sb.css({"paddingTop": h});
+                    }
+                    else {
+                        sb.css({"paddingTop": 0});
+                    }
                 }
-            }
-        });
-    }
+            });
+        }
     }
     $('.ad-charasteristics__mob-btn').click(function (event) {
-      $('.ad-charasteristics-form').slideToggle();
+        $('.ad-charasteristics-form').slideToggle();
     });
+
     if ($('.news__right').length > 0) {
         $(window).scroll(function () {
             var sb_m_n = 0;
@@ -312,30 +311,31 @@ $(document).ready(function () {
 
         });
     }
-     if ($('.all-shops__content_left').length > 0) {
-            $(window).scroll(function () {
-                var sb_m_n = 50;
-                /* отступ сверху и снизу */
-                var mb_n = 300;
-                /* высота подвала с запасом */
-                var st_n = $(window).scrollTop();
-                var sb_n = $(".all-shops__content_left");
-                var sbi_n = $("#cssmenu-1");
-                var sb_ot_n = sb_n.offset().top;
-                var sbi_ot_n = sbi_n.offset().top;
-                var sb_h_n = sb_n.height();
-                if (sb_h_n + $(document).scrollTop() + sb_m_n + mb_n < $(document).height()) {
-                    if (st_n > sb_ot_n) {
-                        var h = Math.round(st_n - sb_ot_n) + sb_m_n;
-                        sb_n.css({"paddingTop": h});
-                    }
-                    else {
-                        sb_n.css({"paddingTop": 0});
-                    }
-                }
 
-            });
-        }
+    if ($('.all-shops__content_left').length > 0) {
+        $(window).scroll(function () {
+            var sb_m_n = 50;
+            /* отступ сверху и снизу */
+            var mb_n = 300;
+            /* высота подвала с запасом */
+            var st_n = $(window).scrollTop();
+            var sb_n = $(".all-shops__content_left");
+            var sbi_n = $("#cssmenu-1");
+            var sb_ot_n = sb_n.offset().top;
+            var sbi_ot_n = sbi_n.offset().top;
+            var sb_h_n = sb_n.height();
+            if (sb_h_n + $(document).scrollTop() + sb_m_n + mb_n < $(document).height()) {
+                if (st_n > sb_ot_n) {
+                    var h = Math.round(st_n - sb_ot_n) + sb_m_n;
+                    sb_n.css({"paddingTop": h});
+                }
+                else {
+                    sb_n.css({"paddingTop": 0});
+                }
+            }
+
+        });
+    }
     /*sidebar*/
 
     // open anchor
@@ -435,7 +435,9 @@ $(document).ready(function () {
         });
     }
     /*gamburger*/
-    $(".help-category-menu").click(function(){
+    $(".help-category-menu").click(function () {
         $(".help-category-menu-hide").slideToggle();
     });
+
+
 });
