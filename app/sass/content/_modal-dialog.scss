@@ -25,23 +25,19 @@
       width: 100%;
     }
     .first-modal {
-      .modal-body  {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        @include breakpoint(max-width 700px) {
-          padding: 20px;
-          padding-top: 0;
-        }
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      @include breakpoint(max-width 700px) {
+        padding: 20px;
+        padding-top: 0;
       }
     }
     .second-modal {
-      .modal-body  {
-        display: flex;
-        @include breakpoint(max-width 700px) {
-          padding: 0;
-          transform: translateX(-100%);
-        }
+      display: flex;
+      @include breakpoint(max-width 700px) {
+        padding: 0;
+        transform: translateX(-100%);
       }
     }
   }

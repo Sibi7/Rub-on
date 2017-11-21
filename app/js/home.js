@@ -32,9 +32,10 @@ document.addEventListener('DOMContentLoaded', function () {
         if($(window.innerWidth < 700)) {
             var count = 1;
             $(document).on('click', '.arrow-back', function () {
+                console.log(111);
                 if (count <=2 || count >=0) {
                     count--;
-                    $('.second-modal .modal-body').css({
+                    $('.second-modal').css({
                         'transform': 'translateX(-'+ count + '00%)'
                     });
                 }
@@ -45,8 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     return false
                 } else {
                     count++;
-                    console.log(count);
-                    $('.second-modal .modal-body').css({
+                    $('.second-modal').css({
                         'transform': 'translateX(-'+ count + '00%)'
                     });
                 }
