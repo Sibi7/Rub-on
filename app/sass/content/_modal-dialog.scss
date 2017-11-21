@@ -24,7 +24,7 @@
       height: 100%;
       width: 100%;
     }
-    .first-modal .modal-body{
+    .first-modal{
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
@@ -33,7 +33,7 @@
         padding-top: 0;
       }
     }
-    .second-modal .modal-body{
+    .second-modal{
       display: flex;
       transform: translateX(0);
       @include breakpoint(max-width 700px) {
