@@ -35,6 +35,10 @@ document.addEventListener('DOMContentLoaded', function () {
             $('.second-modal').css({
                 'transform': 'translateX(0)'
             });
+        } else {
+            $('.second-modal').css({
+                'transform': 'translateX(-100%)'
+            });
         }
     });
 
