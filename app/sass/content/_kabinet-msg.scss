@@ -223,7 +223,6 @@
   height: 450px;
   overflow-y: scroll;
 }
-
 .kabinet-msg-form {
   display: block;
   position: relative;
@@ -290,5 +289,19 @@
     &:hover {
       background: linear-gradient(#626f7b, #334a51);
     }
+  }
+}
+.kabinet-msg-box__blanket {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  p{
+    font-size: 22px;
+    font-weight: 700;
+    margin: 40px 0;
   }
 }
