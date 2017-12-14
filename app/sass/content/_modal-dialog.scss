@@ -24,24 +24,21 @@
       height: 100%;
       width: 100%;
     }
-    .first-modal {
-      .modal-body  {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        @include breakpoint(max-width 700px) {
-          padding: 20px;
-          padding-top: 0;
-        }
+    .first-modal{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      @include breakpoint(max-width 700px) {
+        padding: 20px;
+        padding-top: 0;
       }
     }
-    .second-modal {
-      .modal-body  {
-        display: flex;
-        @include breakpoint(max-width 700px) {
-          padding: 0;
-          transform: translateX(-100%);
-        }
+    .second-modal{
+      display: flex;
+      transform: translateX(0);
+      @include breakpoint(max-width 700px) {
+        padding: 0;
+        transform: translateX(-100%);
       }
     }
   }

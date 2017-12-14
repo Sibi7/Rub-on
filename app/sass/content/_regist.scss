@@ -193,11 +193,11 @@
 .row-knopka-2{
 	width: 100%;
 	text-align: left;
-	display: inline-block;
 	float: left;
-	height: 31px;
     margin: 10px 0;
-    margin-left: 35px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
  }
 .reg-form-send-2{
 	text-decoration: none;
@@ -216,7 +216,6 @@
 	z-index: 29;
 	outline: none;
 	text-align: -webkit-center;
-    margin-left: 10%;
   @include green-hov-rgba;
 
 }
