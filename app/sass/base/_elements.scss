@@ -46,7 +46,30 @@
     }
   }
 }
-
+.modal-dialog{
+  max-width: 500px;
+  .modal-content{
+    .modal-header{
+      padding: 20px;
+    }
+  }
+  .modal-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    p{
+      width: 100%;
+    }
+    .publish{
+      color: #fff!important;
+      margin: 0 10px;
+    }
+  }
+}
 //.display-flex {
 //  display: flex!important;
 //}
