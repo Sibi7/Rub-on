@@ -2,6 +2,15 @@
   width: 100%;
   float: left;
   position: relative;
+  .modal-content{
+    .modal-body{
+      div{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+      }
+    }
+  }
 }
 .shops-txt {
   @include breakpoint(max-width 992px) {
