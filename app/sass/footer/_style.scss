@@ -625,9 +625,9 @@ last-change-column{
 .second-change-column{
 	z-index: 9;
 }
-#go-top {
+#go-phone {
 	position: fixed;
-	bottom: 60px;
+	bottom: 30px;
 	right: 30px;
 	cursor: pointer;
 	z-index: 10;
@@ -640,7 +640,7 @@ last-change-column{
 	border-radius: 50%;
 	background: #334a51;
 }
-#go-top .fa {
+#go-phone .fa {
 	font-size: 28px;
 	color: #fff;
 	font-weight: 300;

@@ -1,0 +1,122 @@
+.cabinet-promo {
+  display: block;
+  float: left;
+  width: 100%;
+  position: relative;
+  padding: 20px;
+  main {
+    max-width: 940px;
+    width: 100%;
+    padding: 20px
+  }
+
+  p, h3, h4 {
+    margin: 0;
+  }
+
+  .title h3 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  .code {
+    display: flex;
+    align-items: center;
+    margin-top: 37px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    background-color: #fbfbfb;
+  }
+
+  .code form {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: relative;
+    flex-direction: row;
+    padding-left: 0;
+    width: 100%;
+    div{
+      width: 100%;
+    }
+  }
+
+  .code form label {
+    width: 100%;
+    margin-left: 15px;
+  }
+
+  .code form #code {
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 3px 15px;
+    box-sizing: border-box;
+    font-size: 24px;
+    border-radius: 15px;
+    border: 1px solid #dedede;
+    background-color: #ffffff;
+  }
+
+  .code form #submit {
+    padding: 5px 25px;
+    font-size: 15px;
+    margin-top: 26px;
+    box-sizing: border-box;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    background-color: #334a51;
+  }
+
+  .code img {
+    margin-top: 14px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .code p {
+    align-self: flex-end;
+    max-width: 370px;
+    width: 100%;
+    font-size: 13px;
+    margin-left: 15px;
+    position: relative;
+    top: -11px;
+  }
+
+  .use-code {
+    max-width: 570px;
+    width: 100%;
+    margin-top: 45px;
+  }
+
+  .use-code h4 {
+    font-size: 16px;
+  }
+
+  .use-code__variants {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .use-code__variants a {
+    color: #334a51;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+
+  .use-code__variants a:hover,
+  .use-code__variants a:active,
+  .use-code__variants a:focus {
+    opacity: 0.8;
+    text-decoration: underline;
+    transition: opacity 0.2s;
+  }
+}
