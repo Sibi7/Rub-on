@@ -9,12 +9,19 @@
     padding-top: 70px;
     padding-bottom: 50px;
     box-sizing: border-box;
+    @include breakpoint(max-width 992px){
+      width: 100%;
+      padding: 15px 0;
+    }
     ul{
       width: 100%;
       float: left;
       display: inline-block;
       padding: 0;
       margin: 0;
+      @include breakpoint(max-width 992px){
+        display: flex;
+      }
       li{
         width: 100%;
         display: inline-block;
@@ -49,6 +56,12 @@
     padding-bottom: 50px;
     box-sizing: border-box;
     border-left: 1px solid #dedede;
+    @include breakpoint(max-width 992px){
+      width: 100%;
+      border: none;
+      padding: 15px 0;
+      padding-top: 0;
+    }
     h2{
       padding-left: 50px;
       box-sizing: border-box;
