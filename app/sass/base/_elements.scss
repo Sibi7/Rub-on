@@ -54,23 +54,26 @@
       .modal-header {
         padding: 20px;
       }
-    }
-    .modal-wrap {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      flex-direction: row;
-      align-items: center;
-      width: 100%;
-      position: relative;
-      p {
-        width: 100%;
+      .modal-body {
+        .modal-wrap {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          flex-direction: row;
+          align-items: center;
+          width: 100%;
+          position: relative;
+          p {
+            width: 100%;
+          }
+          .publish {
+            color: #fff !important;
+            margin: 0 10px;
+          }
+        }
       }
-      .publish {
-        color: #fff !important;
-        margin: 0 10px;
-      }
     }
+
   }
 }
 

@@ -7,7 +7,7 @@
 
 .modal-dialog {
   position: absolute;
-  max-width: 850px;
+  max-width: 500px;
   width: 100%;
   top: 50%;
   left: 50%;
@@ -20,9 +20,31 @@
     width: 100%;
    }
   .modal-content {
+    .modal-header{
+    padding: 20px 0;
+    }
+    .modal-body{
+      .modal-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        p {
+          width: 100%;
+        }
+        .publish {
+          color: #fff !important;
+          margin: 0 10px;
+        }
+      }
+    }
     @include breakpoint(max-width 600px) {
       height: 100%;
       width: 100%;
+
     }
     .first-modal{
       display: flex;
