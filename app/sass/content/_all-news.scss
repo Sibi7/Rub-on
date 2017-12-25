@@ -6,6 +6,9 @@
   box-sizing: border-box;
   text-align: center;
   background-color: #edeef0;
+  @include breakpoint(max-width 992px){
+    padding-bottom: 0;
+  }
   h1{
     width: 100%;
     float: left;
@@ -19,15 +22,22 @@
 }
 
 .all-news__item{
-  width: 371px;
+  width: 30.333%;
   height: auto;
   position: relative;
   background-color: #fff;
   border-radius: 5px;
   display: inline-block;
   float: none;
-  margin: 8px;
+  margin: 1%;
   min-height: 527px;
+  @include breakpoint(max-width 992px){
+    width: 47%;
+  }
+  @include breakpoint(max-width 660px){
+    width: 100%;
+    margin: 0;
+  }
   span{
     width: 100%;
     float: left;
@@ -57,7 +67,7 @@
     overflow: hidden;
     img{
       size: 100%;
-      object-fit: contain;
+      object-fit: cover;
     }
   }
   .content{
@@ -67,6 +77,9 @@
     text-align: left;
     padding: 30px;
     box-sizing: border-box;
+    @include breakpoint(max-width 992px){
+      padding: 15px;
+    }
     h2{
       font-size: 18px;
       font-family: $ob;
@@ -92,12 +105,11 @@
       font-size: 16px;
       &:after{
         content: "";
-        background-image: url("../img/news/arrow-next.png");
+        background: url("../img/news/arrow-next.png") no-repeat;
         size: 5px 9px;
         display: block;
         position: relative;
         margin-left: 5px;
-        background-repeat: no-repeat;
         background-size: contain;
         top: 7px;
         float: right;

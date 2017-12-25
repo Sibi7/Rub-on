@@ -14,7 +14,7 @@
       //margin: 0 10px;
       position: relative;
       font-size: 10px;
-      font-family:$or ;
+      font-family: $or;
       a {
         color: #334a51;
       }
@@ -30,12 +30,12 @@
       }
       &:last-of-type {
         line-height: 30px;
-        a{
+        a {
           float: right;
           line-height: 30px;
           font-size: 12px;
           color: #334a51;
-          font-family:$or ;
+          font-family: $or;
           padding-left: 20px;
           box-sizing: border-box;
         }
@@ -50,10 +50,36 @@
   z-index: 1!important;
 }
 
-//.display-flex {
-//  display: flex!important;
-//}
-//
+#modalAds {
+  .modal.in .modal-dialog {
+
+    .modal-content {
+      .modal-header {
+        padding: 20px;
+      }
+      .modal-body {
+        .modal-wrap {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          flex-direction: row;
+          align-items: center;
+          width: 100%;
+          position: relative;
+          p {
+            width: 100%;
+          }
+          .publish {
+            color: #fff !important;
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+
+  }
+}
+
 //.display-block {
 //  display: block!important;
 //}

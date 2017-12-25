@@ -430,12 +430,12 @@
 }
 
 .logo-organization-wrap {
-  width: 170px;
-  height: 119px;
+  height: 110px;
   position: absolute;
-  left: 4%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
   overflow: hidden;
-  margin-top: -122px;
   img {
     size: 100%;
     object-fit: contain;

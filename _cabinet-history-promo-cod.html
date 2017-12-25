@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
-    <title></title>
+    <title>Мои сообщения</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css">
@@ -18,8 +18,6 @@
     <link href="css/style.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-
-
 <!-- start _header-top-user.html-->
 <section class="header__top">
     <div class="container">
@@ -145,121 +143,49 @@
     </div>
 </section>
 <!-- end _kabinet-header-menu.html-->
-<!-- start _kabinet-favorite-organizatsii.html-->
-<section class="kabinet-favorite-organizatsii">
+<!-- start _cabinet-promo-cod.html-->
+<section class="kabinet-history">
     <div class="container">
-        <div class="kabinet-favorite-left">
+        <div class="kabinet-history__left">
             <ul>
-                <li><a href="">Транспорт <span class="count">2</span></a></li>
-                <li><a href="">Для дома и дачи <span class="count">1</span></a></li>
-                <li><a href="">Бытовая электроника <span class="count">5</span></a></li>
+                <li><a href="">пополнить кошелек</a></li>
+                <li><a href="">оплатить услугу</a></li>
+                <li class="active"><a href="">история</a></li>
             </ul>
         </div>
-        <div class="kabinet-favorite-right">
-            <!-- open .breadcrubs -->
-            <article class="breadcrumbs">
-                <!-- open .container -->
-
-                <!-- open .bread -->
-                <ol class="breadcrumbs__list">
-                    <li><a href="#">Главная </a></li>
-                    <li><a href="#">Кабинет</a></li>
-                    <li><a href="#">Объявления</a></li>
-                    <li>Избранные</li>
-                </ol>
-                <!-- close .bread -->
-
-                <!-- close .container -->
-            </article>
-            <!-- close .breadcrubs -->
-            <div class="top-menu">
-                <ul class="kabinet-favorite-right_top-menu">
-                    <li><a href="">Все избранные</a></li>
-                    <li class="active"><a href="" >Объявления</a></li>
-                    <li><a href="">Магазины</a></li>
-                    <li><a href="">Спецпредложения</a></li>
-                </ul>
-                <a href="" class="delete-knopka">Удалить из избранного</a>
-                <div class="checkbox0">
-                    <input id="check0" type="checkbox" name="check" value="check0">
-                    <label for="check0"></label>
+        <div class="kabinet-history__right">
+            <main class="cabinet-promo">
+                <div class="title">
+                    <h3>Введите промокод</h3>
                 </div>
-            </div>
-            <!-- <div class="kabinet-favorite-right-nav">
-              <a href="" class="delete-knopka">Удалить из избранного</a>
-              <div class="checkbox0">
-                <input id="check0" type="checkbox" name="check" value="check0">
-                <label for="check0"></label>
-              </div>
-            </div> -->
-            <div class="kabinet-favorite-right-item">
-                <!-- item -->
-                <div class="average-ad-item">
-                    <a href="" class="average-ad-item-thumb">
-                        <img src="img/adpic-1.png" alt=""/>
-                    </a>
-                    <div class="average-ad-item-content">
-                        <div class="top-content">
-                            <a href="" class="average-ad-title">«АСКА недвижимость»</a>
-                            <p>«АСКА недвижимость» – успешная, динамично развивающаяся компания.</p>
+
+                <div class="code">
+                    <form method="POST" action="#">
+                        <div>
+                            <label for="code">Добавьте код</label>
+                            <input id="code" type="text">
                         </div>
-                        <div class="bottom-content">
-                            <div class="left">
-                                <p class="average-ad-time">На сайте с марта 2015</p>
-                                <p class="average-ad-geo"> <span class="geo-space"></span>Ижевск</p>
-                            </div>
-                            <div class="right">
-                                <a href="" class="average-ad-category">Квартиры</a><a href="" class="average-ad-category">Недвижимость</a>
-                                <span class="shops-tel">8 800 356 41 25</span>
-                            </div>
-                            <a href="" class="shops-link">перейти в магазин</a>
-                        </div>
+                        <img src="img/icons/ruble1.png" alt="">
+                        <input id="submit" type="submit" value="Отправить">
+                        <p>Данный код дает вам возможность поднять свои объявления в ТОП для быстрой и эффективной
+                            продажи</p>
+                    </form>
+
+                </div>
+
+                <div class="use-code">
+                    <h4>Используйте код прямо сейчас:</h4>
+                    <div class="use-code__variants">
+                        <a href="#">Сделать вип</a>
+                        <a href="#">Выделить объявление</a>
+                        <a href="#">Поднять объявление</a>
                     </div>
                 </div>
-                <!-- item -->
-                <div class="checkbox0">
-                    <input id="check1" type="checkbox" name="check" value="check1">
-                    <label for="check1"></label>
-                </div>
-            </div>
-            <div class="kabinet-favorite-right-item ">
-
-                <!-- item -->
-                <div class="average-ad-item average-ad-item-hide">
-                    <a href="" class="average-ad-item-thumb">
-                        <img src="img/adpic-1.png" alt=""/>
-                    </a>
-                    <div class="average-ad-item-content">
-                        <div class="top-content">
-                            <a href="" class="average-ad-title">«АСКА недвижимость»</a>
-                            <p>«АСКА недвижимость» – успешная, динамично развивающаяся компания.</p>
-                        </div>
-                        <div class="bottom-content">
-                            <div class="left">
-                                <p class="average-ad-time">На сайте с марта 2015</p>
-                                <p class="average-ad-geo"> <span class="geo-space"></span>Ижевск</p>
-                            </div>
-                            <div class="right">
-                                <a href="" class="average-ad-category">Квартиры</a><a href="" class="average-ad-category">Недвижимость</a>
-                                <span class="shops-tel">8 800 356 41 25</span>
-                            </div>
-                            <a href="" class="shops-link">перейти в магазин</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- item -->
-                <div class="checkbox0">
-                    <input id="check2" type="checkbox" name="check" value="check2">
-                    <label for="check2"></label>
-                </div>
-                <span class="close-ad">Объявление закрыто владельцем</span>
-                <div class="close-ad__fon"></div>
-            </div>
-
+            </main>
         </div>
     </div>
 </section>
-<!-- end _kabinet-favorite-organizatsii.html-->
+<!-- end _cabinet-promo-cod.html-->
 <!-- start _footer.html-->
 <section class="footer">
     <h2><b>Rubon—</b> сайт объявлений. </h2>
@@ -320,7 +246,8 @@
 <!-- end _footer.html-->
 
 
-<div class="modalas myModal" >
+
+<div class="modalas myModal">
     <div class="modal-header">
         <h2>Выберите категорию</h2>
         <span class="krest close"> &times;</span>
@@ -389,7 +316,7 @@
 </div>
 <div class="modalas modalas1">
     <span class="krest close" tabindex="-1"> &times;</span>
-    <div class="column column-change column-modal header-rubric" data-parent="0" >
+    <div class="column column-change column-modal header-rubric" data-parent="0">
         <h3 class="title">Рубрики</h3>
         <div class="obvertka obvertka-first style-scroll">
 			<span class="heading heading-change active" data-category="">
@@ -490,16 +417,13 @@
 </div>
 <a href="#" class="scrollup_button">Наверх</a>
 <div id="overlay"></div>
-
+<!-- @@close-->
 </body>
 <!-- <script src="js/jquery.mousewheel-3.0.6.pack.js" type="text/javascript"></script> -->
 <script src="js/jquery-2.1.3.min.js" type="text/javascript"></script>
 <!-- <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script> -->
 <script src="js/jquery-ui.min.js" type="text/javascript"></script>
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
-<script src="../../js/fotorama.js" type="text/javascript"></script>
-<script src="js/script.min.js" type="text/javascript"></script>
-<script src="js/script.js" type="text/javascript"></script>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script src="js/owl.carousel.min.js" type="text/javascript"></script>
 <script src="js/jquery.contenttoggle.min.js" type="text/javascript"></script>
@@ -513,5 +437,6 @@
 <!-- <script src="js/star-rating.min.js" type="text/javascript"></script>
 <script src="js/theme.min.js" type="text/javascript"></script> -->
 <script src="js/stickyfill.min.js" type="text/javascript"></script>
+<script src="js/script.js" type="text/javascript"></script>
 
 </html>

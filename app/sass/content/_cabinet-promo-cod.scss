@@ -1,0 +1,163 @@
+.cabinet-promo {
+  display: block;
+  float: left;
+  width: 100%;
+  position: relative;
+  padding: 20px;
+  @include breakpoint(max-width 992px){
+    padding: 0;
+  }
+  main {
+    max-width: 940px;
+    width: 100%;
+    padding: 20px;
+    @include breakpoint(max-width 992px){
+      width: 100%;
+    }
+  }
+
+  p, h3, h4 {
+    margin: 0;
+  }
+
+  .title h3 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0;
+    @include breakpoint(max-width 992px){
+     margin-bottom: 15px;
+    }
+  }
+
+  .code {
+    display: flex;
+    align-items: center;
+    margin-top: 37px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    background-color: #fbfbfb;
+    @include breakpoint(max-width 992px){
+      margin-top: 0;
+      padding: 10px;
+    }
+  }
+
+  .code form {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: relative;
+    flex-direction: row;
+    padding-left: 0;
+    width: 100%;
+    @include breakpoint(max-width 660px){
+      flex-wrap: wrap;
+    }
+    div{
+      width: 100%;
+    }
+  }
+
+  .code form label {
+    width: 100%;
+    margin-left: 15px;
+  }
+
+  .code form #code {
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 3px 15px;
+    box-sizing: border-box;
+    font-size: 24px;
+    border-radius: 15px;
+    border: 1px solid #dedede;
+    background-color: #ffffff;
+  }
+
+  .code form #submit {
+    padding: 5px 25px;
+    font-size: 15px;
+    margin-top: 26px;
+    box-sizing: border-box;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    background-color: #334a51;
+    @include breakpoint(max-width 992px){
+      padding: 0 25px;
+      margin: 12px 0;
+    }
+  }
+
+  .code img {
+    margin-top: 14px;
+    margin-right: 10px;
+    margin-left: 10px;
+    @include breakpoint(max-width 992px){
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .code p {
+    align-self: flex-end;
+    max-width: 370px;
+    width: 100%;
+    font-size: 13px;
+    margin-left: 15px;
+    position: relative;
+    top: -11px;
+    @include breakpoint(max-width 992px){
+      display: block;
+      margin: 10px auto;
+    }
+  }
+
+  .use-code {
+    max-width: 570px;
+    width: 100%;
+    margin-top: 45px;
+    @include breakpoint(max-width 992px){
+      max-width: 100%;
+      margin: 15px 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .use-code h4 {
+    font-size: 16px;
+    @include breakpoint(max-width 992px){
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .use-code__variants {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    @include breakpoint(max-width 992px){
+      flex-wrap: wrap;
+    }
+  }
+
+  .use-code__variants a {
+    color: #334a51;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+
+  .use-code__variants a:hover,
+  .use-code__variants a:active,
+  .use-code__variants a:focus {
+    opacity: 0.8;
+    text-decoration: underline;
+    transition: opacity 0.2s;
+  }
+}

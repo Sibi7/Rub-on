@@ -432,8 +432,11 @@
         padding: 5px 10px;
         box-sizing: border-box;
         min-width: 161px;
-        right: -16px;
-        top: 97px;
+        left: 0;
+        top: 109px;
+        @include breakpoint(max-width 992px){
+          top: 30px;
+        }
         &:before{
           content: "";
           position: absolute;
@@ -444,6 +447,9 @@
           border-right: 5px solid transparent;
           border-bottom: 5px solid #dedede;
           margin-top: -11px;
+          @include breakpoint(max-width 992px){
+            right: 15%;
+          }
         }
         a{
           width: 100%;
