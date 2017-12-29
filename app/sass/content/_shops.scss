@@ -436,14 +436,13 @@
 }
 
 .logo-organization-wrap {
-  height: 110px;
+  height: 100%;
   width: 15%;
   position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
   overflow: hidden;
-  margin-left: 15px;
   img {
     size: 100%;
     object-fit: cover;

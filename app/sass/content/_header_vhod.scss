@@ -181,6 +181,7 @@
 	display: inline-block;
 	margin: 0;
 	font-size: initial;
+	width: 100px;
 	margin-right: 20px;
 	@include breakpoint(max-width 670px){
 		margin-right: 12px;
