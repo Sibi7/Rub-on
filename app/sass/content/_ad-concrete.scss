@@ -244,7 +244,6 @@
   .slick-arrow{
     position: absolute;
     top: 50%;
-    z-index: 4!important;
     margin-top: -12px;
   }
   .slick-prev{
@@ -252,7 +251,6 @@
     background-color: #fff;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
-
     &::before{
       content: "";
       background-image: url("../img/left-green-ar.png");
