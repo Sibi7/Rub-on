@@ -273,7 +273,6 @@
   }
   .item{
     position: relative;
-
     height: 370px;
     display: inline-block;
     @include breakpoint(max-width 500px) {
