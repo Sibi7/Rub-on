@@ -171,7 +171,11 @@
   .select2-container--krajee .select2-results>.select2-results__options {
     overflow-x: hidden;
   }
-
+.select2-container--krajee{
+  @include breakpoint(max-width 450px){
+    width: 100%!important;
+  }
+}
 
 }
  .select2-selection__arrow {

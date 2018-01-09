@@ -1,10 +1,10 @@
-.ad-author__menu{
+.ad-author__menu {
   width: 100%;
   float: left;
   position: relative;
   text-align: center;
   background-color: #334a51;
-  .kabinet-header__mnu{
+  .kabinet-header__mnu {
     width: 100%;
     padding: 10px 0;
     box-sizing: border-box;
@@ -15,14 +15,15 @@
     margin: 0;
     @include breakpoint(max-width 500px) {
       flex-direction: column;
+      align-items: left;
     }
-    li{
+    li {
       display: inline-block;
       list-style-type: none;
       min-width: 5%;
       margin: 0 20px;
       position: relative;
-      a{
+      a {
         text-decoration: underline;
         color: #fff;
         font-family: $ob;
@@ -35,33 +36,40 @@
         height: 30px;
       }
     }
-    li.active{
+    li.active {
       border-bottom: none;
+      @include breakpoint(max-width 992px) {
+        padding-bottom: 0;
+      }
     }
     li.active a:after {
-    content: "";
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    left: 0;
-    background-color: #ffd800;
-    display: inline-block;
-    top: 42px;
-}
+      content: "";
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      left: 0;
+      background-color: #ffd800;
+      display: inline-block;
+      top: 42px;
+      @include breakpoint(max-width 992px) {
+        display: none;
+      }
+    }
   }
 }
-.ad-author__content{
+
+.ad-author__content {
   width: 100%;
   float: left;
   position: relative;
-  &_left{
+  &_left {
     width: 75%;
     float: left;
     position: relative;
     @include breakpoint(max-width 992px) {
       width: 100%;
     }
-    .about-seller{
+    .about-seller {
       width: 100%;
       border-top: none;
       display: flex;
@@ -75,26 +83,26 @@
       .user-number {
         width: auto;
       }
-      .user{
+      .user {
         width: 20%;
         min-width: 200px;
         float: left;
         display: inline-block;
         position: relative;
-        .thumb{
+        .thumb {
           size: 35px;
           float: left;
           overflow: hidden;
           border-radius: 50%;
           height: 35px;
           margin-right: 5px;
-          img{
+          img {
             width: auto;
             height: 100%;
             object-fit: cover;
           }
         }
-        span{
+        span {
           font-family: $or;
           color: #878787;
           font-size: 12px;
@@ -102,7 +110,7 @@
           float: left;
           width: 70%;
         }
-        h4{
+        h4 {
           margin: 0;
           font-size: 16px;
           font-family: $ob;
@@ -112,110 +120,113 @@
           float: left;
         }
       }
-      .user-number, .user-city{
+      .user-number, .user-city {
         margin-top: 17px;
       }
     }
-    .ad-author__content_left-item{
+    .ad-author__content_left-item {
       display: inline-block;
       float: left;
       width: 100%;
       padding: 15px 0;
       box-sizing: border-box;
       border-bottom: 1px solid #dedede;
-      @include breakpoint(max-width 770px) {
-        width: 50%;
-      }
-      @include breakpoint(max-width 500px) {
+      @include breakpoint(max-width 992px) {
         width: 100%;
       }
-      .kabinet-active-ad__content_ad{
+      .kabinet-active-ad__content_ad {
         width: 100%;
         float: left;
         display: inline-block;
         @include breakpoint(max-width 992px) {
           padding: 5px;
         }
-        .average-ad-item-thumb{
+        .average-ad-item-thumb {
           width: 25%;
           @include breakpoint(max-width 770px) {
             width: 100%;
           }
-          img{
+          img {
             height: 100%;
             object-fit: cover;
           }
         }
-        .average-ad-item-content{
-          .average-ad-title{
+        .average-ad-item-content {
+          .average-ad-title {
             font-size: 16px;
           }
         }
       }
-      .average-ad-item{
+      .average-ad-item {
         border-bottom: none;
         padding: 0;
-        .average-ad-item-thumb{
+        .average-ad-item-thumb {
           width: 20%;
         }
-        .average-ad-title{
+        .average-ad-title {
           width: 96%;
         }
-        .left{
+        .left {
           width: 35%;
           text-align: left;
           padding-top: 0;
         }
         .right {
-            width: 65%;
-            border-left: none;
-            .shops-tel{
-              width: 100%;
+          width: 65%;
+          border-left: none;
+          .shops-tel {
+            width: 100%;
+            float: left;
+            font-family: $ob;
+            color: #334a51;
+            font-size: 14px;
+            text-align: left;
+            .tel-icon {
+              background-image: url(../img/phone-receiver.png);
+              display: inline-block;
               float: left;
-              font-family: $ob;
-              color: #334a51;
-              font-size: 14px;
-              text-align: left;
-              .tel-icon {
-                  background-image: url(../img/phone-receiver.png);
-                  display: inline-block;
-                  float: left;
-                  width: 14px;
-                  height: 13px;
-                  position: relative;
-                  top: 2px;
-                  margin-right: 5px;
-                  background-repeat: no-repeat;
-                  background-size: contain;
-              }
+              width: 14px;
+              height: 13px;
+              position: relative;
+              top: 2px;
+              margin-right: 5px;
+              background-repeat: no-repeat;
+              background-size: contain;
             }
+          }
         }
       }
-      &:last-of-type{
+      &:last-of-type {
         border-bottom: none;
       }
     }
   }
-  &_right{
+  &_right {
     width: 25%;
     float: left;
     @include breakpoint(max-width 992px) {
       display: none;
     }
   }
-  .banner-rightbar{
+  .banner-rightbar {
     margin-top: 20px;
   }
 }
 
-
-.warning-pic{
+.warning-pic {
   width: 114px;
   height: 104px;
   float: left;
   margin-right: 20px;
+  @include breakpoint(max-width 992px){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 }
-.warning-row{
+
+.warning-row {
   float: left;
   color: #020000;
   font-family: $ob;
@@ -224,4 +235,11 @@
   line-height: 96px;
   display: inline-block;
   width: calc(100% - 135px);
+  @include breakpoint(max-width 992px){
+    width: 100%;
+    line-height: inherit;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
 }
