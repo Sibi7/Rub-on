@@ -182,9 +182,7 @@
         display: block;
         margin-top: 20px;
       }
-      .kabinet-setting-account__right .setting-account-form .row-knopka{
-        float: left;
-      }
+
       .selectAvatar{
         width: 61%!important;
       }
@@ -236,5 +234,8 @@
         background-image: url("../img/twi-soc-37.png");
       }
     }
+  }
+  .kabinet-setting-account__right .setting-account-form .row-knopka{
+    float: left!important;
   }
 }
