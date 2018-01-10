@@ -12,17 +12,31 @@
     border: 1px solid #dedede;
     background-color: #fbfbfb;
     height: calc(100vh - 200px);
+    @include breakpoint(max-width 770px) {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
     &--link {
       display: flex;
       flex-direction: column;
-      width: 100%;
+      width: calc(100% - 80px);
       margin-left: 40px;
+      margin-right: 40px;
       margin-top: 65px;
+      @include breakpoint(max-width 770px) {
+        margin-top: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
       a {
-        margin-bottom: 20px;
         color: #6c5d0b;
         font-size: 14px;
         font-weight: 700;
+        margin-bottom: 20px;
+        @include breakpoint(max-width 770px) {
+          margin-right: 20px;
+        }
       }
     }
   }
@@ -33,6 +47,10 @@
     width: 80%;
     padding: 0 0 0 36px;
     background: #fff;
+    @include breakpoint(max-width 770px) {
+      width: 100%;
+      padding: 0;
+    }
     .title {
       margin-top: 57px;
       margin-bottom: 35px;
@@ -53,6 +71,10 @@
       height: 39px;
       background-color: #fbfbfb;
       margin-left: -36px;
+      @include breakpoint(max-width 770px) {
+        width: 100%;
+        margin-left: 0;
+      }
       h3 {
         color: #000000;
         font-size: 14px;
@@ -75,8 +97,11 @@
       align-items: center;
       margin-bottom: 46px;
       form {
-        margin-left: 20px;
+        margin: 0 20px;
         position: relative;
+        @include breakpoint(max-width 490px) {
+          width: calc(100% - 40px);
+        }
         label {
           color: #000000;
           margin-left: 15px;
@@ -94,6 +119,9 @@
           padding-left: 15px;
           font-size: 14px;
           font-weight: 400;
+          @include breakpoint(max-width 490px) {
+            width: 100%;
+          }
           &::placeholder {
             font-style: italic;
             font-size: 14px;
@@ -109,6 +137,10 @@
           font-size: 15px;
           font-weight: 400;
           margin-left: 37px;
+          @include breakpoint(max-width 490px) {
+            margin-left: 0;
+            margin-top: 20px;
+          }
         }
       }
       .description {
@@ -127,7 +159,7 @@
       display: block;
       position: relative;
       float: left;
-      min-width: 546px;
+      width: 100%;
       margin-bottom: 13px;
       overflow: hidden;
       .img{
@@ -168,6 +200,10 @@
       .goods{
         display: flex;
         align-items: center;
+        @include breakpoint(max-width 992px) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
         a {
           color: #000000;
           font-size: 12px;
@@ -178,6 +214,17 @@
         }
         &__actions {
           display: flex;
+          @include breakpoint(max-width 992px) {
+            flex-direction: column;
+            position: absolute;
+            bottom: 15px;
+            right: 0;
+          }
+          @include breakpoint(max-width 400px) {
+            position: relative;
+            bottom: auto;
+            margin-top: 10px;
+          }
         }
         &__action {
           display: inline-flex;
