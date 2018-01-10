@@ -308,9 +308,45 @@
           font-size: 16px;
           width: 100%;
         }
-        .average-ad-price{
-          float: left;
-          margin-top: 0;
+        .average-ad-price-wrapper{
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          .average-ad-price{
+            margin-top: 0;
+            margin-right: 25px;
+          }
+          .average-ad-vip{
+            width: 110px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .vip-color{
+              background-color: #ffa000;
+            }
+            a{
+              width: 26px;
+              height: 26px;
+              background-color: #fac66e;
+              border-radius: 50%;
+              position: relative;
+              color: #160606;
+              font-size: 9px;
+              font-weight: 700;
+              line-height: 9.27px;
+              text-transform: uppercase;
+              letter-spacing: 0.09px;
+              text-decoration: none;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              img{
+                height: 12px;
+                width: 12px;
+                object-fit: contain;
+              }
+            }
+          }
         }
         .bottom-content{
           .left, .right{
