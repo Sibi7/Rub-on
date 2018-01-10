@@ -375,7 +375,6 @@ ul.cities_list li:hover {
   margin-bottom: -1px;
   display: inline-block;
   float: left;
-  z-index: 2;
 }
 
 .small-label {
@@ -1119,6 +1118,7 @@ input[type=radio]:checked + label {
   margin-top: 10px;
   background-color: #e3e3e3;
   position: relative;
+  z-index: 0;
   span {
     cursor: pointer;
   }
