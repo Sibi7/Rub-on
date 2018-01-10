@@ -1,0 +1,198 @@
+.cabinet-integration {
+  display: block;
+  float: left;
+  width: 100%;
+  position: relative;
+  &__left {
+    display: block;
+    position: relative;
+    float: left;
+    width: 20%;
+    //height: 520px;
+    border: 1px solid #dedede;
+    background-color: #fbfbfb;
+    height: calc(100vh - 200px);
+    &--link {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-left: 40px;
+      margin-top: 65px;
+      a {
+        margin-bottom: 20px;
+        color: #6c5d0b;
+        font-size: 14px;
+        font-weight: 700;
+      }
+    }
+  }
+  &__right {
+    display: block;
+    position: relative;
+    float: left;
+    width: 80%;
+    padding: 0 0 0 36px;
+    background: #fff;
+    .title {
+      margin-top: 57px;
+      margin-bottom: 35px;
+      color: #000000;
+      font-size: 24px;
+      font-weight: 400;
+      display: block;
+      float: left;
+      width: 100%;
+
+    }
+    .subtitle {
+      display: flex;
+      align-items: center;
+      float: left;
+      width: 104%;
+      margin-bottom: 34px;
+      height: 39px;
+      background-color: #fbfbfb;
+      margin-left: -36px;
+      h3 {
+        color: #000000;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0 0 0 36px;
+        a {
+          color: #959595;
+          font-size: 12px;
+          font-weight: 400;
+          margin-left: 16px;
+        }
+      }
+    }
+    &--add-public {
+      width: 100%;
+      height: 91px;
+      background-color: #fbfbfb;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 46px;
+      form {
+        margin-left: 20px;
+        position: relative;
+        label {
+          color: #000000;
+          margin-left: 15px;
+          font-size: 14px;
+          display: block;
+          font-weight: 400;
+        }
+        input {
+          width: 271px;
+          height: 36px;
+          border-radius: 15px;
+          border: 1px solid #dedede;
+          background-color: #ffffff;
+          outline: none;
+          padding-left: 15px;
+          font-size: 14px;
+          font-weight: 400;
+          &::placeholder {
+            font-style: italic;
+            font-size: 14px;
+          }
+        }
+        button {
+          width: 129px;
+          height: 32px;
+          border-radius: 16px;
+          background-color: #334a51;
+          border: none;
+          color: #ffffff;;
+          font-size: 15px;
+          font-weight: 400;
+          margin-left: 37px;
+        }
+      }
+      .description {
+        width: 423px;
+        p {
+          color: #000000;
+          font-size: 12px;
+          margin: 0;
+          font-weight: 400;
+          margin-left: 34px;
+        }
+      }
+    }
+    &--group-wrapper{
+      display: block;
+      position: relative;
+      float: left;
+      width: 546px;
+      margin-bottom: 13px;
+      .img{
+        display: block;
+        float: left;
+        width: 56px;
+        overflow: hidden;
+        padding-bottom: 30px;
+        margin-top: 13px;
+        margin-right: 20px;
+        img{
+          width: 55px;
+          height: 55px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+      .links{
+        display: block;
+        position: relative;
+        float: left;
+        width: calc(100% - 76px);
+        margin-bottom: 13px;
+        a{
+          color: #000000;
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+      .partner{
+        margin-bottom: 13px;
+        a{
+          color: #000000;
+          font-size: 11px;
+          font-weight: 400;
+        }
+      }
+      .goods{
+        a{
+          color: #000000;
+          font-size: 12px;
+          font-weight: 700;
+          text-decoration: underline;
+        }
+      }
+      .successfully-add{
+        position: absolute;
+        top: -4px;
+        right: 0;
+        width: 115px;
+        span{
+          display: inline-block;
+          color: #18363b;
+          font-size: 11px;
+          font-weight: 400;
+        }
+        &:after{
+          height: 13px;
+          width: 13px;
+          content: '';
+          left: -20px;
+          top: 7px;
+          position: absolute;
+          background: url("../img/icons/ok2.png") no-repeat center center;
+          background-size: contain;
+        }
+      }
+    }
+  }
+}
