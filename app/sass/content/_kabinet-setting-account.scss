@@ -161,6 +161,33 @@
           display: block;
         }
       }
+      .form-group.field-profile-avatar {
+        display: block;
+        float: left;
+        width: 100%;
+      }
+      label.control-label {
+        width: 100%;
+        float: left;
+        display: block;
+      }
+      .form-horizontal .control-label {
+        text-align: left;
+      }
+      img#blah {
+        display: block;
+        margin: 20px auto 0 auto;
+      }
+      .selectAvatar span{
+        display: block;
+        margin-top: 20px;
+      }
+      .kabinet-setting-account__right .setting-account-form .row-knopka{
+        float: left;
+      }
+      .selectAvatar{
+        width: 61%!important;
+      }
     }
     .row-soc{
       width: 58%;
