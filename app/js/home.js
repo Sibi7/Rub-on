@@ -67,5 +67,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    $(document).on('click', '.get-goods-btn', function (e) {
+        e.preventDefault();
+        $(this).closest('.group-item').find('.get-goods').slideToggle('fast')
+    });
+
 
 });

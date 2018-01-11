@@ -364,6 +364,7 @@ button.slick-prev.slick-arrow{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
   .thumb{
     size: 35px;
@@ -902,10 +903,12 @@ button.slick-prev.slick-arrow{
   margin-bottom: 15px;
   @include breakpoint(max-width 992px){
     width: 100%;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
-  @include breakpoint(max-width 992px) {
-    width: 100%;
-  }
+
 }
 .banner {
   margin-bottom: 15px;
