@@ -71,6 +71,11 @@ document.addEventListener('DOMContentLoaded', function () {
         e.preventDefault();
         $(this).closest('.group-item').find('.get-goods').slideToggle('fast');
     });
+    $(document).on('click', '.get-goods--hide', function (e) {
+        e.preventDefault();
+        $(this).closest('.group-item').find('.get-goods').slideToggle('fast');
+    });
+
 
 
 });

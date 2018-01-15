@@ -193,7 +193,7 @@
         position: relative;
         float: left;
         width: calc(100% - 76px);
-        margin-bottom: 13px;
+        margin-bottom: 5px;
         a{
           color: #000000;
           font-size: 14px;
@@ -201,7 +201,9 @@
         }
       }
       .partner{
-        margin-bottom: 13px;
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 20px;
         a{
           color: #000000;
           font-size: 11px;
@@ -209,24 +211,24 @@
         }
       }
       .update {
-        margin-bottom: 13px;
+        margin-left: 15px;
         color: #000000;
         font-size: 11px;
         font-weight: 400;
         a {
           margin-left: 10px;
-          color: #000;
+          color: #5aca40;
           font-size: 12px;
           font-weight: 700;
-          &:before {
-            content: '';
-            margin-right: 5px;
-            display: inline-block;
-            height: 12px;
-            width: 12px;
-            background: url(../img/icons/reloading.png) no-repeat center;
-            background-size: cover;
-          }
+          //&:before {
+          //  content: '';
+          //  margin-right: 5px;
+          //  display: inline-block;
+          //  height: 12px;
+          //  width: 12px;
+          //  background: url(../img/icons/reloading.png) no-repeat center;
+          //  background-size: cover;
+          //}
         }
       }
       .goods{
@@ -303,7 +305,7 @@
         display: none;
         max-width: 560px;
         margin-left: 76px;
-        padding: 20px 0;
+        padding: 5px 0 20px 0;
         clear: both;
         @include breakpoint(max-width 450px) {
           margin-left: 10px;
@@ -314,6 +316,23 @@
           height: 0;
           width: 100%;
           overflow: hidden;
+        }
+        &--hide {
+          float: left;
+          clear: both;
+          display: inline-flex;
+          align-items: center;
+          font-size: 12px;
+          color: #6e6b64;
+          cursor: pointer;
+          &:before {
+            margin-right: 5px;
+            content: '';
+            display: inline-block;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid #6e6b64;
+          }
         }
         .form-line {
           display: flex;
@@ -327,8 +346,23 @@
           label {
             top: auto;
           }
-          select {
+          select, input {
             margin: 0;
+            max-width: 300px;
+          }
+        }
+        .field-ads-private_business {
+          float: left;
+          clear: both;
+          width: 100%;
+          padding: 15px;
+          display: block;
+          border-left: 1px solid #6e6b64;
+          &:after {
+            content: '';
+            height: 0;
+            width: 100%;
+            overflow: hidden;
           }
         }
       }
