@@ -165,6 +165,10 @@
       .group-item {
         position: relative;
         margin-bottom: 20px;
+        padding: 10px 0;
+        &:nth-of-type(even) {
+          background-color: #efefef;
+        }
         &:after {
           content: '';
           display: block;
@@ -181,11 +185,21 @@
         padding-bottom: 30px;
         margin-top: 13px;
         margin-right: 20px;
+        @include breakpoint(max-width 400px) {
+          width: auto;
+          padding-bottom: 0;
+          margin-right: 10px;
+          margin-top: 0;
+        }
         img{
           width: 55px;
           height: 55px;
           border-radius: 50%;
           object-fit: cover;
+          @include breakpoint(max-width 400px) {
+            height: 30px;
+            width: 30px;
+          }
         }
       }
       .links{
@@ -194,6 +208,9 @@
         float: left;
         width: calc(100% - 76px);
         margin-bottom: 5px;
+        @include breakpoint(max-width 400px) {
+          width: calc(100% - 40px);
+        }
         a{
           color: #000000;
           font-size: 14px;
@@ -204,14 +221,22 @@
         display: inline-flex;
         align-items: center;
         margin-bottom: 20px;
+        width: calc(100% - 76px);
+        @include breakpoint(max-width 520px) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        @include breakpoint(max-width 400px) {
+          width: 100%;
+        }
         a{
           color: #000000;
           font-size: 11px;
           font-weight: 400;
+          margin-right: 15px;
         }
       }
       .update {
-        margin-left: 15px;
         color: #000000;
         font-size: 11px;
         font-weight: 400;
@@ -235,11 +260,13 @@
         float: left;
         display: flex;
         align-items: center;
+        width: calc(100% - 76px);
         @include breakpoint(max-width 992px) {
           flex-direction: column;
           align-items: flex-start;
         }
         @include breakpoint(max-width 400px) {
+          width: calc(100% - 40px);
           margin-bottom: 20px;
         }
         a {
@@ -255,12 +282,15 @@
           @include breakpoint(max-width 992px) {
             flex-direction: column;
             position: absolute;
-            top: 25px;
+            top: 65px;
             right: 0;
+          }
+          @include breakpoint(max-width 520px) {
+            top: 70px;
           }
           @include breakpoint(max-width 400px) {
             position: relative;
-            bottom: auto;
+            top: 10px;
             flex-direction: row;
             margin-bottom: 20px;
           }
