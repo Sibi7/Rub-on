@@ -164,6 +164,7 @@
       overflow: hidden;
       .group-item {
         position: relative;
+        margin-bottom: 20px;
         &:after {
           content: '';
           display: block;
@@ -205,6 +206,27 @@
           color: #000000;
           font-size: 11px;
           font-weight: 400;
+        }
+      }
+      .update {
+        margin-bottom: 13px;
+        color: #000000;
+        font-size: 11px;
+        font-weight: 400;
+        a {
+          margin-left: 10px;
+          color: #000;
+          font-size: 12px;
+          font-weight: 700;
+          &:before {
+            content: '';
+            margin-right: 5px;
+            display: inline-block;
+            height: 12px;
+            width: 12px;
+            background: url(../img/icons/reloading.png) no-repeat center;
+            background-size: cover;
+          }
         }
       }
       .goods{
@@ -309,6 +331,16 @@
             margin: 0;
           }
         }
+      }
+      .vk-save-prod {
+        width: 129px;
+        height: 32px;
+        border-radius: 16px;
+        background-color: #334a51;
+        border: none;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 400;
       }
     }
   }
