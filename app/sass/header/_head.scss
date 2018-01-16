@@ -708,9 +708,11 @@ margin: 0 auto;
 border-bottom-left-radius: 15px;
 border-bottom-right-radius: 15px;
 display: none;
+	padding-bottom: 10px;
+	overflow: hidden;
 }
 ul.cities_list1 li {
-padding: 6px 0px 6px 30px;
+padding: 6px 0px 2px 25px;
 list-style-type: none;
 font-family: $or;
 font-size: 16px;
@@ -725,7 +727,7 @@ position: relative;
 	background-image: url("../img/disk.png");
 	width: 5px;
 	height: 5px;
-	margin-left: -20px;
+	margin-left: -15px;
   margin-top: 10px;
 
 }
