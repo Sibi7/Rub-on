@@ -96,7 +96,7 @@
           width: 60%;
           min-width: 300px;
           float: none;
-          margin: 15px auto;
+          margin: 15px 0;
         }
         label{
           width: 45%;
@@ -153,7 +153,7 @@
         }
       }
       .row-knopka{
-        width: 55%;
+        width: 240px;
         float: right;
         @include breakpoint(max-width 770px) {
           margin: 10px auto;
@@ -184,7 +184,7 @@
       }
 
       .selectAvatar{
-        width: 61%!important;
+        width: 240px!important;
       }
     }
     .row-soc{
@@ -238,4 +238,7 @@
   .kabinet-setting-account__right .setting-account-form .row-knopka{
     float: left!important;
   }
+}
+.form-horizontal .form-group {
+  margin: 0;
 }

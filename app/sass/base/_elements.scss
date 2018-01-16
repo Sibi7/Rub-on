@@ -81,5 +81,9 @@
 //  display: block!important;
 //}
 .fancybox-overlay{
-  z-index: 1!important;
+  z-index: 40!important;
+}
+.fancybox-opened,
+#fancybox-thumbs {
+  z-index: 41;
 }
