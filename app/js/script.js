@@ -439,6 +439,12 @@ $(document).ready(function () {
         $(".help-category-menu-hide").slideToggle();
     });
 
-
-
+    function fixOwlSlider() {
+        var sliders = document.querySelectorAll('.owl-stage');
+        for (var i=0; i<sliders.length; i++) {
+            var width = parseInt(sliders[i].style.width, 10);
+            sliders[i].style.width = width + 1 + 'px'
+        }
+    }
+    fixOwlSlider()
 });
