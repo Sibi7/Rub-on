@@ -6,6 +6,7 @@
   &_left {
     width: 20%;
     float: left;
+    border-right: 1px solid #dedede;
     @include breakpoint(max-width 992px) {
       display: none;
     }
@@ -162,7 +163,6 @@
     width: 80%;
     display: block;
     height: auto;
-    border-left: 1px solid #dedede;
     box-sizing: border-box;
     @include breakpoint(max-width 992px) {
       width: 100%;
@@ -261,6 +261,7 @@
         border-left: none;
         @include breakpoint(max-width 992px){
           margin-bottom: 15px;
+          border-left: 1px solid #dedede;
         }
         &:last-of-type {
           border-top: none;
@@ -273,6 +274,7 @@
             }
             .average-ad-title {
               color: $green;
+              width: calc(100% - 25px);
             }
           }
           .bottom-content {

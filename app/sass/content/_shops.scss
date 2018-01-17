@@ -368,6 +368,7 @@
 
     }
     .favorite-shop-button, .mapsearch-shop-button, .complain-shop-button {
+      position: relative;
       display: inline-block;
       width: 100%;
       text-decoration: none;
@@ -393,7 +394,8 @@
       }
       .average-ad-star {
         float: left;
-        top: 2px;
+        top: 50%;
+        transform: translateY(-50%);
       }
     }
     .favorite-shop-icon, .geo-shop-icon, .complain-icon {

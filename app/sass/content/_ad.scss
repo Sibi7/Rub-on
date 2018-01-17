@@ -423,7 +423,7 @@ ul.cities_list li:hover {
 .line-type {
   width: 100%;
   float: left;
-  display: inline-block;
+  display: inline-flex;
 }
 
 .input-checkbox {
@@ -769,6 +769,11 @@ input[type=radio]:checked + label {
   display: flex;
   @include breakpoint(max-width 770px) {
     flex-direction: column-reverse;
+  }
+  .average-ad-star {
+    position: absolute;
+    top: 5px;
+    right: 5px;
   }
 }
 
