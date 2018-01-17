@@ -259,9 +259,7 @@
   }
 }
 
-//.average-ad-item-hide{
-//  opacity: 0.3;
-//}
+
 
 .close-ad{
   font-family: $or;
@@ -274,7 +272,7 @@
   min-width: 210px;
   left: 22%;
 bottom: 26%;
-  z-index: 1;
+  z-index: 101;
   @include breakpoint(max-width 600px) {
     right: 0;
     left: auto;
@@ -427,7 +425,11 @@ bottom: 26%;
 .kabinet-favorite-organizatsii{
   .kabinet-favorite-right-item{
     .average-ad-item{
-
+      .average-ad-item-hide{
+        background-color: #fff;
+        opacity: 0.6;
+        z-index: 100;
+      }
       .average-ad-item-content{
         .top-content{
           p{

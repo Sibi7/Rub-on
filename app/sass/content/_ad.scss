@@ -603,6 +603,16 @@ input[type=radio]:checked + label {
     width: 100%;
     border: none;
   }
+  .average-ad-item-hide{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    opacity: 0.6;
+    z-index: 100;
+  }
 }
 
 //.adpage{
@@ -658,6 +668,7 @@ input[type=radio]:checked + label {
 
 .average-ad-item {
   display: flex;
+  position: relative;
   @include breakpoint(max-width 770px) {
     flex-direction: column;
     width: 48%;
