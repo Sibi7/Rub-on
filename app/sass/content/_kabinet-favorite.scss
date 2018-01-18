@@ -234,6 +234,11 @@
       display: none;
     }
   }
+  .average-ad-item-hide{
+    background-color: #fff;
+    opacity: 0.6;
+    z-index: 100;
+  }
   .average-ad-item{
     width: calc(100% - 20px);
     float: left;
@@ -427,11 +432,6 @@ bottom: 26%;
 
 .kabinet-favorite-organizatsii{
   .kabinet-favorite-right-item{
-    .average-ad-item-hide{
-      background-color: #fff;
-      opacity: 0.6;
-      z-index: 100;
-    }
     .average-ad-item{
       .average-ad-item-content{
         .top-content{
