@@ -320,6 +320,9 @@
 	display: inline-block;
 	margin-bottom: 20px;
 	z-index: 30;
+	@include breakpoint(max-width 768px) {
+		display: none;
+	}
 	>.container {
 		display: flex;
 		@include breakpoint(max-width 992px) {
@@ -521,6 +524,9 @@
 	display: block;
 	background-color: #fff6c4;
 	height: 50px;
+	@include breakpoint(max-width 768px) {
+		display: none;
+	}
 	>.container {
 		display: flex;
 		align-items: center;

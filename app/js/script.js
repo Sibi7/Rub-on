@@ -447,4 +447,8 @@ $(document).ready(function () {
         }
     }
     fixOwlSlider()
+
+    $(document).on('click', '.mob-search-btn', function () {
+        $(".header__bottom-home").slideToggle('slow');
+    });
 });

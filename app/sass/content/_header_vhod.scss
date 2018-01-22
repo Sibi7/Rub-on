@@ -17,7 +17,8 @@
 	align-items: center;
 	flex:1 ;
 	.mob-append-btn,
-	.mob-menu-btn {
+	.mob-menu-btn,
+	.mob-search-btn{
 		display: none;
 		height: 30px;
 		width: 30px;
@@ -25,19 +26,36 @@
 		border: none;
 
 	}
+	.mob-search-btn {
+		background-color: transparent;
+		cursor: pointer;
+		img {
+			size: 100%;
+			object-fit: contain;
+		}
+		@include breakpoint(max-width 768px) {
+			display: block;
+		}
+	}
 	.mob-append-btn {
+		position: relative;
 		background-color: #334a51;
 		border-radius: 50%;
-		color: #fff;
-		font-size: 27px;
-		line-height: 26px;
 		display: none;
-		align-items: center;
-		justify-content: center;
+		flex-shrink: 0;
 		transition: .4s;
-		//outline: none;
-		@include breakpoint(max-width 680px) {
-			display: flex;
+		padding: 0;
+		outline: none;
+		span {
+			color: #fff;
+			font-size: 23px;
+			position: absolute;
+			top: 47%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		@include breakpoint(max-width 768px) {
+			display: block;
 		}
 		&-active {
 			transform: rotate(405deg);
@@ -78,7 +96,7 @@
 	.mob-menu-btn {
 		background-color: transparent;
 		padding: 0;
-		@include breakpoint(max-width 680px) {
+		@include breakpoint(max-width 768px) {
 			display: block;
 		}
 		span {
@@ -155,7 +173,7 @@
 		color: #fff;
 		font-size: 12px;
 		padding: 3px 0;
-		@include breakpoint(max-width 680px) {
+		@include breakpoint(max-width 768px) {
 			font-size: 9px;
 			padding: 5px 0;
 		}
@@ -206,6 +224,7 @@
 	margin-right: 20px;
 	@include breakpoint(max-width 680px) {
 		width: 70px;
+		margin-right: 0;
 	}
 	img{
 		object-fit: contain;
@@ -218,7 +237,7 @@
 	position: relative;
 	margin-top: 3px;
 	display: flex;
-	@include breakpoint(max-width 680px) {
+	@include breakpoint(max-width 768px) {
 		display: none;
 	}
 	a {
