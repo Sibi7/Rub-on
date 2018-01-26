@@ -452,3 +452,4 @@ $(document).ready(function () {
         $(".header__bottom-home").slideToggle('slow');
     });
 });
+

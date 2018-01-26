@@ -185,6 +185,7 @@
         padding-bottom: 30px;
         margin-top: 13px;
         margin-right: 20px;
+        margin-left: 10px;
         @include breakpoint(max-width 400px) {
           width: auto;
           padding-bottom: 0;
@@ -206,10 +207,10 @@
         display: block;
         position: relative;
         float: left;
-        width: calc(100% - 76px);
+        width: calc(100% - 90px);
         margin-bottom: 5px;
         @include breakpoint(max-width 400px) {
-          width: calc(100% - 40px);
+          width: calc(100% - 50px);
         }
         a{
           color: #000000;
@@ -221,7 +222,7 @@
         display: inline-flex;
         align-items: center;
         margin-bottom: 20px;
-        width: calc(100% - 76px);
+        width: calc(100% - 90px);
         @include breakpoint(max-width 520px) {
           flex-direction: column;
           align-items: flex-start;
@@ -260,13 +261,13 @@
         float: left;
         display: flex;
         align-items: center;
-        width: calc(100% - 76px);
+        width: calc(100% - 90px);
         @include breakpoint(max-width 992px) {
           flex-direction: column;
           align-items: flex-start;
         }
         @include breakpoint(max-width 400px) {
-          width: calc(100% - 40px);
+          width: calc(100% - 50px);
           margin-bottom: 20px;
         }
         a {
