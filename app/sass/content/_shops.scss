@@ -66,7 +66,7 @@
   }
 }
 
-.shops-ad, .shops-favorite, .shops-msg, .shops-wallet, .shops-setting, .shops-my {
+.shops-ad, .shops-favorite, .shops-msg, .shops-wallet, .shops-setting, .shops-my, .shops-integration {
   display: inline-block;
   width: 26px;
   height: 23px;
@@ -141,6 +141,10 @@
 
 .shops-setting {
   background: url("../img/menu-icon/shops-setting.png") center center no-repeat;
+}
+.shops-integration {
+  background: url("../img/icons/settings.png") center center no-repeat;
+  background-size: contain;
 }
 
 .header-shop-fon {
