@@ -149,7 +149,6 @@
 
 .header-shop-fon {
   width: 100%;
-  height: 112px;
   float: left;
   position: relative;
   .header-fons-log {
@@ -157,6 +156,7 @@
     position: relative;
     float: left;
     width: 100%;
+    height: 112px;
   }
   @include breakpoint(max-width 992px) {
     display: flex;
